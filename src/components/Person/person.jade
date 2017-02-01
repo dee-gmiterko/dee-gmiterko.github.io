@@ -1,0 +1,23 @@
+.profile(itemscope,itemtype="http://schema.org/Person")
+  p.name
+    strong(itemprop="name") Dominik Gmiterko
+  p.job
+    span(itemprop="jobTitle") Coder, Artist, Me
+  img.hide(src=blogProfileImage,itemprop="image", alt="Photo of Dominik Gmiterko")
+  ul.no-bullet
+    li
+      span.icon.website
+      a(href="//ienze.me", itemprop="url") Website: ienze.me
+    li
+      span.icon.email
+      a(href="mailto:"+siteEmail,itemprop="email")= 'Email: ' + siteEmail
+    li
+      span.icon.github
+      a(href="//github.com/Linzee", target="_blank") Github: Linzee
+    li
+      span.icon.twitter
+      a(href="//twitter.com/ienze",target="_blank") Twitter: Ienze
+    li
+      span.icon.skype
+      a(href="skype:i-enze") Skype: i-enze
+  p.about-me(itemprop="description") !{__('ABOUT_ME')}

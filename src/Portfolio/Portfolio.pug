@@ -1,0 +1,14 @@
+#portfolio-description
+  h1= __(siteTitle) + ' : ' + __("Portfolio")
+  p.portfolio-content= __(portfolioContent)
+ul.portfolio
+  each block in projects
+    div(class="block g" + block.length + " s" + (1 + Math.round(random())))
+      each project in block
+        include includes/portfolioPost.jade
+
+  if projects.length > 0
+    if portfolioCategory
+      a(class="pagination", href="/portfolio/" + portfolioCategory + "/" + (page+1))= __("Older projects")
+    else
+      a(class="pagination", href="/portfolio/" + (page+1))= __("Older projects")

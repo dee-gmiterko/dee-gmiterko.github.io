@@ -1,0 +1,8 @@
+li(class="category " + project.category)
+  a.galleryItem(href="/project/"+project.slug, style="background-image: url(" + (project.image ? project.image.url : '') + ")")
+    if project.image
+      img(src=project.image.url)
+  .project-meta
+    .meta
+      h2= project.title
+      p= project.description

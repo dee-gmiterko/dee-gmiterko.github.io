@@ -1,0 +1,29 @@
+ul
+    li.hide-connection
+        a(href='/#m')= __(siteTitle)
+                 
+        ul
+          li(class=(activeMenuItem == 'about' ? "active" : ""))
+            a(href='/about#m')= __("About")
+                             
+            ul                    
+              li.force-l-t(class=(activeMenuItem == 'blog' ? "active" : ""))
+                a(href='/blog#m')= __("Blog")
+                       
+          li(class=(activeMenuItem == 'portfolio' ? "active" : ""))
+            a(href='/portfolio#m')= __("Portfolio")
+                             
+            ul
+              li(class=(activeMenuItem == 'programming' ? "active" : ""))
+                a(href='/portfolio/programming#m')= __("Programming")
+
+                ul
+                  li(class=(activeMenuItem == 'websites' ? "active" : ""))
+                    a(href='/portfolio/websites#m')= __("Websites")
+               
+              li.force-l-b(class=(activeMenuItem == 'other' ? "active" : ""))
+                a(href='/portfolio/other#m')= __("Other")
+
+                ul
+                  li(class=(activeMenuItem == 'art' ? "active" : ""))
+                    a(href='/portfolio/art#m')= __("Art")

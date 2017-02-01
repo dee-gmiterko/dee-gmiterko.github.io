@@ -1,0 +1,27 @@
+extends ./layout.jade
+
+block content
+  a.hide(href="#content") Skip to content
+  
+  #menu
+    include menu.jade
+
+  #top.menu-open-container
+    a.text-center#menu-open(href="#menu")
+      //- span= __(siteTitle)
+      span= __("Menu")
+
+  #content
+    block pageContent
+
+  #footer-space
+  #footer
+    include footer.jade
+
+  if !lang.saved
+    #first-lang-select
+      .language-change.large
+        h3= __("Choose language:")
+        p
+          a.sk(href="#") Slovenský
+          a.en(href="#") English

@@ -1,37 +1,29 @@
-block breadcrumbs
-  li
-    a(href='/#m')= __(siteTitle)
-  li
-    a(href='/about#m')= __(title)
-
-block pageContent
-  #title-screen
-    .row.white-triange-bottom-border
-      .corners
-        .blog-profile.small
-          img.enlarge(src=blogProfileImage)
-        h1.hide= __("About me")
-        include includes/titleScreenMeta.jade
-  #about-columns
-    .row
-      .small-12.large-4.columns.corners
-        p= __("ABOUT_1").replace(/\%/g, siteAuthorYears)
-      .small-12.large-4.columns.corners
-        p= __("ABOUT_2").replace(/\%/g, siteAuthorYears - 10)
-      .small-12.large-4.columns.corners
-        p= __("ABOUT_3")
-  .row#about-contact
-    if siteMessageBoardEnabled
-      h3= __("Contact")
-      .small-12.medium-6.columns
-        include includes/messageBoardStructure.jade
-      .small-12.medium-6.columns
-        include includes/person.jade
-    else
-      .small-12.medium-6.medium-centered.columns
-        h3= __("Contact")
-        include includes/person.jade
+div
+    #title-screen
+        .row.white-triange-bottom-border
+            .corners
+                .blog-profile.small
+                    img.enlarge(src=blogProfileImage)
+                h1.hide= __("About me")
+                h2
+                    a(href="/about") Dominik Gmiterko
+                p
+                    a(href="/portfolio/programming") Coder&nbsp;&nbsp;
+                    a(href="/portfolio/art") Artist&nbsp;&nbsp;
+                    a(href="/blog") Me
+    #about-columns
+        .row
+            .small-12.large-4.columns.corners
+                p= __("ABOUT_1").replace(/\%/g, siteAuthorYears)
+            .small-12.large-4.columns.corners
+                p= __("ABOUT_2").replace(/\%/g, siteAuthorYears - 10)
+            .small-12.large-4.columns.corners
+                p= __("ABOUT_3")
+    .row#about-contact
+        .small-12.medium-6.medium-centered.columns
+            h3= __("Contact")
+            Person me
   
-  #about-pointless-image
-    .row
-      img(src='/images/me.png', alt=__('Just') + ' ' + siteTitle) 
+    #about-pointless-image
+        .row
+            img(src='/images/me.png', alt=__('Just') + ' ' + siteTitle) 

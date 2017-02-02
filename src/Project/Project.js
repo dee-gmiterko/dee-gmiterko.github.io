@@ -1,12 +1,11 @@
 import { Component } from 'react';
-import pact from 'pug-react-compiler';
 
-import template from './Project.pug';
+import template from './Project.pug.js';
 // import './Project.css';
 
 class Project extends Component {
   render() {
-    return pact.compile(template);
+    return template;
   }
 }
 

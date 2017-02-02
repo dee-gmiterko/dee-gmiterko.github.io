@@ -1,12 +1,11 @@
 import { Component } from 'react';
-import pact from 'pug-react-compiler';
 
-import template from './Portfolio.pug';
+import template from './Portfolio.pug.js';
 // import './Portfolio.css';
 
 class Portfolio extends Component {
   render() {
-    return pact.compile(template);
+    return template;
   }
 }
 

@@ -1,12 +1,11 @@
 import { Component } from 'react';
-import pact from 'pug-react-compiler';
 
-import template from './NotFound.pug';
+import template from './NotFound.pug.js';
 // import './NotFound.css';
 
 class NotFound extends Component {
   render() {
-    return pact.compile(template);
+    return template;
   }
 }
 

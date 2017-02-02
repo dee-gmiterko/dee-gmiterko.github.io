@@ -1,16 +1,17 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router'
-import pact from 'pug-react-compiler';
 
-import template from './Index.pug';
+import template from './Index.pug.js';
 // import './Index.css';
 
-class Index extends Component {
-  render() {
-    return pact.compile(template, {
+var res = pact.compile(template, {
     	siteTitle: "Ienze",
     	Link
     });
+
+class Index extends Component {
+  render() {
+    return template;
   }
 }
 

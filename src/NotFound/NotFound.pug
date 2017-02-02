@@ -1,17 +1,18 @@
-h1= message
-pre= message
-if error
-  h2= error.status
-  pre= error.stack
-ul
-  li
-    a(href="/") Return to index
-  li
-    a(href="/blog") Read blog
-  li
-    a(href="/portfolio") Browse portfolio
-img(src="/images/error.png", style="position: fixed; bottom: 0; right: 32px; max-height: 100%")
-//- block styles
-//-  link(rel='stylesheet',type='text/css',href='/stylesheets/app.css')
-//-  link(rel='stylesheet',type='text/css',href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext')
-//-  //- script(src='/javascripts/modernizr.min.js')
+div
+    h1= message
+    pre= message
+    if error
+        h2= error.status
+        pre= error.stack
+    ul
+        li
+            a(href="/") Return to index
+        li
+            a(href="/blog") Read blog
+        li
+            a(href="/portfolio") Browse portfolio
+    img(src="/images/error.png", style="position: fixed; bottom: 0; right: 32px; max-height: 100%")
+    //- block styles
+    //-  link(rel='stylesheet',type='text/css',href='/stylesheets/app.css')
+    //-  link(rel='stylesheet',type='text/css',href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext')
+    //-  //- script(src='/javascripts/modernizr.min.js')

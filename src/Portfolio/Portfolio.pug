@@ -1,6 +1,6 @@
 div
     #portfolio-description
-        h1= __(siteTitle) + ' : ' + __("Portfolio")
-        p.portfolio-content= __(portfolioContent)
+        h1= this.props.locale(this.props.siteSettings.siteTitle) + ' : ' + this.props.locale("Portfolio")
+        //- p.portfolio-content= this.props.locale(this.props.portfolioDescription)
     
     //- Gallery16(itemType=PortfolioItem, projects=projects)

@@ -1,11 +1,12 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
-import template from './Project.pug.js';
+import Template from './Project.pug.js';
+import siteSettings from './../../data/site.json';
 // import './Project.css';
 
 class Project extends Component {
   render() {
-    return template;
+    return <Template locale={this.props.locale} siteSettings={siteSettings} project={this.props.project} />
   }
 }
 

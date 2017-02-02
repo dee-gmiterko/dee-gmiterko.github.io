@@ -1,12 +1,13 @@
+- const Person = require('../components/Person/Person')
 div
     #title-screen
         .row.white-triange-bottom-border
             .corners
                 .blog-profile.small
-                    img.enlarge(src=blogProfileImage)
-                h1.hide= __("About me")
+                    img.enlarge(src=this.props.siteSettings.me.image)
+                h1.hide= this.props.locale("About me")
                 h2
-                    a(href="/about") Dominik Gmiterko
+                    a(href="/about")= this.props.siteSettings.me.name
                 p
                     a(href="/portfolio/programming") Coder&nbsp;&nbsp;
                     a(href="/portfolio/art") Artist&nbsp;&nbsp;
@@ -14,16 +15,16 @@ div
     #about-columns
         .row
             .small-12.large-4.columns.corners
-                p= __("ABOUT_1").replace(/\%/g, siteAuthorYears)
+                p= this.props.locale("ABOUT_1").replace(/\%/g, this.props.siteAuthorYears)
             .small-12.large-4.columns.corners
-                p= __("ABOUT_2").replace(/\%/g, siteAuthorYears - 10)
+                p= this.props.locale("ABOUT_2").replace(/\%/g, this.props.siteAuthorYears - 10)
             .small-12.large-4.columns.corners
-                p= __("ABOUT_3")
+                p= this.props.locale("ABOUT_3")
     .row#about-contact
         .small-12.medium-6.medium-centered.columns
-            h3= __("Contact")
-            Person me
+            h3= this.props.locale("Contact")
+            Person(locale=this.props.locale person=this.props.siteSettings.me)
   
     #about-pointless-image
         .row
-            img(src='/images/me.png', alt=__('Just') + ' ' + siteTitle) 
+            img(src='/images/me.png', alt=this.props.locale('Just') + ' ' + this.props.siteSettings.siteTitle) 

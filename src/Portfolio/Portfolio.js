@@ -1,11 +1,15 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
-import template from './Portfolio.pug.js';
+import Template from './Portfolio.pug.js';
+import siteSettings from './../../data/site.json';
 // import './Portfolio.css';
 
 class Portfolio extends Component {
   render() {
-    return template;
+
+  	// var portfolioDescription = 
+
+    return <Template locale={this.props.locale} siteSettings={siteSettings} projects={this.props.projects} />;
   }
 }
 

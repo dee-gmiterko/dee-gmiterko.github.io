@@ -1,9 +1,5 @@
 div
-    h1= message
-    pre= message
-    if error
-        h2= error.status
-        pre= error.stack
+    h2= this.props.message
     ul
         li
             a(href="/") Return to index

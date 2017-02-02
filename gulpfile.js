@@ -9,7 +9,8 @@ gulp.task('compile-pug', function() {
 	.pipe(foreach(function(stream, file) {
 		return stream.pipe(modify({
 			fileModifier: function(file, contents) {
-				return pact.compileClient(contents);
+				var header = "import React from 'react';\n";
+				return header + pact.compileClient(contents);
 			}
 		}))
 		.pipe(rename(function (path) {

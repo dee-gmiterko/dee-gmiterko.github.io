@@ -5,7 +5,10 @@ import template from './NotFound.pug.js';
 
 class NotFound extends Component {
   render() {
-    return template;
+    return template({
+    	message: "None",
+    	error: "None"
+    });
   }
 }
 

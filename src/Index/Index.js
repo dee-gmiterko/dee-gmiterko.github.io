@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 
-import template from './Index.pug.js';
+import Template from './Index.pug.js';
+import siteSettings from './../../data/site.json';
 // import './Index.css';
-
-var res = pact.compile(template, {
-    	siteTitle: "Ienze",
-    	Link
-    });
 
 class Index extends Component {
   render() {
-    return template;
+    return <Template locale={this.props.locale} siteSettings={siteSettings} />
   }
 }
 

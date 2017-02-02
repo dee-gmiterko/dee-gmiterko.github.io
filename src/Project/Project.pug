@@ -1,13 +1,12 @@
 div
     article.single.project
         .image
-            .img-container(style="background-image: url(" + project.image.url + ")")
+            .img-container(style="background-image: url(" + this.props.project.image.url + ")")
                 .row
                     .to-bottom
                         .corners
-                            h1= project.title
+                            h1= this.props.project.title
       
         .row.content.white-triange-bottom-border
             .corners
-                p!= project.text
-                p.project-meta.text-center= (project.started_at ? formatDate(project.started_at) : '?') + __(" to ") + (project.finished_at ? formatDate(project.finished_at) : '?')
+                p!= this.props.project.text

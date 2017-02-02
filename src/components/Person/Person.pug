@@ -1,0 +1,23 @@
+.profile(itemscope,itemtype="http://schema.org/Person")
+  p.name
+    strong(itemprop="name")= this.props.person.name
+  p.job
+    span(itemprop="jobTitle") Coder, Artist, Me
+  img.hide(src=this.props.person.image, itemprop="image", alt="Photo of "+this.props.person.name)
+  ul.no-bullet
+    li
+      span.icon.website
+      a(href=this.props.person.website, itemprop="url")= 'Website: ' + this.props.person.website
+    li
+      span.icon.email
+      a(href="mailto:"+this.props.person.email,itemprop="email")= 'Email: ' + this.props.person.email
+    li
+      span.icon.github
+      a(href="//github.com/" + this.props.person.github, target="_blank") Github: this.props.person.github
+    li
+      span.icon.twitter
+      a(href="//twitter.com/" + this.props.person.twitter, target="_blank") Twitter: this.props.person.twitter
+    li
+      span.icon.skype
+      a(href="skype:" + this.props.person.skype) Skype: this.props.person.skype
+  p.about-me(itemprop="description") !{this.props.locale('ABOUT_ME')}

@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var foreach = require('gulp-foreach');
 var modify = require('gulp-modify');
 var rename = require("gulp-rename");
+var sass = require('gulp-sass');
 var pact = require('pug-react-compiler');
 
 gulp.task('compile-pug', function() {
@@ -14,7 +15,8 @@ gulp.task('compile-pug', function() {
 
 				try {
 					s = pact.compileClient(contents);
-					s = s.replace(/(.+?) = require\((.+?)\)/g, 'var $1 = require($2);');
+					// s = s.replace(/(.+?) = require\((.+?)\)/g, 'var $1 = require($2);');
+					s = s.replace(/(.+?) = require\((.+?)\)/g, 'import {$1} from $2;');
 					out += s;
 				} catch (e) {
 					console.log("Problem in "+file.path+".");
@@ -32,11 +34,17 @@ gulp.task('compile-pug', function() {
 	.pipe(gulp.dest('src'));
 });
 
+gulp.task('compile-sass', function () {
+  return gulp.src('./src/style/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./src/style'));
+});
+
 gulp.task('watch', function() {
-	//pug
 	gulp.watch(['src/**/*.pug'], ['compile-pug']);
+	gulp.watch(['src/style/**/*.scss'], ['compile-sass']);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('build', ['compile-pug']);
+gulp.task('build', ['compile-pug', 'compile-sass']);
 gulp.task('default', ['build', 'watch']);

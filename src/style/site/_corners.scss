@@ -1,0 +1,107 @@
+@media #{$large-up} {
+
+    .corners {
+        position: relative;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            pointer-events: none;
+        }
+    }
+
+    .white-triange-bottom-border .corners:after {
+        bottom: -24px;
+        z-index: 3;
+        background: url(../images/corners/corner-left-bottom-white.png) left bottom no-repeat, 
+            url(../images/corners/corner-right-bottom-white.png) right bottom no-repeat;
+    }
+    
+    article.single .image .corners:after {
+        background: url(../images/corners/corner-left-top-black.png) left top no-repeat, 
+            url(../images/corners/corner-right-top-black.png) right top no-repeat;
+        background-size: 8%;
+        opacity: 0.4;
+    }
+
+    #area-knowledgebase .corners:after {
+        top: -24px;
+        z-index: 3;
+        background: url(../images/corners/corner-left-top-green.png) left top no-repeat, 
+            url(../images/corners/corner-right-top-green.png) right top no-repeat,
+            url(../images/corners/corner-left-bottom-green.png) left bottom no-repeat, 
+            url(../images/corners/corner-right-bottom-green.png) right bottom no-repeat;
+    }
+
+    #footer {
+        .corners:first-child:after {
+            opacity: 0.4;
+            background: url(../images/corners/corner-left-top-black.png) left top no-repeat,
+                url(../images/corners/corner-right-bottom-black.png) right bottom no-repeat;
+        }
+        .corners:last-child:after {
+            opacity: 0.4;
+            background: url(../images/corners/corner-right-top-black.png) right top no-repeat,
+                url(../images/corners/corner-left-bottom-black.png) left bottom no-repeat;
+        }
+    }
+    
+    #about-columns {
+        .corners:after {
+            opacity: 0.2;
+            
+            background: url(../images/corners/corner-left-bottom-black.png) left bottom no-repeat,
+                url(../images/corners/corner-right-bottom-black.png) right bottom no-repeat;
+        }
+        .corners:first-child:after {
+            background: url(../images/corners/corner-left-bottom-black.png) left bottom no-repeat;
+        }
+        .corners:last-child:after {
+            background: url(../images/corners/corner-right-bottom-black.png) right bottom no-repeat;
+        }
+    }
+    
+    #blog .blog article.post {
+        .corners:after {
+            opacity: 0.1;
+            
+            background: url(../images/corners/corner-left-top-black.png) left top no-repeat,
+                url(../images/corners/corner-right-bottom-black.png) right bottom no-repeat;
+        }
+    }
+    
+    #blog-meta {
+        &.corners:after {
+            background: url(../images/corners/corner-right-bottom-white.png) right bottom no-repeat;
+            background-size: 60%;
+        }
+    }
+    
+    article.project {
+        .image .corners:after {
+            /*
+            opacity: 0.5;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            
+            background: url(../images/corners/corner-left-top-black.png) left top no-repeat, 
+                url(../images/corners/corner-right-top-black.png) right top no-repeat;
+            */
+        }
+    }
+}
+
+#title-screen h1.butterfly-effect span {
+    position: relative;
+
+    &:after {
+        content: " ";
+        width: 46px;
+        height: 49px;
+        position: absolute;
+        top: 56px;
+        left: 192px;
+        background: url(../images/butterfly.png);
+    }
+}

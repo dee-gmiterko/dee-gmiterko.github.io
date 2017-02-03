@@ -1,0 +1,292 @@
+$metro-node-radius: 21px;
+$metro-line-length: 200px;
+$metro-line-width: 8px;
+
+$metro-node-base-color: $primary-color;
+$metro-node-active-color: $secondary-color;
+
+.navigation-wrapper {
+    position: relative;
+    @include clearfix;
+    z-index: 4;
+    height: 100%;
+
+    background: #333;
+
+    .breadcrumbs-wrapper {
+        position: absolute;
+        left: 0; right: 0; top: 0;
+        pointer-events: none;
+
+        .breadcrumbs {
+            position: relative;
+            z-index: 10;
+            margin: 0;
+            float: left;
+            pointer-events: all;
+        }
+        
+        .passiveSwitch {
+            position: relative;
+            z-index: 10;
+            margin: 0;
+            float: right;
+            pointer-events: all;
+            
+            color: white;
+            
+            &:hover {
+                cursor: pointer;
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .metroNavigation.active {
+        position: relative;
+        height: 100%;
+    }
+
+    .background {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        overflow: hidden;
+
+        div {
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+
+            background: url(../images/chessBg.png) center;
+            image-rendering: pixelated;
+
+            opacity: 0.5;
+        }
+
+        div:last-child {
+            filter: invert(38%);
+            -webkit-filter: invert(38%);
+        }
+
+        .mask {
+            position: absolute;
+            top: 0; left: 0; 
+            display: block;
+            width: 600px;
+            height: 600px;
+
+            background: -moz-radial-gradient(center, ellipse cover, #333 0%, rgba(255,255,255,0) 70%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 70%, color-stop(0%,#333), color-stop(100%,rgba(255,255,255,0)));
+            background: -webkit-radial-gradient(center, ellipse cover, #333 0%,rgba(255,255,255,0) 70%);
+            background: -o-radial-gradient(center, ellipse cover, #333 0%,rgba(255,255,255,0) 70%);
+            background: -ms-radial-gradient(center, ellipse cover, #333 0%,rgba(255,255,255,0) 70%);
+            background: radial-gradient(ellipse at center, #333 0%,rgba(255,255,255,0) 70%);
+        }
+    }
+}
+
+/* PASSIVE */
+
+.metroNavigation.passive {
+    position: relative;
+    z-index: 9;
+    @include grid-row();
+    margin-top: rem-calc(64);
+
+    .mover {
+        display: none;
+    }
+
+    ul {
+        padding: rem-calc(16);
+
+        li {
+            text-align: right;
+            list-style: none;
+            font-size: 2.6rem;
+
+            li {
+                font-size: 75%;
+                text-align: right;
+            }
+
+            a {
+                font-family: $header-font-family;
+                font-weight: $header-font-weight;
+                display: block;
+            }
+            
+            &:hover > a {
+                color: $secondary-color;
+                
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        ul {
+            padding: 0.1em rem-calc(45) 0.1em 0;
+            margin-left: 0;
+            font-size: inherit;
+        }
+    }
+}
+
+/* ACTIVE */
+
+@mixin metro-side($side) {
+    $angle: $side / 8 * pi() * 2;
+    $angleDeg: -1 * $side / 8 * 360;
+
+    top: -1 * $metro-line-length * sin($angle);
+    left: $metro-line-length * cos($angle);
+
+    &:before {
+        top: ($metro-line-length * sin($angle) / 2) + 18/* < have no idea why */; 
+        left: (-1 * $metro-line-length * cos($angle) / 2) - 90/* < still have no idea why */;
+        transform: rotate(#{$angleDeg}deg);
+    }
+}
+
+.metroNavigation.active {
+    $metro-navigation-active-color: scale-color(white, $lightness: -10%);
+
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+
+    overflow: hidden;
+
+    & > ul {
+        position: relative;
+    }
+
+    .mover {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        //background: rgba(255, 0, 0, 0.4);
+    }
+
+    li {
+        @include metro-side(0);
+        position: absolute;
+        list-style: none;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            height: $metro-line-width;
+            width: $metro-line-length;
+            margin-top: $metro-line-width / -2;
+            border-radius: $metro-line-width / 2;
+            background: $metro-navigation-active-color;
+        }
+
+        a {
+            position: relative;
+            z-index: 9;
+            white-space: nowrap;
+            font-size: 1.6em;
+            color: $metro-node-base-color;
+
+            font-family: $header-font-family;
+            font-weight: $header-font-weight;
+
+            &:before {
+                content: " ";
+                display: inline-block;
+
+                width: $metro-node-radius;
+                height: $metro-node-radius;
+
+                background: $metro-node-base-color;
+                border-radius: $metro-node-radius/2;
+
+                margin-right: rem-calc(10);
+            }
+        }
+
+        ul {
+            position: absolute;
+            top: 0;
+            left: -1 * $metro-node-radius;
+        }
+
+        &.active, &.hover {
+            > a {
+                color: $metro-node-active-color;
+            }
+
+            > a:before {
+                background: $metro-node-active-color;
+            }
+        }
+
+        a:hover {
+            color: $metro-node-active-color;
+
+            &:before {
+                background: $metro-node-active-color;
+            }
+        }
+
+        &.active > a:before, &.hover > a:before, a:hover:before {
+            background: $metro-node-active-color;
+        }
+
+        &.hide-connection:before {
+            display: none;
+        }
+
+        &:first-child {
+            @include metro-side(1);
+        }
+
+        &:last-child {
+            @include metro-side(7);
+        }
+
+        &.other{
+            @include metro-side(4);
+        }
+
+        &.other:first-child {
+            @include metro-side(3);
+        }
+
+        &.other:last-child {
+            @include metro-side(5);
+        }
+
+        &.force-r {
+            @include metro-side(0);
+        }
+
+        &.force-r-t {
+            @include metro-side(1);
+        }
+
+        &.force-t {
+            @include metro-side(2);
+        }
+
+        &.force-l-t {
+            @include metro-side(3);
+        }
+
+        &.force-l {
+            @include metro-side(4);
+        }
+
+        &.force-l-b {
+            @include metro-side(5);
+        }
+
+        &.force-b {
+            @include metro-side(6);
+        }
+
+        &.force-r-b {
+            @include metro-side(7);
+        }
+    }
+}

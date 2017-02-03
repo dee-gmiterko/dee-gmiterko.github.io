@@ -1,0 +1,60 @@
+#messageBoard {
+    //background: scale-color(#000, $lightness: 82);
+    height: 100%;
+    
+    .login {
+        padding: rem-calc(16);
+        
+        h2 {
+            font-size: rem-calc(26);
+            text-align: center;
+        }
+        
+        label {
+            margin-top: rem-calc(16);
+            font-size: rem-calc(14);
+        }
+    }
+    
+    .chat {
+        background: scale-color($primary-color, $lightness: 8);
+        position: relative;
+        height: 100%;
+        
+        ul {
+            position: absolute;
+            top: rem-calc(5); right: rem-calc(5); bottom: rem-calc(16 + 5 + 5); left: rem-calc(5);
+            
+            background: white;
+            box-shadow: $global-bg-shadow;
+            overflow: auto;
+            margin: 0;
+            padding: rem-calc(16 / 2);
+        }
+        
+        .input-container {
+            position: absolute;
+            right: rem-calc(5 + 5 + 64); bottom: rem-calc(5); left: rem-calc(5);
+            height: rem-calc(16);
+            
+            line-height: 1;
+            
+            input {
+                width: 100%;
+                height: rem-calc(16);
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+        input[type="submit"] {
+            position: absolute;
+            right: rem-calc(5); bottom: rem-calc(5);
+            height: rem-calc(16);
+            width: rem-calc(64);
+            padding: 0;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}

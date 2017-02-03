@@ -1,6 +1,6 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
 import React from 'react';
-var ReactRouter = require('react-router');
+import {ReactRouter} from 'react-router';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;

@@ -3,7 +3,7 @@
         strong(itemprop="name")= this.props.person.name
     p.job
         span(itemprop="jobTitle") Coder, Artist, Me
-    img.hide(src=this.props.person.image, itemprop="image", alt="Photo of "+this.props.person.name)
+    img.hide(src=require('../../images/profile_16.png'), itemprop="image", alt="Photo of "+this.props.person.name)
     ul.no-bullet
         li
             span.icon.website

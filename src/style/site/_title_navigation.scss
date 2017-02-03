@@ -1,0 +1,127 @@
+#title-screen {
+
+    .title-navigation {
+        position: relative;
+
+        ul.passive {
+
+            padding: rem-calc(16);
+
+            li {
+                text-align: right;
+                list-style: none;
+                font-size: 2.6rem;
+
+                li {
+                    font-size: 2.0rem;
+
+                    li {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                ul {
+                    padding-right: rem-calc(45);
+                }
+            }
+        }
+
+        ul.active {
+            position: absolute;
+            top: 50%;
+
+            li, li.force-r-c {
+                position: absolute;
+                list-style: none;
+
+                top: 0px;
+                left: 150px;
+
+                &:before {
+                    content: " ";
+                    position: absolute;
+                    height: 8px;
+                    margin-top: -4px;
+                    border-radius: 4px;
+                    background: white;
+                    border: 1px solid black;
+
+                    width: 150px;
+                    left: -150px;
+                }
+
+                a {
+                    top: -20px;
+                    left: -10px;
+                    position: relative;
+                    z-index: 99;
+                    padding-left: 24px;
+                    background: url('../images/point.png') no-repeat left center;
+                    white-space: nowrap;
+
+                    font-size: 1.5em;
+                    text-shadow: 1px 1px 1px #7b4400;
+                    //color: white;
+
+                    &:hover {
+                        background-image: url('../images/point_active.png');
+                    }
+                }
+            }
+
+            li:first-child, li.force-r-t, li.force-l-b {
+                top: -150px;
+                left: 150px;
+
+                &:before {
+                    width: 212px;
+                    top: 75px;
+                    left: -182px;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            li:last-child, li.force-r-b, li.force-l-t {
+                top: 150px;
+                left: 150px;
+
+                &:before {
+                    width: 212px;
+                    top: -75px;
+                    left: -182px;
+                    transform: rotate(45deg);
+                }
+            }
+
+            li.other, li.force-l-c {
+
+                top: 0px;
+                left: -150px;
+
+                &:before {
+                    left: 0;
+                }
+            }
+
+            li.other:first-child, li.force-l-b {
+                top: 150px;
+                left: -150px;
+
+                &:before {
+                    left: -30px;
+                    top: -75px;
+                }
+            }
+
+            li.other:last-child, li.force-l-t {
+                top: -150px;
+                left: -150px;
+
+                &:before {
+                    left: -30px;
+                    top: 75px;
+                }
+            }
+        }
+    }
+}

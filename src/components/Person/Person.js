@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Template from './Person.pug.js';
 // import './Index.css';
 
-class Person extends Component {
+export class Person extends Component {
   render() {
     return <Template locale={this.props.locale} person={this.props.person} />
   }

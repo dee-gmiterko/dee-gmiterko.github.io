@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
 
 import Template from './Index.pug.js';
 import siteSettings from './../../data/site.json';

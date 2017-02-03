@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
 
 import Template from './Person.pug.js';
 // import './Index.css';

@@ -1,3 +1,6 @@
+- const Person = require('../components/Person/Person')
+- const ReactRouter = require('react-router')
+- const Link = ReactRouter.Link
 div
     #title-screen
         .row.white-triange-bottom-border
@@ -5,10 +8,10 @@ div
                 h1
                     span= this.props.siteSettings.siteTitle
                 h2
-                    a(href="/about") Dominik Gmiterko
+                    Link(to="/about") Dominik Gmiterko
                 p
-                    a(href="/portfolio/programming") Coder&nbsp;&nbsp;
-                    a(href="/portfolio/art") Artist&nbsp;&nbsp;
-                    a(href="/blog") Me
+                    Link(to="/portfolio/programming") Coder&nbsp;&nbsp;
+                    Link(to="/portfolio/art") Artist&nbsp;&nbsp;
+                    Link(to="/about") Me
       
         //- Gallery16(itemType=PortfolioItem, projects=projects)

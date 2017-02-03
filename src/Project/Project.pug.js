@@ -1,3 +1,4 @@
+/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
 import React from 'react';
 module.exports = class __Component extends React.Component {
     render() {

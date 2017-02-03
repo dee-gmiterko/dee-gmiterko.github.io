@@ -1,14 +1,12 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router';
 
-import template from './NotFound.pug.js';
+import Template from './NotFound.pug.js';
 // import './NotFound.css';
 
 class NotFound extends Component {
   render() {
-    return template({
-    	message: "None",
-    	error: "None"
-    });
+    return <Template Link={Link} />
   }
 }
 

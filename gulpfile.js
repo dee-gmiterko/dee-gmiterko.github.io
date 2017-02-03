@@ -9,8 +9,20 @@ gulp.task('compile-pug', function() {
 	.pipe(foreach(function(stream, file) {
 		return stream.pipe(modify({
 			fileModifier: function(file, contents) {
-				var header = "import React from 'react';\n";
-				return header + pact.compileClient(contents);
+				var out = "/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */\n"
+				+ "import React from 'react';\n";
+
+				try {
+					s = pact.compileClient(contents);
+					s = s.replace(/(.+?) = require\((.+?)\)/g, 'var $1 = require($2);');
+					out += s;
+				} catch (e) {
+					console.log("Problem in "+file.path+".");
+					console.log(e.stack);
+				}
+
+				return out;
+
 			}
 		}))
 		.pipe(rename(function (path) {

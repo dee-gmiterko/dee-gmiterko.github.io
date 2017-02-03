@@ -1,12 +1,14 @@
+- const ReactRouter = require('react-router')
+- const Link = ReactRouter.Link
 div
     h2= this.props.message
     ul
         li
-            a(href="/") Return to index
+            Link(to="/") Return to index
         li
-            a(href="/blog") Read blog
+            Link(to="/about") Read about me
         li
-            a(href="/portfolio") Browse portfolio
+            Link(to="/portfolio") Browse portfolio
     img(src="/images/error.png", style="position: fixed; bottom: 0; right: 32px; max-height: 100%")
     //- block styles
     //-  link(rel='stylesheet',type='text/css',href='/stylesheets/app.css')

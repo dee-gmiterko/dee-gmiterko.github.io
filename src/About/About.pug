@@ -1,4 +1,6 @@
 - const Person = require('../components/Person/Person')
+- const ReactRouter = require('react-router')
+- const Link = ReactRouter.Link
 div
     #title-screen
         .row.white-triange-bottom-border
@@ -7,11 +9,11 @@ div
                     img.enlarge(src=this.props.siteSettings.me.image)
                 h1.hide= this.props.locale("About me")
                 h2
-                    a(href="/about")= this.props.siteSettings.me.name
+                    Link(to="/about")= this.props.siteSettings.me.name
                 p
-                    a(href="/portfolio/programming") Coder&nbsp;&nbsp;
-                    a(href="/portfolio/art") Artist&nbsp;&nbsp;
-                    a(href="/blog") Me
+                    Link(to="/portfolio/programming") Coder&nbsp;&nbsp;
+                    Link(to="/portfolio/art") Artist&nbsp;&nbsp;
+                    Link(to="/about") Me
     #about-columns
         .row
             .small-12.large-4.columns.corners
@@ -23,8 +25,8 @@ div
     .row#about-contact
         .small-12.medium-6.medium-centered.columns
             h3= this.props.locale("Contact")
-            Person(locale=this.props.locale person=this.props.siteSettings.me)
+            //- Person(locale=this.props.locale, person=this.props.siteSettings.me)
   
     #about-pointless-image
         .row
-            img(src='/images/me.png', alt=this.props.locale('Just') + ' ' + this.props.siteSettings.siteTitle) 
+            img(src='/images/me.png', alt=this.props.locale('Just') + ' ' + this.props.siteSettings.siteTitle)

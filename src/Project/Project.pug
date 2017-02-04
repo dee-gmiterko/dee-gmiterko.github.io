@@ -12,5 +12,5 @@ article.single.project
             each entry in this.props.project.entries
                 if entry.type === 'text'
                     TextEntry(key=$index, entry=entry)
-                else if entry.type === 'image'
+                if entry.type === 'image'
                     ImageEntry(key=$index, entry=entry)

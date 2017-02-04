@@ -3,6 +3,6 @@ import React from 'react';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
-        return React.DOM.div({ className: 'entry' }, React.DOM.p(null, entry.text));
+        return React.DOM.div({ className: 'entry' }, React.DOM.p(null, this.props.entry.text));
     }
 };

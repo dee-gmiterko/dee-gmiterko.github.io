@@ -4345,35 +4345,35 @@ article.single.post .attachments-container {
     margin: 0;
     padding: 0 4rem 1rem 4rem; }
 
-ul.portfolio {
+ul.gallery16 {
   margin: 0;
   width: 100vw;
   background: #222;
   color: white; }
-  ul.portfolio:before, ul.portfolio:after {
+  ul.gallery16:before, ul.gallery16:after {
     content: " ";
     display: table; }
-  ul.portfolio:after {
+  ul.gallery16:after {
     clear: both; }
-  ul.portfolio .block {
+  ul.gallery16 .block {
     height: 100vw;
     width: 100vw;
     float: left; }
-    ul.portfolio .block:before, ul.portfolio .block:after {
+    ul.gallery16 .block:before, ul.gallery16 .block:after {
       content: " ";
       display: table; }
-    ul.portfolio .block:after {
+    ul.gallery16 .block:after {
       clear: both; }
-    ul.portfolio .block.g1 li {
+    ul.gallery16 .block.g1 li {
       height: 100vw;
       width: 100vw; }
-    ul.portfolio .block.g2.s1 li {
+    ul.gallery16 .block.g2.s0 li {
       height: 100vw; }
-    ul.portfolio .block.g2.s2 li {
+    ul.gallery16 .block.g2.s1 li {
       width: 100vw; }
-    ul.portfolio .block.g2.g3 li:last-child {
+    ul.gallery16 .block.g2.g3 li:last-child {
       width: 100vw; }
-  ul.portfolio li {
+  ul.gallery16 li {
     height: 50vw;
     width: 50vw;
     float: left;
@@ -4382,40 +4382,40 @@ ul.portfolio {
     background: #eee;
     border: 14px solid #222;
     transition: border-width .5s ease-in-out; }
-    ul.portfolio li:hover {
+    ul.gallery16 li:hover {
       border-width: 4px; }
-    ul.portfolio li a {
+    ul.gallery16 li a {
       display: block;
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-      ul.portfolio li a img {
+      ul.gallery16 li a img {
         display: none;
         margin: 0; }
   @media only screen and (min-width: 40.0625em) {
-    ul.portfolio .block {
+    ul.gallery16 .block {
       height: 50vw;
       width: 50vw; }
-      ul.portfolio .block.g1 li {
+      ul.gallery16 .block.g1 li {
         height: 50vw;
         width: 50vw; }
-      ul.portfolio .block.g2.s1 li {
+      ul.gallery16 .block.g2.s0 li {
         height: 50vw; }
-      ul.portfolio .block.g2.s2 li {
+      ul.gallery16 .block.g2.s1 li {
         width: 50vw; }
-      ul.portfolio .block.g3 li:last-child {
+      ul.gallery16 .block.g3 li:last-child {
         width: 50vw; }
-    ul.portfolio li {
+    ul.gallery16 li {
       height: 25vw;
       width: 25vw; } }
-  ul.portfolio a.pagination, ul.portfolio .jscroll-added > p {
+  ul.gallery16 a.pagination, ul.gallery16 .jscroll-added > p {
     display: inline-block;
     text-align: center;
     width: 100%; }
-  ul.portfolio .category {
+  ul.gallery16 .category {
     position: relative; }
-    ul.portfolio .category .project-meta {
+    ul.gallery16 .category .project-meta {
       position: absolute;
       top: 0;
       right: 0;
@@ -4428,21 +4428,21 @@ ul.portfolio {
       transition: opacity 0.3s ease-in-out;
       display: table;
       box-shadow: 0 0 64px rgba(0, 0, 0, 0.2) inset; }
-      ul.portfolio .category .project-meta .meta {
+      ul.gallery16 .category .project-meta .meta {
         display: table-cell;
         vertical-align: middle;
         text-align: center; }
-        ul.portfolio .category .project-meta .meta h2 {
+        ul.gallery16 .category .project-meta .meta h2 {
           color: white; }
-    ul.portfolio .category:hover .project-meta {
+    ul.gallery16 .category:hover .project-meta {
       opacity: 1.0; }
-  ul.portfolio .category.programming .project-meta {
+  ul.gallery16 .category.programming .project-meta {
     background: rgba(52, 73, 94, 0.8); }
-  ul.portfolio .category.websites .project-meta {
+  ul.gallery16 .category.websites .project-meta {
     background: rgba(165, 78, 104, 0.8); }
-  ul.portfolio .category.art .project-meta {
+  ul.gallery16 .category.art .project-meta {
     background: rgba(119, 192, 70, 0.8); }
-  ul.portfolio .category.other .project-meta {
+  ul.gallery16 .category.other .project-meta {
     background: rgba(170, 170, 170, 0.8); }
 
 /* FIX dont show x-scroll-bar */

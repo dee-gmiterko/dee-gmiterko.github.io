@@ -6,7 +6,14 @@ import siteSettings from './../../data/site.json';
 
 class Index extends Component {
   render() {
-    return <Template locale={this.props.locale} siteSettings={siteSettings} />
+  	
+  	var projects = this.props.projectsService.getProjects().slice();
+  	projects.sort(function(a, b){
+  		return (new Date(a.startedAt).valueOf() > new Date(b.startedAt).valueOf());
+  	});
+  	projects = projects.slice(0, 16);
+
+    return <Template locale={this.props.locale} siteSettings={siteSettings} projects={projects} />
   }
 }
 

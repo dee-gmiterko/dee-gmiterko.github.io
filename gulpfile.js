@@ -15,8 +15,7 @@ gulp.task('compile-pug', function() {
 
 				try {
 					s = pact.compileClient(contents);
-					// s = s.replace(/(.+?) = require\((.+?)\)/g, 'var $1 = require($2);');
-					s = s.replace(/(.+?) = require\((.+?)\)/g, 'import {$1} from $2;');
+					s = s.replace(/(?:var ){0,1}(.+?) = require\((.+?)\)/g, 'import $1 from $2;');
 					out += s;
 				} catch (e) {
 					console.log("Problem in "+file.path+".");

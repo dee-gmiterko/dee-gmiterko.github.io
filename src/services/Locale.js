@@ -1,4 +1,4 @@
-class Locale {
+export class Locale {
 
 	/*
 	Format of locales:
@@ -21,6 +21,10 @@ class Locale {
 			throw new Error("Locale "+localeName+" not found");
 		}
 		this.locale = localeName;
+	}
+
+	getLocale() {
+		return this.locale;
 	}
 
 	getTranslations() {

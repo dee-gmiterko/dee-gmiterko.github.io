@@ -1,6 +1,6 @@
-- const Person = require('../components/Person/Person')
-- const ReactRouter = require('react-router')
-- const Link = ReactRouter.Link
+- const {Link} = require('react-router')
+- const Gallery16 = require('../components/Gallery16/Gallery16')
+- const PortfolioItem = require('../components/PortfolioItem/PortfolioItem')
 div
     #title-screen
         .row.white-triange-bottom-border
@@ -10,8 +10,8 @@ div
                 h2
                     Link(to="/about") Dominik Gmiterko
                 p
-                    Link(to="/portfolio/programming") Coder&nbsp;&nbsp;
-                    Link(to="/portfolio/art") Artist&nbsp;&nbsp;
+                    Link(to="/portfolio/programming") Coder  
+                    Link(to="/portfolio/art") Artist  
                     Link(to="/about") Me
       
-        //- Gallery16(itemType=PortfolioItem, projects=projects)
+        Gallery16(itemType=PortfolioItem, items=this.props.projects)

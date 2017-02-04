@@ -1,0 +1,774 @@
+[
+  {
+    "slug": "minecraft-bulldozer",
+    "tags": [
+      "programming"
+    ],
+    "title": "Bulldozer (Minecraft)",
+    "image": "FrrRiIpTQkwwyqwKy2EmK.png",
+    "startedAt": "2013-11-15",
+    "finishedAt": "2013-11-19",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Lanceys bulldozer is mod for game Minecraft. It adds functional bulldozer into game.\n\nObtained skills: Java, Minecraft Forge"
+      },
+      {
+        "type": "text",
+        "path": "FrrRiIpTQkwwyqwKy2EmK.png"
+      },
+      {
+        "type": "text",
+        "path": "6irl2cWVjygMGGWKMaKcMe.png"
+      },
+      {
+        "type": "text",
+        "path": "2KSrJsMnGwgEYGgyi64sso.png"
+      }
+    ]
+  },
+  {
+    "slug": "jeden-den",
+    "tags": [
+      "art"
+    ],
+    "title": "One day",
+    "image": "7eOo4fWOWWC0m6Oi4CWsO4.png",
+    "startedAt": "2014-11-26",
+    "finishedAt": "2014-12-10",
+    "entries": [
+      {
+        "type": "text",
+        "text": "One her day. A few sketches."
+      },
+      {
+        "type": "text",
+        "path": "2NlMhalyeICsGm62meAIe4.png"
+      },
+      {
+        "type": "text",
+        "path": "7eOo4fWOWWC0m6Oi4CWsO4.png"
+      },
+      {
+        "type": "text",
+        "path": "6vzOQC1VL22yYsSmUoySii.png"
+      },
+      {
+        "type": "text",
+        "path": "2iQPMNUdVGWa8Q2i2kYg22.png"
+      },
+      {
+        "type": "text",
+        "path": "6pvzlDsWDSW2OwkuWCu0Uq.png"
+      }
+    ]
+  },
+  {
+    "slug": "ghdesign",
+    "tags": [
+      "art"
+    ],
+    "title": "Design-GH",
+    "image": "5BzfY2gpcQYG8mmsq2E0iG.png",
+    "startedAt": "2014-11-10",
+    "finishedAt": "2014-11-10",
+    "entries": [
+      {
+        "type": "text",
+        "text": "website design"
+      },
+      {
+        "type": "text",
+        "path": "5BzfY2gpcQYG8mmsq2E0iG.png"
+      },
+      {
+        "type": "text",
+        "path": "2s4uOO9NhGaO0MOKi0EycI.png"
+      },
+      {
+        "type": "text",
+        "path": "2czzsMjkU4ogiuaYMU2KiS.png"
+      }
+    ]
+  },
+  {
+    "slug": "minecraft-daily-token",
+    "tags": [
+      "programming"
+    ],
+    "title": "Daily token (Minecraft)",
+    "image": ".png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "Daily token is minecraft plugin. It allows players gain some special items. Players can finish quests/tasks in order to recive tokens.  On server where this plugin is used its setuoed to give plywrs money. Each quest can be setuped individualy in configuration file."
+      }
+    ]
+  },
+  {
+    "slug": "icons-extractor",
+    "tags": [
+      "programming"
+    ],
+    "title": "Icons extractor",
+    "image": "4NEzejr3xmSsG0c2s8U0Mw.png",
+    "startedAt": "2014-08-25",
+    "finishedAt": "2014-09-19",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Icons extractor is program written in Java. It is creating one image whitch contains all imput images. Icons can be added one-per-image or program will also find them if there is more on one image. Program also generate file with coordinates of all icons and data which can be used in my SASS function for using icons with css. This function will generate css to allow dirrect use of icons on page.\n\n`\n//Example of icons usage on page:\n<span class=\"icon facebook\">Facebook</span>\n\n//SASS Function to generate css for icons:\n\n@mixin icons-generator($names:(none), $coords:(0 0), $sizes:false) {\n    $i: 1;\n    @each $name in $names {\n        &.#{$name} {\n            background-position: nth($coords, $i);\n            @if $sizes {\n                width: #{nth(nth($sizes, $i), 1)}px;\n                height: #{nth(nth($sizes, $i), 2)}px;\n            }\n        }\n        $i: $i+1;\n    }\n}\n\n//Example of generated data from program:\n\n0, 0 => 46, 49 (46, 49)\n46, 0 => 78, 32 (32, 32)\n78, 0 => 110, 32 (32, 32)\n110, 0 => 138, 23 (28, 23)\n0, 49 => 26, 75 (26, 26)\n26, 49 => 53, 75 (27, 26)\n53, 49 => 89, 85 (36, 36)\n\n\n.icon {\n  background-image: url(icons.png);\n  display: inline-block;\n  font-size: 0;\n\n  a {\n    font-size: 0;\n    height: 100%;\n    display: block;\n  }\n\n  @include icons-generator(\n    (name-1, name-2, name-3, name-4, name-5, name-6, name-7),\n    (0 0, -46px 0, -78px 0, -110px 0, 0 -49px, -26px -49px, -53px -49px),\n    (46 49, 32 32, 32 32, 28 23, 26 26, 27 26, 36 36)\n  );\n}\n`\n\nObtained skills: Java"
+      },
+      {
+        "type": "text",
+        "path": "uqhAIU61moIQCMG6Ygem2.png"
+      },
+      {
+        "type": "text",
+        "path": "3NDruTT00UCISA2CEmkUUQ.png"
+      },
+      {
+        "type": "text",
+        "path": "4dneSqz7tYekiasyO2KmsK.png"
+      },
+      {
+        "type": "text",
+        "path": "6AnMuqaqUo2ym8YYCe6asq.png"
+      }
+    ]
+  },
+  {
+    "slug": "create-it",
+    "tags": [
+      "websites"
+    ],
+    "title": "CreateIt",
+    "image": "2d4I6Wqs68SKeOi0g6gK6M.png",
+    "startedAt": "2011-07-29",
+    "finishedAt": "2011-11-20",
+    "entries": [
+      {
+        "type": "text",
+        "text": "This website contained simple mostly word-based games. Website have own original design, users system, and a few games created with PHP. It is one of my first PHP attempts.\n\nObtained skills: PHP, MySQL, CSS"
+      },
+      {
+        "type": "text",
+        "path": "2d4I6Wqs68SKeOi0g6gK6M.png"
+      },
+      {
+        "type": "text",
+        "path": "6kPkJ9j1gQuoiUAemUWEia.png"
+      },
+      {
+        "type": "text",
+        "path": "1fT1blPlyIEUUEMaGKoiIw.png"
+      }
+    ]
+  },
+  {
+    "slug": "py-2049",
+    "tags": [
+      "programming"
+    ],
+    "title": "py-2049",
+    "image": "6wpVxPGL2osEw4See4UW2s.png",
+    "startedAt": "2015-11-03",
+    "finishedAt": "2015-11-18",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Is program written in Python. It was created as assignment for class \"IB111 Úvod do programování\". Program is analysing data about train delays. It has two main functions.\n\nAs first we have to obtain this data. They are being downloaded in regular interavals from official website. [Scrapy](http://scrapy.org/) is used to select only inforamtions we need. They are stored JSON format.\n\nSecond part is there to analyse this data.\n\n###Statistics of delays\nIt displays statistics about particular train or group of trains.\n\n```python 2049.py -h```\n\nSpecific train\n```python 2049.py -t \"Os 9206\"```\n\nGroup of trains\n```python 2049.py -t \"EC\"```\n\nAll trains\n```python 2049.py```\n\n###Probability I'll be able to change train\nIt calculate probability you'll be able to change your train based on past delays.\n\nInput is list of train names with time (in minutes) you have between each to transfer.\n\n```python 2049.py -p \"EC 277 Slovan\" 40 \"R 1601 Chopok\" 10 \"Os 9119\" 20 \"Os 9219\"```\n\n```python 2049.py -p \"Os 4171\" 32 \"Zr 1847 Rozsutec\" 20 \"R 811 Gemeran\"```\n\n### GitHub\nWhole project is available at GitHub [py-2049](https://github.com/Linzee/py-2049) and part to obtain data [py-2049-data](https://github.com/Linzee/py-2049-data). Example data can also by downloaded [from this website](http://ienze.me/media/delays.json)."
+      },
+      {
+        "type": "text",
+        "path": "5V0rlNbsxUOSqCsYqSCOaS.png"
+      },
+      {
+        "type": "text",
+        "path": "1MmfgR0De4EQGEECMaIUI0.png"
+      },
+      {
+        "type": "text",
+        "path": "4lzyiRV90QUeMYKQkGwUyG.png"
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-tus",
+    "tags": [
+      "websites"
+    ],
+    "title": "TuS Mingolsheim (Wordpress)",
+    "image": "7xTThOX57yAyY2WC8eMkWo.png",
+    "startedAt": "2014-06-06",
+    "finishedAt": "2014-07-12",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Wordpress theme created by given design.\nAnd also custom plugin for managing content inside widget.\n\nWe can visit website at address [tus-mingolsheim.de](http://www.tus-mingolsheim.de/)\n\nOriginal photoshop image designed by [Daniel Kessler](http://grafikstudio-kessler.de/). I have made this design work.\n\nObtained skills: css, php, wordpress"
+      },
+      {
+        "type": "text",
+        "path": "5QxtqUvwukegGE0KOo8aCE.png"
+      },
+      {
+        "type": "text",
+        "path": "43agWOkwtOKeqiEs4Ek6YS.png"
+      }
+    ]
+  },
+  {
+    "slug": "py-2048",
+    "tags": [
+      "programming"
+    ],
+    "title": "py-2048",
+    "image": "Eb22jUC5y0Y0cWiksMcQK.png",
+    "startedAt": "2015-09-27",
+    "finishedAt": "2015-10-07",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Is program written in Python. It was created as assignment for class \"IB111 Úvod do programování\". Program is simulating playing of game [2048](http://2048game.com/). There are available 3 strategies.\n\n#### Random\nAt each turn is choosen one random side to slide.\n#### Simple\nIf there are two number in row or column that can be connected this turn will be used. If there arent any random turn is used instead.\n#### Stragery thinking few turns to future\nThis strategy calculates score for each possible turn, best turn will be used. Because this strategy checks few steps to future, it is able to connect some numbers even in few turns.\n\n### Usage\n```python 2048.py -h```\n\nTest of random and simple strategy, 10 games \n```python 2048.py -s -t 10```\n\nTest of multiple levels of prediction \n```python 2048.py -l -t 3```\n\n### GitHub\nWhole project is available at GitHub [py-2050](https://github.com/Linzee/py-2050)."
+      },
+      {
+        "type": "text",
+        "path": "Eb22jUC5y0Y0cWiksMcQK.png"
+      },
+      {
+        "type": "text",
+        "path": "6f2GEhnWtaICQmYiOcOWsm.png"
+      }
+    ]
+  },
+  {
+    "slug": "snake-necklace",
+    "tags": [
+      "art"
+    ],
+    "title": "Snake necklace",
+    "image": "5IK5jWbR3GemAIIuiAEMCk.png",
+    "startedAt": "2011-05-08",
+    "finishedAt": "2011-05-08",
+    "entries": [
+      {
+        "type": "text",
+        "text": "It's 8 cm long model of snake. I made it from some soft metal I found."
+      },
+      {
+        "type": "text",
+        "path": "5IK5jWbR3GemAIIuiAEMCk.png"
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-maintain",
+    "tags": [
+      "websites"
+    ],
+    "title": "Maintain (Wordpress)",
+    "image": "4IGlP2IJD2cusa0CoYWqqw.png",
+    "startedAt": "2014-12-03",
+    "finishedAt": "2015-01-07",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Maintain is plugin for Wordpress. Plugin adds simple maintaining of templates settings. It is my own plugin which I used in several templates. Plugin ensures saving, editing and loading of global website settings. For example I use it for maintaning contact inforamtions, images in sliders, location on map on contact page and even custom lists (list of partners in site footer). Plugin can be used for maintaining any content on website, but plugin alone doesn't do anything. For it to work is required template which uses it. Every template define its own settings which will be possible to edit."
+      },
+      {
+        "type": "text",
+        "path": "4jNLE6XgV2I4GsUUSSe6eu.png"
+      }
+    ]
+  },
+  {
+    "slug": "mech5",
+    "tags": [
+      "programming"
+    ],
+    "title": "MECH5",
+    "image": "2W1SQ9MiPmkGUYeC4oW2Ei.png",
+    "startedAt": "2014-01-16",
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "MECH5 je názov ktorý používam na označenie hry ktorá je zatiaľ vo vývoji. Ide o 2.5D tile-based strategickú hru. Táto hra sa o iných líši tým, že je možné sledovať minulosť, prítomnosť, aj možnú budúcnosť (ak by sa nič v prítomnosti nezmenilo). Avšak hru je možné ovládať len v jednom čase, prítomnosti.\n\n### Prvky hry:\n- každý hráč môže ovládať jedného alebo viac robotov\n  - robot je schopný ťažiť nerastné suroviny, pohybovať sa a bojovať\n  - robot sa skladá z častí, kompatibilne časti sa dajú kombinovať, výkon záleží od všetkých jeho častí\n- mesta slúžia na výmenu tovaru, zdokonaľovanie robotov, no máju aj iné funkcie\n\n### Systém:\n- back-end server je napísaný v Jave\n- front-end využívaný na načítavanie webovej aplikácie teda to z hry co vidi bežný užívateľ. Takisto zabezpecuje komunikáciu z java-serverom.\n\nObtained skills: Java, OOP, JSON, JavaScript, AJAX"
+      },
+      {
+        "type": "text",
+        "path": "2W1SQ9MiPmkGUYeC4oW2Ei.png"
+      },
+      {
+        "type": "text",
+        "path": "2QmEZej9tSgY2cmoC0Ca6W.png"
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-farny",
+    "tags": [
+      "websites"
+    ],
+    "title": "Farny (Wordpress)",
+    "image": "2rzzo0yGJSCca8uO0Scoke.png",
+    "startedAt": "2014-10-11",
+    "finishedAt": "2014-11-13",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Wordpress theme created by given design.\nThis website also use my [wordpress plugin](/portfolio/project/maintain) for managing global template settings to make template more customizable.\n\nWe can visit website at address [autohaus-farny.de](http://autohaus-farny.de/)\n\nOriginal photoshop image designed by [Daniel Kessler](http://grafikstudio-kessler.de/). I have made this design work.\n\nObtained skills: css, scss, php, wordpress"
+      },
+      {
+        "type": "text",
+        "path": "65HKgIb2nKyw4swskskQ0i.png"
+      }
+    ]
+  },
+  {
+    "slug": "life-of-snow",
+    "tags": [
+      "programming"
+    ],
+    "title": "The Life of Snow",
+    "image": "R9ikHkIEg0wMAeisOKO6Y.png",
+    "startedAt": "2015-01-08",
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "Game designed for Android devices. It's in development so far.\n#### Vločka\nNa začiatku je vločka. Keď sa začne hra padá spolu s ďalšími na zem.\n#### Snehová guľa\nHráč ju môže ovládať. Sú možné dve pohľady, z tretej alebo prvej osoby. Guľa sa zväčšuje, keď chodí po snehu. Ale môže sa aj topiť - zmenšovať.\n#### Snehuliak\nJe tomu ťažké uveriť, ale cieľom hry je postaviť snehuliaka. Avšak snehuliaka nemusia tvoriť len 3 snehové guľe. Tiež sa naňho dajú pridať rôzné predmety. Najčastejšie to bude mrkva a hrniec.\n#### Krajina\nPriestor je zasnežená krajina. Tu chcem upozorniť na naprogramovaný sneh. Kedže klesá tam kde sa kotúľajú snehové guľe.\n#### GUI\nSlúži na ovládanie hry, ale poskytuje možnosť meniť nastavenia, ukladať, načítavať..\n#### Hra\n\nHra je vytvorená pomocov Unity3D. Skripty sú písané v C#. Grafiku a 3D modely má na starosti [NIC00L](http://nicool.rocks/) - partner in science.\n\nObtained skills: Unity3D, C#"
+      },
+      {
+        "type": "text",
+        "path": "74VnJw1EGIoGUquAqOgKkQ.png"
+      },
+      {
+        "type": "text",
+        "path": "R9ikHkIEg0wMAeisOKO6Y.png"
+      },
+      {
+        "type": "text",
+        "path": "6xHV10OqqseUMug8GQuGyq.png"
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-erhard",
+    "tags": [
+      "websites"
+    ],
+    "title": "Erhard (Wordpress)",
+    "image": "2raJaZxQvSsOqACmA2aS6I.png",
+    "startedAt": "2014-11-22",
+    "finishedAt": "2015-02-09",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Wordpress theme created by given design.\nThis website also use my [wordpress plugin](/portfolio/project/maintain) for managing global template settings to make template more customizable.\n\nWe can visit website at address [erhard-hygienesysteme.de](http://erhard-hygienesysteme.de/)\n\nOriginal photoshop image designed by [Daniel Kessler](http://grafikstudio-kessler.de/). I have made this design work.\n\nObtained skills: css, scss, php, wordpress"
+      },
+      {
+        "type": "text",
+        "path": "5cpUzliPeg2ECcCM6wEcqI.png"
+      }
+    ]
+  },
+  {
+    "slug": "srm",
+    "tags": [
+      null
+    ],
+    "title": null,
+    "image": ".png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": null
+      }
+    ]
+  },
+  {
+    "slug": "py-2050",
+    "tags": [
+      "programming"
+    ],
+    "title": "py-2050",
+    "image": "3Weu4HYDs4OQ0I0kcskEaU.png",
+    "startedAt": "2015-11-03",
+    "finishedAt": "2015-11-18",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Is program written in Python. It was created as assignment for class \"IB111 Úvod do programování\". Program is generating images of space based on given parameters. All objects in image are generated using layers. Layers are applied in given order, and each layer depends on layer before.\n\nImages can be saved in current directory or displayed.\n\n### Usage\n```python 2050.py -h```\n\n```python 2050.py -W 800 -H 400 -s 96 -z 80```\n\n### GitHub\nWhole project is available at GitHub [py-2050](https://github.com/Linzee/py-2050)."
+      },
+      {
+        "type": "text",
+        "path": "3Weu4HYDs4OQ0I0kcskEaU.png"
+      },
+      {
+        "type": "text",
+        "path": "3H23GdyqoUqOg26eaIgeIG.png"
+      },
+      {
+        "type": "text",
+        "path": "7FKdITVSCc8AoCOWGoucIU.png"
+      }
+    ]
+  },
+  {
+    "slug": "wame",
+    "tags": [
+      "websites"
+    ],
+    "title": "WAME",
+    "image": "4iQj9vVUHuy84Y6w0gSmoQ.png",
+    "startedAt": "2015-06-10",
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "Cez prázdniny som pracoval vo [wame.sk](http://wame.sk) - jedinečné webové riešenia na mieru (CMS, CRM, IS, SEO). Bol som tam na stáž na pozícii Back-end developera. Za ten čas som pracoval na rôznych veciach.\n\n### Leto 2015\n- DynamicForms\n  - Dynamicke generovanie formularov na zaklade roznych udajov\n    - generovane z dat ulozenych v databaze\n    - generovane z anotacii triedy (vyuzite v automatickom editore v mojom systeme)\n  - Editor na upravu formulara ulozeneho v databaze\n  - Wizard na rychle vytvorenie formulara\n  - Ukladanie zozbieranych dat z formularov\n  - Mnozstvo typov ktore je mozne vlozit do formulara (a nastavenia (najprv nazyvane validatory) na ich upravu)\n  - Generovanie css k formularu, sablony\n- \"UserColumns\"\n\t- Triedy repozitara na pristup k zoznamu stlpcomv a udajom\n\t- Napojenie na tabulku user_info a custom stlpce\n- Kompletna stranka z vyuzitim Wame CMS\n- Backend podpora projektov\n\t- Sprava suborov\n\t\t- moznost priradit ich k blogom\n\t- Rozsiahly kontaktny formular z konfigurovatelnymi typmi\n\t- Zobrazovanie produktovych parametrov v kategoriach\n\t- Vylepsenie funkcnosti hromadnych akcii (kontakty, produkty)\n\t- Jednotaky pri cene v eshope (napr: €/m²)\n\t\t- moznost nastavit format v akom sa zobrazuju ceny\n\t- Rozsirenie moznosti upravy objednavky - zmena variacie produktu\n\t- Manazer variant - skopirovanie vybranych vlastnosti do variant produktu\n\t- Kopirovanie produktov\n\t\t- zjednotene z vytvaranim novych variant produktov\n\t- Opravy CMS (zvedca suvisiace z eshopom)\n\t- Nastavenia dostupnosti produktov\n\t\t- akcie pri dosiahnuti urciteho mnozstva na sklade\n- Zrychlenie systemu zbavenim sa niektorych query (v niektorych pripadoch az cez 70)\n- Import/Export\n\t- System na konvertovanie dat\n\t- Vytvorene podporovane typy: Databaza, XML\n\t- Nakonfigurovany import a export pre MK-soft\n\n### Jeseň 2015\n- Realtime aplikacia v webovom protredí využívajuca websocket"
+      }
+    ]
+  },
+  {
+    "slug": "map-london",
+    "tags": [
+      "other"
+    ],
+    "title": "London map",
+    "image": "4mBUiBxHuooEMWKUSGOEAq.png",
+    "startedAt": "2014-05-26",
+    "finishedAt": "2014-06-16",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Map builded in game Minecraft. This map is builded for first person shooter minigame on server [GameHive.sk](http://gamehive.sk/). On this map I was trying to create map with lots of dark places to hide. I used desaturized, cold colors. I have invented own system to create interesting shadows where I want them. There is no light in narrow streets.\n\nObtained skills: 3D level design"
+      },
+      {
+        "type": "text",
+        "path": "4mBUiBxHuooEMWKUSGOEAq.png"
+      },
+      {
+        "type": "text",
+        "path": "6geFfbp33i2w4w0e8yCmw4.png"
+      }
+    ]
+  },
+  {
+    "slug": "minecraft-scarecrows",
+    "tags": [
+      "programming"
+    ],
+    "title": "Scarecrows (Minecraft)",
+    "image": "ldycdqgZJ6QQE2gmg0oo4.png",
+    "startedAt": "2012-06-02",
+    "finishedAt": "2012-11-16",
+    "entries": [
+      {
+        "type": "text",
+        "text": "This is second Bukkit plugin I published. It makes it possible to build scarecrows to scare animals away from fields. It is possible to set whitch animals to scare off and range of scarecrows. Plugin is programmed in Java, it uses Bukkit API.\n\nPlugin is on [Bukkit dev](http://dev.bukkit.org/bukkit-plugins/scarecrows/) website.\n\nObtained skills: Java, Bukkit API."
+      },
+      {
+        "type": "text",
+        "path": "ldycdqgZJ6QQE2gmg0oo4.png"
+      }
+    ]
+  },
+  {
+    "slug": "2minD",
+    "tags": [
+      "websites"
+    ],
+    "title": "2minD",
+    "image": "3KBxpGv0hOEgisIO4wuUaq.png",
+    "startedAt": "2015-02-06",
+    "finishedAt": "2015-03-24",
+    "entries": [
+      {
+        "type": "text",
+        "text": "### It's actually online discussion forum in little weirder way.\n\n2minD is virtual 2D wall, online discussion, where anyone can anonymously post comments. Wall is divided into rectangles, each rectangle sould contain some topic.\n\nWebsite can be found at [2mind.ienze.me](http://2mind.ienze.me)\n\nSource code at [github](https://github.com/linzee/2mind)\n\n[Presentation of website in slovak](https://www.dropbox.com/s/yd9djpriosx80u4/prez.pptx?dl=0)\n\nObtained skills: PHP, Nette, MySQL, CSS, SCSS, Foundation, jQuery, AJAX, presentaion"
+      },
+      {
+        "type": "text",
+        "path": "3KBxpGv0hOEgisIO4wuUaq.png"
+      }
+    ]
+  },
+  {
+    "slug": "dosr",
+    "tags": [
+      "art"
+    ],
+    "title": "D.O.S.R.",
+    "image": "5iNqqWtAbKY8iQ2CMCqM8k.png",
+    "startedAt": "2015-02-14",
+    "finishedAt": "2015-02-17",
+    "entries": [
+      {
+        "type": "text",
+        "text": "digital painting"
+      },
+      {
+        "type": "text",
+        "path": "5iNqqWtAbKY8iQ2CMCqM8k.png"
+      },
+      {
+        "type": "text",
+        "path": "1wVG5ea5ZiQOSwWuUKcacQ.png"
+      }
+    ]
+  },
+  {
+    "slug": "rocnikovy-projekt",
+    "tags": [
+      "websites"
+    ],
+    "title": "Ročníkový projekt",
+    "image": "3j9QtTVIsw2eK0O6yOwQum.png",
+    "startedAt": "2014-10-01",
+    "finishedAt": "2015-05-13",
+    "entries": [
+      {
+        "type": "text",
+        "text": "This webpage has been created as \"Ročníkový projekt\" in Stredná priemyselná škola Bardejov. Is is webpage I made in last grade. It was required for finishing school.\n\nProjekt consists of two parts. At first I created dynamical website. I used a few different programming languages while creating it. On serveer side I used PHP, especialy framework [Nette](//nette.org). And in browser HTML, CSS, JavaScript. CSS is generated using [SASS](//sass-lang.com/). Second part of project was filling created website with content. Website uses database MySQL for storing all data, and website also describes this database system, examples of SQL and usage examples in PHP. It also contains administration for managing content, users and global settings.\n\nWebssite is located at [schools web space.](//studenti.spsbj.sk/13-15/dgmiterko/rpj/).\n\nSource is available at [bitbucket](//bitbucket.org/ienze/rpj). Whole document in PDF is here between files at bottom.\n\nObtained skills: PHP, Nette, MySQL, CSS, SCSS, Foundation, jQuery, AJAX"
+      },
+      {
+        "type": "text",
+        "path": "3j9QtTVIsw2eK0O6yOwQum.png"
+      },
+      {
+        "type": "text",
+        "path": "6tPtFHgn4IA80eeUQAiGoM.png"
+      }
+    ]
+  },
+  {
+    "slug": "papercraft",
+    "tags": [
+      "other"
+    ],
+    "title": "Papercraft",
+    "image": "5mhpOOHDQQqwaM0GaAwySy.png",
+    "startedAt": "2014-10-30",
+    "finishedAt": "2014-11-11",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Design of quite complex papercraft. At first I created model in 3D graphic program Blender. Model is convertedd to papercraft using program Pepakura. It's only design of papercraft, nobody builded it so far."
+      },
+      {
+        "type": "text",
+        "path": "5mhpOOHDQQqwaM0GaAwySy.png"
+      },
+      {
+        "type": "text",
+        "path": "4XsJGzNVJm8Kg2a8amAQuq.png"
+      },
+      {
+        "type": "text",
+        "path": "3vyYV5WHkcuGGEQEw08Qco.png"
+      }
+    ]
+  },
+  {
+    "slug": "wordpress-ped",
+    "tags": [
+      "websites"
+    ],
+    "title": "p(e)d World (Wordpress)",
+    "image": "1nXqmgq9ZC0ga648uGAmAa.png",
+    "startedAt": "2014-12-09",
+    "finishedAt": "2015-01-30",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Wordpress theme created by given design.\nThis website also use my [wordpress plugin](/portfolio/project/maintain) for managing global template settings to make template more customizable.\n\nWe can visit website at address [ped-world.de](http://ped-world.de/)\n\nOriginal photoshop image designed by [Daniel Kessler](http://grafikstudio-kessler.de/). I have made this design work.\n\nObtained skills: css, scss, php, wordpress"
+      },
+      {
+        "type": "text",
+        "path": "3b11kxqkJaWCq82kwSakgg.png"
+      }
+    ]
+  },
+  {
+    "slug": "slenderman",
+    "tags": [
+      "art"
+    ],
+    "title": "Slenderman",
+    "image": "6OIYB3BzwIYMU8wOo6IKsc.png",
+    "startedAt": "2015-04-14",
+    "finishedAt": "2015-06-01",
+    "entries": [
+      {
+        "type": "text",
+        "text": "digital painting"
+      },
+      {
+        "type": "text",
+        "path": "NCDOU8MREWAe6YG8MUOYI.png"
+      },
+      {
+        "type": "text",
+        "path": "4LafQaJC9GmqAUiQWsocCk.png"
+      },
+      {
+        "type": "text",
+        "path": "6OIYB3BzwIYMU8wOo6IKsc.png"
+      },
+      {
+        "type": "text",
+        "path": "181PkHdHN0ASmwocEQWSwm.png"
+      }
+    ]
+  },
+  {
+    "slug": "ee-antic",
+    "tags": [
+      "other"
+    ],
+    "title": "Antic map",
+    "image": "6jgvGHN7X2gkckayGqOuEe.png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "This is how looks map builded in game [Everybody Edits](http://everybodyedits.com/). This map is created by me and my sister. On this map visitor have to overcome lots of dificult obstacles. There is used system of collecting points. By collecting more points visitor still have more and more avaleible tasks, parts of map does step by step unlock.\n\nMap avaleible at: [http://everybodyedits.com/games/PWAHRSDFloa0I](http://everybodyedits.com/games/PWAHRSDFloa0I)\n\nAll maps: [http://everybodyedits.com/profiles/?/seg](http://everybodyedits.com/profiles/?/seg)\n\nObtained skills: 2D level design, pixel art"
+      },
+      {
+        "type": "text",
+        "path": "6jgvGHN7X2gkckayGqOuEe.png"
+      },
+      {
+        "type": "text",
+        "path": "5CG7eqJpIcA2gKiAOuo26K.png"
+      },
+      {
+        "type": "text",
+        "path": "6SRDAW54HYq84SgIQs8g8c.png"
+      },
+      {
+        "type": "text",
+        "path": "6OK3MOeHnysSoms2oE884q.png"
+      },
+      {
+        "type": "text",
+        "path": "2FNXiXqqDSCk8OOSKkMMO6.png"
+      }
+    ]
+  },
+  {
+    "slug": "forest",
+    "tags": [
+      "art"
+    ],
+    "title": "Forest #1",
+    "image": "1MQjPJOrTmCYc286OaycUy.png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "acrylic color"
+      },
+      {
+        "type": "text",
+        "path": "1MQjPJOrTmCYc286OaycUy.png"
+      }
+    ]
+  },
+  {
+    "slug": "ppl",
+    "tags": [
+      "art"
+    ],
+    "title": "PPL",
+    "image": "1KTlETYROMuSeaoaKq2MIK.png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "poly purpose life - I have no idea how I made this one up."
+      },
+      {
+        "type": "text",
+        "path": "4YMuyNiZF6aumuCoIgO84w.png"
+      },
+      {
+        "type": "text",
+        "path": "1KTlETYROMuSeaoaKq2MIK.png"
+      }
+    ]
+  },
+  {
+    "slug": "ienze",
+    "tags": [
+      "websites"
+    ],
+    "title": "Ienze.me",
+    "image": "2usljIEJ9Gmyyqc6ya0ycU.png",
+    "startedAt": "2015-05-01",
+    "finishedAt": "2015-05-31",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Yes, its this website.\n\nThis server application is written in JavaScript whitch runs with help of [Node.js](https://nodejs.org/). Particularly it uses framework [Express](http://expressjs.com/). All dynamic data on website are managed with [contentful](https://www.contentful.com/). All HTML page structures are written in [Jade](http://jade-lang.com/).\n\nYou can find more informations in [this article](/blog/ako-vzniklo-ienze-me).\n\nObtained skills: Node.js, Contentful api, Jade, SCSS, jQuery"
+      },
+      {
+        "type": "text",
+        "path": "2usljIEJ9Gmyyqc6ya0ycU.png"
+      }
+    ]
+  },
+  {
+    "slug": "gamehive",
+    "tags": [
+      "programming"
+    ],
+    "title": "Gamehive",
+    "image": "VZsGAcJhEQEeMqwyqQUm6.png",
+    "startedAt": "2014-04-01",
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "Oficialnu stránku najdeme na [gamehive.sk](http://gamehive.sk/)\n\nTo čo sa snažíme vytvoriť je vlastne Minecraft server. Teda skôr ide o portál. Ide o zoskupenie serverov vytvárajúcich jeden portál na ktorom sa bude dať zabávať hraním rôznych minihier vytvorených v Minecrafte. Chceli by sme vytvoriť nové minihry, ktoré budú zaujímavé, jednoduché,..\n\nZatiaľ sa na tomto projekte ešte len pracuje keďže je naozaj rozsiahly. Tu by som chcel poznamenať že by som bol rád za kohokoľvek pomoc. Pomôcť môžeš hocičím čo sa na server hodí.\n\n### Čo som zatiaľ urobil\nMám vytvorený jeden centrálny plugin a niekoľko minihier (a mnou prezývané \"Utility\" pluginy)\n\n#### Jadro\nIde o plugin zabezpečujúci množstvo základných funkcii ktoré môžu jednotlivé servery využívať.\n\n- ukladanie údajov (o serveri, hráčoch, štatistiky)\n- abstraktné komponenty pre minihry, napr.: časovač, sledovanie hry (spectator), kity\n- centralizované funkcie na načítavanie predmetov, pozície a dalších komplexných typov z nastavení\n- rôzne možnosti vstupu a výstupu údajov; ide o množstvo tried tvoriacich vstupy, výstupy a konvertovanie údajov ktoré je možné ľubovolne kombinovať; napr.: vstup - údaje o minihrách, výstup - stena tvorená tabuľkami, konvertovanie - aký údaj sa zobrazuje na ktorom riadku\n- \"menu\" v inventári - zabezpečuje spúšťanie akcii po kliknutí na jednotlivé veci v inventári\n- zabezpečenie lokalizácie\n- triedy zjednodušujúce vytváranie príkazov a prácu z nimi\n- a množstvo často využívaných funkcií\n\n#### Viacero minihier:\n- BallonsFight\n- MineStrike\n- ItsJustDream\nViac informácii o nich ešte pribudne.\n\n#### Takisto som prispel aj niekoľkými mapami:\n- [London](/portfolio/project/minecraft-london)"
+      },
+      {
+        "type": "text",
+        "path": "VZsGAcJhEQEeMqwyqQUm6.png"
+      },
+      {
+        "type": "text",
+        "path": "4mBUiBxHuooEMWKUSGOEAq.png"
+      }
+    ]
+  },
+  {
+    "slug": "girl-in-park",
+    "tags": [
+      "art"
+    ],
+    "title": "Girl in park",
+    "image": "4DZVZqMlDOOmq8uomM8Suu.png",
+    "startedAt": null,
+    "finishedAt": null,
+    "entries": [
+      {
+        "type": "text",
+        "text": "- A3\n- pencil\n- ink\n- carbon\n- photoshop"
+      },
+      {
+        "type": "text",
+        "path": "4DZVZqMlDOOmq8uomM8Suu.png"
+      }
+    ]
+  }
+]

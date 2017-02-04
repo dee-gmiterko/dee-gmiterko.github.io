@@ -10,6 +10,7 @@ import Project from './Project/Project';
 import NotFound from './NotFound/NotFound';
 
 import Locale from './services/Locale';
+import Projects from './services/Projects';
 
 var locale = new Locale({
   'sk': require('./../data/locale/sk.json'),
@@ -17,13 +18,18 @@ var locale = new Locale({
 }, 'sk');
 var translator = locale.getTranslator();
 
+var projectsService = new Projects({
+  'sk': require('./../data/projects/sk.json'),
+  'en': require('./../data/projects/en.json')
+}, locale);
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={() => <Index locale={translator} />} />
+      <IndexRoute component={() => <Index locale={translator} projectsService={projectsService} />} />
       <Route path="about" component={() => <About locale={translator} />}/>
-      <Route path="portfolio/:tag" component={() => <Portfolio locale={translator} />}/>
-      <Route path="project/:project" component={() => <Project locale={translator} />}/>
+      <Route path="portfolio/:tag" component={() => <Portfolio locale={translator} projectsService={projectsService} />}/>
+      <Route path="project/:project" component={() => <Project locale={translator} projectsService={projectsService} />}/>
       <Route path="*" component={() => <NotFound locale={translator} />}/>
     </Route>
   </Router>,

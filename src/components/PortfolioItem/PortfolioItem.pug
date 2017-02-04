@@ -1,0 +1,7 @@
+li(class="category " + this.props.project.tags[0])
+    a.galleryItem(href="/this.props.project/"+this.props.project.slug, style={"backgroundImage": "url(" + this.props.project.image + ")"})
+        img(src=this.props.project.image)
+    .this.props.project-meta
+        .meta
+            h2= this.props.project.title
+            p= this.props.project.description

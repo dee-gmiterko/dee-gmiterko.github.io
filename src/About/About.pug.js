@@ -1,9 +1,7 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
 import React from 'react';
-import {Person} from '../components/Person/Person';
+import Person from '../components/Person/Person';
 import {Link} from 'react-router';
-console.log(Person);
-console.log(Link);
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;

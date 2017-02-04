@@ -1,4 +1,4 @@
-/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
+/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
 import Person from '../components/Person/Person';
 import {Link} from 'react-router';

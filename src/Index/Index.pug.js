@@ -1,4 +1,4 @@
-/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
+/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
 import {Link} from 'react-router';
 import Gallery16 from '../components/Gallery16/Gallery16';

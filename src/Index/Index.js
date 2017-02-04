@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-
 import Template from './Index.pug.js';
 import siteSettings from './../../data/site.json';
-// import './Index.css';
 
 class Index extends Component {
   render() {
   	
-  	var projects = this.props.projectsService.getProjects().slice();
+  	var projects = this.props.route.projectsService.getProjects().slice();
   	projects.sort(function(a, b){
-  		return (new Date(a.startedAt).valueOf() > new Date(b.startedAt).valueOf());
+  		return (new Date(a.startedAt).valueOf() < new Date(b.startedAt).valueOf());
   	});
   	projects = projects.slice(0, 16);
 
-    return <Template locale={this.props.locale} siteSettings={siteSettings} projects={projects} />
+    return <Template locale={this.props.route.locale} siteSettings={siteSettings} projects={projects} />
   }
 }
 

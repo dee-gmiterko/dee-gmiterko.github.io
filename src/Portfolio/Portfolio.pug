@@ -1,7 +1,8 @@
-- const {Link} = require('react-router')
+- const Gallery16 = require('../components/Gallery16/Gallery16')
+- const PortfolioItem = require('../components/PortfolioItem/PortfolioItem')
 div
     #portfolio-description
         h1= this.props.locale(this.props.siteSettings.siteTitle) + ' : ' + this.props.locale("Portfolio")
         //- p.portfolio-content= this.props.locale(this.props.portfolioDescription)
-    
-    //- Gallery16(itemType=PortfolioItem, projects=projects)
+      
+        Gallery16(itemType=PortfolioItem, items=this.props.projects)

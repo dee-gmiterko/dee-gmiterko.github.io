@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
 import Template from './About.pug.js';
 import siteSettings from './../../data/site.json';
-// import './About.css';
 
 class About extends Component {
 
@@ -29,7 +27,7 @@ class About extends Component {
 
 		var siteAuthorYears = calculateAge(6, 23, 1996)
 
-		return <Template locale={this.props.locale} siteSettings={siteSettings} siteAuthorYears={siteAuthorYears} />
+		return <Template locale={this.props.route.locale} siteSettings={siteSettings} siteAuthorYears={siteAuthorYears} />
 	}
 }
 

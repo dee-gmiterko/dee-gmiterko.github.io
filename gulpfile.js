@@ -10,7 +10,7 @@ gulp.task('compile-pug', function() {
 	.pipe(foreach(function(stream, file) {
 		return stream.pipe(modify({
 			fileModifier: function(file, contents) {
-				var out = "/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */\n"
+				var out = "/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */\n"
 				+ "import React from 'react';\n";
 
 				try {

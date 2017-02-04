@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 import Template from './Project.pug.js';
 import siteSettings from './../../data/site.json';
-// import './Project.css';
 
 class Project extends Component {
   render() {
-    return <Template locale={this.props.locale} siteSettings={siteSettings} project={this.props.project} />
+
+	var project = this.props.route.projectsService.getProject(this.props.params.project);
+
+    return <Template locale={this.props.route.locale} siteSettings={siteSettings} project={project} />
   }
 }
 

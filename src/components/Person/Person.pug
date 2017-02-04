@@ -1,16 +1,16 @@
 .profile(itemscope,itemtype="http://schema.org/Person")
     p.name
-        strong(itemprop="name")= this.props.person.name
+        strong(itemProp="name")= this.props.person.name
     p.job
-        span(itemprop="jobTitle") Coder, Artist, Me
-    img.hide(src=require('../../images/profile_16.png'), itemprop="image", alt="Photo of "+this.props.person.name)
+        span(itemProp="jobTitle") Coder, Artist, Me
+    img.hide(src=require('../../images/profile_16.png'), itemProp="image", alt="Photo of "+this.props.person.name)
     ul.no-bullet
         li
             span.icon.website
-            a(href=this.props.person.website, itemprop="url")= 'Website: ' + this.props.person.website
+            a(href=this.props.person.website, itemProp="url")= 'Website: ' + this.props.person.website
         li
             span.icon.email
-            a(href="mailto:"+this.props.person.email,itemprop="email")= 'Email: ' + this.props.person.email
+            a(href="mailto:"+this.props.person.email,itemProp="email")= 'Email: ' + this.props.person.email
         li
             span.icon.github
             a(href="//github.com/" + this.props.person.github, target="_blank")= 'Github: ' + this.props.person.github
@@ -20,4 +20,4 @@
         li
             span.icon.skype
             a(href="skype:" + this.props.person.skype)= 'Skype: ' + this.props.person.skype
-    p.about-me(itemprop="description")= this.props.locale('ABOUT_ME')
+    p.about-me(itemProp="description")= this.props.locale('ABOUT_ME')

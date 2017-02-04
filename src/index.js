@@ -25,12 +25,13 @@ var projectsService = new Projects({
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/" component={App} locale={translator}>
-      <IndexRoute component={() => <Index locale={translator} projectsService={projectsService} />} />
-      <Route path="about" component={() => <About locale={translator} />}/>
-      <Route path="portfolio/:tag" component={() => <Portfolio locale={translator} projectsService={projectsService} />}/>
-      <Route path="project/:project" component={() => <Project locale={translator} projectsService={projectsService} />}/>
-      <Route path="*" component={() => <NotFound locale={translator} />}/>
+    <Route path="/" component={App} locale={translator} >
+      <IndexRoute component={Index} locale={translator} projectsService={projectsService} />
+      <Route path="about" component={About} locale={translator} />
+      <Route path="portfolio" component={Portfolio} locale={translator} projectsService={projectsService} />
+      <Route path="portfolio/:tag" component={Portfolio} locale={translator} projectsService={projectsService} />
+      <Route path="project/:project" component={Project} locale={translator} projectsService={projectsService} />
+      <Route path="*" component={NotFound} locale={translator} />
     </Route>
   </Router>,
   document.getElementById('root')

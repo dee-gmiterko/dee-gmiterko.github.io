@@ -1,0 +1,17 @@
+- const Menu = require('./components/Menu/Menu')
+- const Footer = require('./components/Footer/Footer')
+div.page
+    a.hide(href="#content") Skip to content
+    
+    #menu
+        Menu(locale=this.props.locale)
+
+    #top.menu-open-container
+        a.text-center#menu-open(href="#menu")
+            span= this.props.locale("Menu")
+
+    div.content= this.props.children
+
+    #footer-space
+    #footer
+        Footer(locale=this.props.locale)

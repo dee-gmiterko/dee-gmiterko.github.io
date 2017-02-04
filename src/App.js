@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+import Template from './App.pug.js';
+
 import './style/app.css';
 
 class App extends Component {
 	render() {
-		return <div className="router">{this.props.children}</div>;
+		return <Template locale={this.props.locale} children={this.props.children} />
 	}
 }
 

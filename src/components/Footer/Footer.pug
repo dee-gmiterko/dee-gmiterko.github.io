@@ -1,0 +1,39 @@
+.footer-content-small
+    .row
+        span.icon.email Email
+        a(href="mailto:" + this.props.siteSettings.me.email)= this.props.siteSettings.me.email
+.footer-content-large
+    .expand
+        .row
+            .small-12.medium-4.columns.corners
+                ul.language-change.no-bullet
+                    li= this.props.locale("Change language")
+                    li
+                        a.sk(href="#") SK
+                        |  
+                        a.en(href="#") EN
+            .small-12.medium-4.columns.corners
+                ul.no-bullet
+                    li
+                        span.icon.email
+                        a(href="mailto:"+this.props.siteSettings.me.email,itemprop="email")= this.props.siteSettings.me.email
+                    li
+                        span.icon.twitter
+                        a(href="//twitter.com/" + this.props.siteSettings.me.twitter, target="_blank")= this.props.siteSettings.me.twitter
+                    li
+                        span.icon.github
+                        a(href="//github.com/" + this.props.siteSettings.me.github, target="_blank")= this.props.siteSettings.me.github
+            .small-12.medium-4.columns.corners
+                ul.no-bullet
+                  li Made in
+                  li Slovakia - somewhere on Earth
+    .base
+        .row
+            .medium-4.columns
+                = this.props.locale("Change language")
+            .medium-4.columns
+                span.icon.email Email
+                a(href="mailto:" + this.props.siteSettings.me.email)= this.props.siteSettings.me.email
+            .medium-4.columns
+                span &copy; Dominik Gmiterko | 
+                a(href="//creativecommons.org/licenses/by/4.0/deed.cs") CC BY 4.0

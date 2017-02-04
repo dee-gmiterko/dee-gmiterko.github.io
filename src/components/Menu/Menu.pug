@@ -1,0 +1,43 @@
+- const {Link} = require('react-router')
+.navigation-wrapper
+    .background
+        div
+        span.mask
+        div
+    .breadcrumbs-wrapper
+        .row
+            ul.breadcrumbs
+                //-block breadcrumbs
+            .passiveSwitch Simple menu
+
+    nav.metroNavigation.passive
+        ul
+            li.hide-connection
+                a(href='/#m')= this.props.locale(this.props.siteSettings.siteTitle)
+                         
+                ul
+                    li
+                        a(href='/about#m')= this.props.locale("About")
+                                         
+                        ul                    
+                            li.force-l-t
+                                a(href='/blog#m')= this.props.locale("Blog")
+                                 
+                    li
+                        a(href='/portfolio#m')= this.props.locale("Portfolio")
+                                         
+                        ul
+                            li
+                                a(href='/portfolio/programming#m')= this.props.locale("Programming")
+
+                                ul
+                                    li
+                                        a(href='/portfolio/websites#m')= this.props.locale("Websites")
+                             
+                            li.force-l-b
+                                a(href='/portfolio/other#m')= this.props.locale("Other")
+
+                                ul
+                                    li
+                                        a(href='/portfolio/art#m')= this.props.locale("Art")
+        .mover

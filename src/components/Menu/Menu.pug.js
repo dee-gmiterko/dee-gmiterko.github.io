@@ -1,0 +1,9 @@
+/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape */
+import React from 'react';
+import {Link} from 'react-router';
+module.exports = class __Component extends React.Component {
+    render() {
+        const {props, state} = this;
+        return React.DOM.div({ className: 'navigation-wrapper' }, React.DOM.div({ className: 'background' }, React.DOM.div(), React.DOM.span({ className: 'mask' }), React.DOM.div()), React.DOM.div({ className: 'breadcrumbs-wrapper' }, React.DOM.div({ className: 'row' }, React.DOM.ul({ className: 'breadcrumbs' }), React.DOM.div({ className: 'passiveSwitch' }, 'Simple menu'))), React.DOM.nav({ className: 'metroNavigation' + ' ' + 'passive' }, React.DOM.ul(null, React.DOM.li({ className: 'hide-connection' }, React.DOM.a({ 'href': '/#m' }, this.props.locale(this.props.siteSettings.siteTitle)), React.DOM.ul(null, React.DOM.li(null, React.DOM.a({ 'href': '/about#m' }, this.props.locale('About')), React.DOM.ul(null, '                   ', React.DOM.li({ className: 'force-l-t' }, React.DOM.a({ 'href': '/blog#m' }, this.props.locale('Blog'))))), React.DOM.li(null, React.DOM.a({ 'href': '/portfolio#m' }, this.props.locale('Portfolio')), React.DOM.ul(null, React.DOM.li(null, React.DOM.a({ 'href': '/portfolio/programming#m' }, this.props.locale('Programming')), React.DOM.ul(null, React.DOM.li(null, React.DOM.a({ 'href': '/portfolio/websites#m' }, this.props.locale('Websites'))))), React.DOM.li({ className: 'force-l-b' }, React.DOM.a({ 'href': '/portfolio/other#m' }, this.props.locale('Other')), React.DOM.ul(null, React.DOM.li(null, React.DOM.a({ 'href': '/portfolio/art#m' }, this.props.locale('Art')))))))))), React.DOM.div({ className: 'mover' })));
+    }
+};

@@ -19,5 +19,5 @@
             a(href="//twitter.com/" + this.props.person.twitter, target="_blank")= 'Twitter: ' + this.props.person.twitter
         li
             span.icon.skype
-            a(href="skype:" + this.props.person.skype) Skype: this.props.person.skype
+            a(href="skype:" + this.props.person.skype)= 'Skype: ' + this.props.person.skype
     p.about-me(itemprop="description")= this.props.locale('ABOUT_ME')

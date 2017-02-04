@@ -24,7 +24,7 @@ module.exports = class __Component extends React.Component {
         }, 'Github: ' + this.props.person.github)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'twitter' }), React.DOM.a({
             'href': '//twitter.com/' + this.props.person.twitter,
             'target': '_blank'
-        }, 'Twitter: ' + this.props.person.twitter)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'skype' }), React.DOM.a({ 'href': 'skype:' + this.props.person.skype }, 'Skype: this.props.person.skype'))), React.DOM.p({
+        }, 'Twitter: ' + this.props.person.twitter)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'skype' }), React.DOM.a({ 'href': 'skype:' + this.props.person.skype }, 'Skype: ' + this.props.person.skype))), React.DOM.p({
             'itemprop': 'description',
             className: 'about-me'
         }, this.props.locale('ABOUT_ME')));

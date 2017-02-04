@@ -1,5 +1,6 @@
+- const {Link} = require('react-router')
 li(class="category " + this.props.project.tags[0])
-    a.galleryItem(href="/this.props.project/"+this.props.project.slug, style={"backgroundImage": "url(" + this.props.project.image + ")"})
+    Link(to="/project/"+this.props.project.slug, className="galleryItem", style={"backgroundImage": "url(" + this.props.project.image + ")"})
         img(src=this.props.project.image)
     .this.props.project-meta
         .meta

@@ -6,7 +6,7 @@ import './style/app.css';
 
 class App extends Component {
 	render() {
-		return <Template locale={this.props.locale} children={this.props.children} />
+		return <Template locale={this.props.route.locale} children={this.props.children} />
 	}
 }
 

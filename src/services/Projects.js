@@ -1,11 +1,20 @@
+/* eslint-env browser, jquery */
 export class Projects {
 
-	constructor(data, locale) {
-		this.data = data;
+	constructor(dataPaths, locale) {
 		this.locale = locale;
+
+		Object.keys(dataPaths).forEach((locale) => {
+			jQuery.getJSON(dataPaths[locale], (data) => {
+				self.data[locale] = data;
+			});
+		});
 	}
 
 	getProjects() {
+		if(!this.locale.getLocale()) {
+			return [];
+		}
 		return this.data[this.locale.getLocale()];
 	}
 
@@ -21,6 +30,7 @@ export class Projects {
 				return project;
 			}
 		}
+		return null;
 	}
 }
 

@@ -1,19 +1,19 @@
+/* eslint-env browser, jquery */
 export class Locale {
 
-	/*
-	Format of locales:
-	{
-		"sk": {
-			"error": "Chyba"
-		},
-		"en": {
-			"error": "Error"
-		}
-	}
-	*/
-	constructor(locales, defaultLocale) {
-		this.locales = locales;
-		this.setLocale(defaultLocale);
+	constructor(localesPaths, defaultLocale) {
+		var self = this;
+		this.locales = [];
+
+		Object.keys(localesPaths).forEach((locale) => {
+			jQuery.getJSON(localesPaths[locale], (data) => {
+				self.locales[locale] = data;
+
+				if(locale == defaultLocale) {
+					this.setLocale(defaultLocale);
+				}
+			});
+		});
 	}
 
 	setLocale(localeName) {
@@ -28,6 +28,9 @@ export class Locale {
 	}
 
 	getTranslations() {
+		if(!this.locale) {
+			return {};
+		}
 		return this.locales[this.locale];
 	}
 

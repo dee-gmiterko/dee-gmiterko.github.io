@@ -13,14 +13,14 @@ import Locale from './services/Locale';
 import Projects from './services/Projects';
 
 var locale = new Locale({
-  'sk': require('./../data/locale/sk.json'),
-  'en': require('./../data/locale/en.json')
+  'sk': 'locale/sk.json',
+  'en': 'locale/en.json'
 }, 'sk');
 var translator = locale.getTranslator();
 
 var projectsService = new Projects({
-  'sk': require('./../data/projects/sk.json'),
-  'en': require('./../data/projects/en.json')
+  'sk': 'projects/sk.json',
+  'en': 'projects/en.json'
 }, locale);
 
 ReactDOM.render(

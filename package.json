@@ -2,6 +2,7 @@
   "name": "lindaReact",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://linzee.github.io/",
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",

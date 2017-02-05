@@ -33,7 +33,7 @@ export class Gallery16 extends Component {
 
 		var items = splitItems(this.props.items, random);
 
-		return <Template locale={this.props.locale} items={items} itemType={this.props.itemType} />
+		return <Template translator={this.props.translator} items={items} itemType={this.props.itemType} />
 	}
 }
 

@@ -6,7 +6,7 @@ import Template from './Footer.pug.js';
 export class Footer extends Component {
 
 	render() {
-		return <Template locale={this.props.locale} siteSettings={siteSettings}/>
+		return <Template translator={this.props.translator} changeLocale={this.props.changeLocale} siteSettings={siteSettings}/>
 	}
 }
 

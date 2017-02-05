@@ -13,7 +13,7 @@ module.exports = class __Component extends React.Component {
             }, __map(block.items, (item, $index) => {
                 return React.createElement(ItemType, {
                     'key': $index,
-                    'locale': this.props.locale,
+                    'translator': this.props.translator,
                     'item': item
                 });
             }));

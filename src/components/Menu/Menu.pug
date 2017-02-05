@@ -13,31 +13,31 @@
     nav.metroNavigation.passive
         ul
             li.hide-connection
-                Link(to='/')= this.props.locale(this.props.siteSettings.siteTitle)
+                Link(to='/', className='slowScrollTo', target="#content")= this.props.translator(this.props.siteSettings.siteTitle)
                          
                 ul
                     li
-                        Link(to='/about')= this.props.locale("About")
+                        Link(to='/about', className='slowScrollTo', target="#content")= this.props.translator("About")
                                          
-                        ul                    
+                        //- ul                    
                             li.force-l-t
-                                Link(to='/')= this.props.locale("Blog")
+                                Link(to='/', className='slowScrollTo', target="#content")= this.props.translator("Blog")
                     
                     li
-                        Link(to='/portfolio')= this.props.locale("Portfolio")
+                        Link(to='/portfolio', className='slowScrollTo', target="#content")= this.props.translator("Portfolio")
                                          
                         ul
                             li
-                                Link(to='/portfolio/programming')= this.props.locale("Programming")
+                                Link(to='/portfolio/programming', className='slowScrollTo', target="#content")= this.props.translator("Programming")
 
                                 ul
                                     li
-                                        Link(to='/portfolio/websites')= this.props.locale("Websites")
+                                        Link(to='/portfolio/websites', className='slowScrollTo', target="#content")= this.props.translator("Websites")
                              
                             li.force-l-b
-                                Link(to='/portfolio/other')= this.props.locale("Other")
+                                Link(to='/portfolio/other', className='slowScrollTo', target="#content")= this.props.translator("Other")
 
                                 ul
                                     li
-                                        Link(to='/portfolio/art')= this.props.locale("Art")
+                                        Link(to='/portfolio/art', className='slowScrollTo', target="#content")= this.props.translator("Art")
         .mover

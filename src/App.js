@@ -29,14 +29,6 @@ export class App extends Component {
 			'locales': {},
 			'projects': {}
 		};
-		
-
-
-		window.state = this.state;
-
-
-
-		
 	}
 
 	componentDidMount() {
@@ -47,21 +39,21 @@ export class App extends Component {
 		this.locales.ensureLocale(locale);
 		this.projects.ensureLocale(locale);
 		this.setState({
-			locale: locale
-		})
+			'locale': locale
+		});
 	}
 
 	render() {
 		var translator = this.locales.getTranslator();
 
 		return  <Router history={hashHistory}>
-					<Route path="/" component={Layout} locale={translator} >
-						<IndexRoute component={Index} locale={translator} projectsService={this.projects} />
-						<Route path="about" component={About} locale={translator} />
-						<Route path="portfolio" component={Portfolio} locale={translator} projectsService={this.projects} />
-						<Route path="portfolio/:tag" component={Portfolio} locale={translator} projectsService={this.projects} />
-						<Route path="project/:project" component={Project} locale={translator} projectsService={this.projects} />
-						<Route path="*" component={NotFound} locale={translator} />
+					<Route path="/" component={Layout} translator={translator} changeLocale={this.changeLocale.bind(this)} >
+						<IndexRoute component={Index} translator={translator} projectsService={this.projects} />
+						<Route path="about" component={About} translator={translator} />
+						<Route path="portfolio" component={Portfolio} translator={translator} projectsService={this.projects} />
+						<Route path="portfolio/:tag" component={Portfolio} translator={translator} projectsService={this.projects} />
+						<Route path="project/:project" component={Project} translator={translator} projectsService={this.projects} />
+						<Route path="*" component={NotFound} translator={translator} />
 					</Route>
 				</Router>
 	}

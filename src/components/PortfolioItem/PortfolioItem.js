@@ -4,7 +4,7 @@ import Template from './PortfolioItem.pug.js';
 
 export class PortfolioItem extends Component {
 	render() {
-		return <Template locale={this.props.locale} project={this.props.item} />
+		return <Template translator={this.props.translator} project={this.props.item} />
 	}
 }
 

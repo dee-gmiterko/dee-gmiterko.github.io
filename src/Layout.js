@@ -6,7 +6,7 @@ import 'foundation-sites/js/foundation.js';
 
 class Layout extends Component {
 	render() {
-		return <Template locale={this.props.route.locale} children={this.props.children} />
+		return <Template translator={this.props.route.translator} children={this.props.children} changeLocale={this.props.route.changeLocale} />
 	}
 }
 

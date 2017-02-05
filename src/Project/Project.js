@@ -8,7 +8,7 @@ class Project extends Component {
 
 	var project = this.props.route.projectsService.getProject(this.props.params.project);
 
-    return <Template locale={this.props.route.locale} siteSettings={siteSettings} project={project} />
+    return <Template translator={this.props.route.translator} siteSettings={siteSettings} project={project} />
   }
 }
 

@@ -17,7 +17,7 @@ class Portfolio extends Component {
             return (new Date(a.startedAt).valueOf() < new Date(b.startedAt).valueOf());
         });
 
-        return <Template locale={this.props.route.locale} siteSettings={siteSettings} projects={projects} />;
+        return <Template translator={this.props.route.translator} siteSettings={siteSettings} projects={projects} />;
     }
 }
 

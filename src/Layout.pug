@@ -4,14 +4,14 @@ div.page
     a.hide(href="#content") Skip to content
     
     #menu
-        Menu(locale=this.props.locale)
+        Menu(translator=this.props.translator)
 
-    #top.menu-open-container
-        a.text-center#menu-open(href="#menu")
-            span= this.props.locale("Menu")
+    #content.menu-open-container
+        a#menu-open.text-center.slowScrollTo(target="#menu")
+            span= this.props.translator("Menu")
 
-    div.content= this.props.children
+    div= this.props.children
 
     #footer-space
     #footer
-        Footer(locale=this.props.locale)
+        Footer(translator=this.props.translator, changeLocale=this.props.changeLocale)

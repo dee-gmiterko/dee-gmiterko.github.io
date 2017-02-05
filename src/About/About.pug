@@ -6,26 +6,26 @@ div
             .corners
                 .blog-profile.small
                     img.enlarge(src=require('../images/profile_16.png'))
-                h1.hide= this.props.locale("About me")
+                h1.hide= this.props.translator("About me")
                 h2
-                    Link(to="/about")= this.props.siteSettings.me.name
+                    Link(to="/about", className='slowScrollTo', target="#content")= this.props.siteSettings.me.name
                 p
-                    Link(to="/portfolio/programming") Coder  
-                    Link(to="/portfolio/art") Artist  
-                    Link(to="/about") Me
+                    Link(to="/portfolio/programming", className='slowScrollTo', target="#content") Coder  
+                    Link(to="/portfolio/art", className='slowScrollTo', target="#content") Artist  
+                    Link(to="/about", className='slowScrollTo', target="#content") Me
     #about-columns
         .row
             .small-12.large-4.columns.corners
-                p= this.props.locale("ABOUT_1").replace(/\%/g, this.props.siteAuthorYears)
+                p= this.props.translator("ABOUT_1").replace(/\%/g, this.props.siteAuthorYears)
             .small-12.large-4.columns.corners
-                p= this.props.locale("ABOUT_2").replace(/\%/g, this.props.siteAuthorYears - 10)
+                p= this.props.translator("ABOUT_2").replace(/\%/g, this.props.siteAuthorYears - 10)
             .small-12.large-4.columns.corners
-                p= this.props.locale("ABOUT_3")
+                p= this.props.translator("ABOUT_3")
     .row#about-contact
         .small-12.medium-6.medium-centered.columns
-            h3= this.props.locale("Contact")
-            Person(locale=this.props.locale, person=this.props.siteSettings.me)
+            h3= this.props.translator("Contact")
+            Person(translator=this.props.translator, person=this.props.siteSettings.me)
   
     #about-pointless-image
         .row
-            img(src=require('../images/me.png'), alt=this.props.locale('Just') + ' ' + this.props.siteSettings.siteTitle)
+            img(src=require('../images/me.png'), alt=this.props.translator('Just') + ' ' + this.props.siteSettings.siteTitle)

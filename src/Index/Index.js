@@ -11,7 +11,7 @@ class Index extends Component {
   	});
   	projects = projects.slice(0, 16);
 
-    return <Template locale={this.props.route.locale} siteSettings={siteSettings} projects={projects} />
+    return <Template translator={this.props.route.translator} siteSettings={siteSettings} projects={projects} />
   }
 }
 

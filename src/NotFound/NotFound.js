@@ -3,7 +3,7 @@ import Template from './NotFound.pug.js';
 
 class NotFound extends Component {
   render() {
-    return <Template locale={this.props.route.locale} />
+    return <Template translator={this.props.route.translator} />
   }
 }
 

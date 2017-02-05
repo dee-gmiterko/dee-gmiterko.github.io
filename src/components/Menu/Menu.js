@@ -6,7 +6,7 @@ import Template from './Menu.pug.js';
 export class Menu extends Component {
 
 	render() {
-		return <Template locale={this.props.locale} siteSettings={siteSettings}/>
+		return <Template translator={this.props.translator} siteSettings={siteSettings}/>
 	}
 }
 

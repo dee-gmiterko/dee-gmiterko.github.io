@@ -7,11 +7,11 @@
         .row
             .small-12.medium-4.columns.corners
                 ul.language-change.no-bullet
-                    li= this.props.locale("Change language")
+                    li= this.props.translator("Change language")
                     li
-                        a.sk(href="#") SK
+                        a.sk(onClick=()=>{props.changeLocale('sk')}) SK
                         |  
-                        a.en(href="#") EN
+                        a.en(onClick=()=>{props.changeLocale('en')}) EN
             .small-12.medium-4.columns.corners
                 ul.no-bullet
                     li
@@ -30,7 +30,7 @@
     .base
         .row
             .medium-4.columns
-                = this.props.locale("Change language")
+                = this.props.translator("Change language")
             .medium-4.columns
                 span.icon.email Email
                 a(href="mailto:" + this.props.siteSettings.me.email)= this.props.siteSettings.me.email

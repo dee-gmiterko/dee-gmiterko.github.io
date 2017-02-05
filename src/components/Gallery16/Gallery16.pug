@@ -3,4 +3,4 @@ ul.gallery16
     each block in this.props.items
         div(key=$index, class="block g" + block.items.length + " s" + block.sigil)
             each item in block.items
-                ItemType(key=$index, locale=this.props.locale, item=item)
+                ItemType(key=$index, translator=this.props.translator, item=item)

@@ -27,7 +27,7 @@ class About extends Component {
 
 		var siteAuthorYears = calculateAge(6, 23, 1996)
 
-		return <Template locale={this.props.route.locale} siteSettings={siteSettings} siteAuthorYears={siteAuthorYears} />
+		return <Template translator={this.props.route.translator} siteSettings={siteSettings} siteAuthorYears={siteAuthorYears} />
 	}
 }
 

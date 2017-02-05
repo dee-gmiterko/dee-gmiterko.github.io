@@ -2,7 +2,7 @@
 - const PortfolioItem = require('../components/PortfolioItem/PortfolioItem')
 div
     #portfolio-description
-        h1= this.props.locale(this.props.siteSettings.siteTitle) + ' : ' + this.props.locale("Portfolio")
-        //- p.portfolio-content= this.props.locale(this.props.portfolioDescription)
+        h1= this.props.translator(this.props.siteSettings.siteTitle) + ' : ' + this.props.translator("Portfolio")
+        //- p.portfolio-content= this.props.translator(this.props.portfolioDescription)
       
         Gallery16(itemType=PortfolioItem, items=this.props.projects)

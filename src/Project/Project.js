@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Template from './Project.pug.js';
-import siteSettings from './../../data/site.json';
+import siteSettings from './../../config/site.json';
 
 class Project extends Component {
   render() {

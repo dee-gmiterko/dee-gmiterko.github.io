@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import siteSettings from './../../../data/site.json';
+import siteSettings from './../../../config/site.json';
 
 import Template from './Footer.pug.js';
 

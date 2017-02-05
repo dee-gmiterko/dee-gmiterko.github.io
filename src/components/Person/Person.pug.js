@@ -4,8 +4,8 @@ module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
         return React.DOM.div({
-            'itemscope': true,
-            'itemtype': 'http://schema.org/Person',
+            'itemScope': true,
+            'itemType': 'http://schema.org/Person',
             className: 'profile'
         }, React.DOM.p({ className: 'name' }, React.DOM.strong({ 'itemProp': 'name' }, this.props.person.name)), React.DOM.p({ className: 'job' }, React.DOM.span({ 'itemProp': 'jobTitle' }, 'Coder, Artist, Me')), React.DOM.img({
             'src': require('../../images/profile_16.png'),

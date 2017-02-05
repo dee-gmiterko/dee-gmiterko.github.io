@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Template from './Index.pug.js';
-import siteSettings from './../../data/site.json';
+import siteSettings from './../../config/site.json';
 
 class Index extends Component {
   render() {

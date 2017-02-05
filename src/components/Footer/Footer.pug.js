@@ -11,7 +11,7 @@ module.exports = class __Component extends React.Component {
             className: 'en'
         }, 'EN')))), React.DOM.div({ className: 'small-12' + ' ' + 'medium-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.ul({ className: 'no-bullet' }, React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'email' }), React.DOM.a({
             'href': 'mailto:' + this.props.siteSettings.me.email,
-            'itemprop': 'email'
+            'itemProp': 'email'
         }, this.props.siteSettings.me.email)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'twitter' }), React.DOM.a({
             'href': '//twitter.com/' + this.props.siteSettings.me.twitter,
             'target': '_blank'

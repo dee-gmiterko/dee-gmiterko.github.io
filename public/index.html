@@ -8,5 +8,49 @@
   </head>
   <body>
     <div id="root"></div>
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!--
+
+doctype html
+html
+  head
+    meta(charset="utf-8") 
+    title= (title ? __(title) + " - " : "") + __(siteTitle) + (title ? "" : " - Coder, Artist, Me")
+    meta(name="description",content=__(siteDescription))
+    meta(name="keywords",content=__(siteKeywords))
+    meta(name="robots",content="index, follow")
+    meta(name="author",content="Dominik Gmiterko (Ienze)")
+    meta(property="og:title",content=(title ? title :  __(siteTitle) + " - Coder, Artist, Me"))
+    meta(property="og:description",content=__(siteDescription))
+    meta(property="og:type",content="website")
+    meta(property="og:image",content="http://ienze.me/images/me.png")
+    meta(property="og:url",content="http://ienze.me")
+    meta(name="viewport",content="width=device-width")
+    style
+      include critical.css
+  body
+    include analytics.jade
+    block content
+    block styles
+      link(rel='stylesheet',type='text/css',href='/stylesheets/app.css')
+      link(rel='stylesheet',type='text/css',href='//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext')
+      //- script(src='/javascripts/modernizr.min.js')
+    block scripts
+      script(src='/javascripts/jquery.min.js')
+      //- script(src='/javascripts/foundation.min.js')
+      script(src='/javascripts/jscroll.min.js')
+      script(src='/javascripts/jquery-ui-draggable.min.js')
+      script(src='/javascripts/timeago.min.js')
+      script(src='/javascripts/sticky.min.js')
+      script(src='/javascripts/cookie.min.js')
+      if siteMessageBoardEnabled
+        script(src="/socket.io/socket.io.js")
+      script(src='/javascripts/linda.js')
+
+-->

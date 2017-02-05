@@ -1,21 +1,29 @@
 /* eslint-env browser, jquery */
 export class Projects {
 
-	constructor(dataPaths, locale) {
-		this.locale = locale;
+	constructor(app, projectsPaths) {
+		this.app = app;
+		this.projectsPaths = projectsPaths;
+	}
 
-		Object.keys(dataPaths).forEach((locale) => {
-			jQuery.getJSON(dataPaths[locale], (data) => {
-				self.data[locale] = data;
+	ensureLocale(locale) {
+		var self = this;
+		if(!self.app.state.projects[locale]) {
+			jQuery.getJSON(self.projectsPaths[locale], (data) => {
+				var newProjects = self.app.state.projects;
+				newProjects[locale] = data;
+				self.app.setState({
+					'projects': newProjects
+				});
 			});
-		});
+		}
 	}
 
 	getProjects() {
-		if(!this.locale.getLocale()) {
+		if(!this.app.state.locale || !this.app.state.projects[this.app.state.locale]) {
 			return [];
 		}
-		return this.data[this.locale.getLocale()];
+		return this.app.state.projects[this.app.state.locale];
 	}
 
 	getProjectsByTag(tag) {

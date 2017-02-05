@@ -10,7 +10,8 @@ article.single.project
     .row.content.white-triange-bottom-border
         .corners
             each entry in this.props.project.entries
-                if entry.type === 'text'
-                    TextEntry(key=$index, entry=entry)
-                if entry.type === 'image'
-                    ImageEntry(key=$index, entry=entry)
+                div.entry(key=$index)
+                    if entry.type === 'image'
+                        ImageEntry(key=$index, entry=entry)
+                    if entry.type === 'text'
+                        TextEntry(key=$index, entry=entry)

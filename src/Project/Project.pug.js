@@ -10,13 +10,16 @@ module.exports = class __Component extends React.Component {
             'style': { backgroundImage: 'url(' + this.props.project.image + ')' },
             className: 'img-container'
         }), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'to-bottom' }, React.DOM.div({ className: 'corners' }, React.DOM.h1(null, this.props.project.title))))), React.DOM.div({ className: 'row' + ' ' + 'content' + ' ' + 'white-triange-bottom-border' }, React.DOM.div({ className: 'corners' }, __map(this.props.project.entries, (entry, $index) => {
-            return entry.type === 'text' ? React.createElement(TextEntry, {
+            return React.DOM.div({
+                'key': $index,
+                className: 'entry'
+            }, entry.type === 'image' ? React.createElement(ImageEntry, {
                 'key': $index,
                 'entry': entry
-            }) : null, entry.type === 'image' ? React.createElement(ImageEntry, {
+            }) : null, entry.type === 'text' ? React.createElement(TextEntry, {
                 'key': $index,
                 'entry': entry
-            }) : null;
+            }) : null);
         }))));
     }
 };

@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import Namp from 'namp';
 import Template from './TextEntry.pug.js';
 
 export class TextEntry extends Component {
   render() {
-    return <Template entry={this.props.entry} />
+
+  	var entry = {
+  		type: 'text',
+  		text: Namp(this.props.entry.text).html
+  	}
+
+    return <Template entry={entry} />
   }
 }
 

@@ -6,11 +6,11 @@ div.page
     #menu
         Menu(translator=this.props.translator)
 
-    #content.menu-open-container
+    #top.menu-open-container
         a#menu-open.text-center.slowScrollTo(target="#menu")
             span= this.props.translator("Menu")
 
-    div= this.props.children
+    #content= this.props.children
 
     #footer-space
     #footer

@@ -9,13 +9,13 @@ module.exports = class __Component extends React.Component {
             'href': '#content',
             className: 'hide'
         }, 'Skip to content'), React.DOM.div({ 'id': 'menu' }, React.createElement(Menu, { 'translator': this.props.translator })), React.DOM.div({
-            'id': 'content',
+            'id': 'top',
             className: 'menu-open-container'
         }, React.DOM.a({
             'id': 'menu-open',
             'target': '#menu',
             className: 'text-center' + ' ' + 'slowScrollTo'
-        }, React.DOM.span(null, this.props.translator('Menu')))), React.DOM.div(null, this.props.children), React.DOM.div({ 'id': 'footer-space' }), React.DOM.div({ 'id': 'footer' }, React.createElement(Footer, {
+        }, React.DOM.span(null, this.props.translator('Menu')))), React.DOM.div({ 'id': 'content' }, this.props.children), React.DOM.div({ 'id': 'footer-space' }), React.DOM.div({ 'id': 'footer' }, React.createElement(Footer, {
             'translator': this.props.translator,
             'changeLocale': this.props.changeLocale
         })));

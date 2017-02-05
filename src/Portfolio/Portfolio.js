@@ -3,6 +3,7 @@ import Template from './Portfolio.pug.js';
 import siteSettings from './../../config/site.json';
 
 class Portfolio extends Component {
+    
     render() {
 
         var projects;
@@ -18,6 +19,13 @@ class Portfolio extends Component {
         });
 
         return <Template translator={this.props.route.translator} siteSettings={siteSettings} projects={projects} />;
+    }
+
+    componentDidMount(e) {
+        window.myAttachScript();
+    }
+    componentDidUpdate(e) {
+        window.myAttachScript();
     }
 }
 

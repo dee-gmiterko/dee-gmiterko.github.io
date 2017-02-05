@@ -339,6 +339,21 @@ li.empty {
     }
 }
 
+.blog-profile {
+    margin: 0 auto rem-calc(16) auto;
+
+    img {
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0 0 4px grey;
+    }
+
+    &.small {
+        padding: rem-calc(24);
+        max-width: 280px;
+    }
+}
+
 #about-columns {
 
     .columns {

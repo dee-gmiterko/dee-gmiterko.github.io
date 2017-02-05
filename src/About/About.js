@@ -29,6 +29,13 @@ class About extends Component {
 
 		return <Template translator={this.props.route.translator} siteSettings={siteSettings} siteAuthorYears={siteAuthorYears} />
 	}
+
+	componentDidMount(e) {
+		window.myAttachScript();
+	}
+	componentDidUpdate(e) {
+		window.myAttachScript();
+	}
 }
 
 export default About;

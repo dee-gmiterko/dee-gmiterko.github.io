@@ -3754,6 +3754,16 @@ li.empty {
       margin-bottom: 0;
       letter-spacing: 1rem; } }
 
+.blog-profile {
+  margin: 0 auto 1rem auto; }
+  .blog-profile img {
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 4px grey; }
+  .blog-profile.small {
+    padding: 1.5rem;
+    max-width: 280px; }
+
 #about-columns .columns {
   padding: 5.0625rem 1.875rem 1.875rem;
   color: white;

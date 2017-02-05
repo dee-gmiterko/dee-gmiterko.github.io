@@ -3,10 +3,10 @@
 article.single.project
     .image
         .img-container(style={backgroundImage: "url(" + this.props.project.image + ")"})
-            .row
-                .to-bottom
-                    .corners
-                        h1= this.props.project.title
+        .row
+            .to-bottom
+                .corners
+                    h1= this.props.project.title
     .row.content.white-triange-bottom-border
         .corners
             each entry in this.props.project.entries

@@ -5,8 +5,57 @@ import './linda/metroNavigation.js';
 import './linda/metroNavigationGrab.js';
 import './linda/menuAddons.js';
 import './linda/slowAnchorScroll.js';
+import './linda/imagePopup.js';
 
-$(function () {
+var attach = (element) => {
+
+	try {
+		element.find(".image-popup").each(function () {
+			$(this).imagePopup();
+		});
+	} catch (e) {
+		console.warn(e);
+	}
+
+	try {
+		var wh = $(window).height() - 100;
+		$(".image-fit-window").each(function () {
+			if($(this).height() > wh) {
+				$(this).height(wh);
+			}
+		});
+	} catch (e) {
+		console.warn(e);
+	}
+
+	try {
+		element.find('a.slowScrollTo').slowAnchorScroll();
+	} catch (e) {
+		console.warn(e);
+	}
+
+	try {
+		element.find('a').each(function () {
+			var a = new RegExp('/' + window.location.host + '/');
+			var b = new RegExp('^http');
+			if (!a.test(this.href) && b.test(this.href)) {
+				$(this).attr("target", "_blank");
+				$(this).addClass("externalLink");
+			}
+		});
+	} catch (e) {
+		console.warn(e);
+	}
+
+};
+
+window.myAttachScript = () => {
+	// setTimeout(() => {
+		attach($("#content"));
+	// });
+}
+
+$(() => {
 
 	try {
 		$("#menu-open").sticky({topSpacing: 0});
@@ -25,47 +74,7 @@ $(function () {
 		console.warn(e);
 	}
 
-	// try {
-	// 	var panorama = $("#panorama .panorama-content");
-	// 	if (panorama.size()) {
-	// 		panorama.empty();
-
-	// 		var panoramaPortfolio = $('<ul class="portfolio"></ul>');
-	// 		panorama.append(panoramaPortfolio);
-
-	// 		panoramaPortfolio.load("/portfolio");
-	// 	}
-	// } catch (e) {
-	// 	console.warn(e);
-	// }
-
-	// try {
-	// 	$(".image-popup").each(function () {
-	// 		$(this).imagePopup();
-	// 	});
-
-	// } catch (e) {
-	// 	console.warn(e);
-	// }
-
-	try {
-		$('a.slowScrollTo').slowAnchorScroll();
-	} catch (e) {
-		console.warn(e);
-	}
-
-	try {
-		$('a').each(function () {
-			var a = new RegExp('/' + window.location.host + '/');
-			var b = new RegExp('^http');
-			if (!a.test(this.href) && b.test(this.href)) {
-				$(this).attr("target", "_blank");
-				$(this).addClass("externalLink");
-			}
-		});
-	} catch (e) {
-		console.warn(e);
-	}
+	attach($("body :not(#content)"));
 
 	// Initialise foundation
 	$(document).foundation();

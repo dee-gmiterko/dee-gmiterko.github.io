@@ -1,2 +1,3 @@
 div.image-entry
-  img(src=this.props.entry.path)
+    a(href=this.props.entry.path, className="image-popup")
+        img(src=this.props.entry.path, className="image-fit-window")

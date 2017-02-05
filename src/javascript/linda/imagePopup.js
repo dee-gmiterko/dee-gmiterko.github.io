@@ -1,11 +1,12 @@
 /* eslint-env browser, jquery */
 
-$.fn.imagePopup = function () {
-    var image = this;
+$.fn.imagePopup = function (e) {
+    var imageContainer = this;
+    var image = imageContainer.find("img");
 
-    var open = function (image, e) {
+    var open = function (e) {
         
-        var url = image.attr("href");
+        var url = imageContainer.attr("href");
 
         var insideImage = $("<div></div>");
         insideImage.css({
@@ -19,7 +20,7 @@ $.fn.imagePopup = function () {
             height: image.height()
         });
 
-        image.append(insideImage);
+        imageContainer.append(insideImage);
 
         insideImage.animate({
             top: 0,
@@ -35,7 +36,7 @@ $.fn.imagePopup = function () {
             insideImage.css('background-position', x + '% ' + y + '%');
         }
 
-        insideImage.mousemove(function (e) {
+        insideImage.mousemove((e) => {
             center(e);
         });
 
@@ -43,22 +44,24 @@ $.fn.imagePopup = function () {
     };
 
     var close = function () {
-        image.find("div").animate({
+        
+        imageContainer.find("div").animate({
             top: image.offset().top - $(window).scrollTop(),
             left: image.offset().left - $(window).scrollLeft(),
             width: image.width(),
             height: image.height()
         }, 300, null, function () {
-            image.find("div").remove();
+            imageContainer.find("div").remove();
         });
     };
 
-    image.click(function (e) {
+    imageContainer.click(function(e) {
+        e.preventDefault();
 
-        if (image.find("div").size() === 0) {
-            open(image, e);
+        if (imageContainer.find("div").size() === 0) {
+            open(e);
         } else {
-            close(image);
+            close();
         }
 
         return false;

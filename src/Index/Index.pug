@@ -8,10 +8,13 @@ div
                 h1
                     span= this.props.siteSettings.siteTitle
                 h2
-                    Link(to="/about") Dominik Gmiterko
+                    Link(to="/about", className='slowScrollTo', target="#content") Dominik Gmiterko
                 p
-                    Link(to="/portfolio/programming") Coder  
-                    Link(to="/portfolio/art") Artist  
-                    Link(to="/about") Me
+                    Link(to="/portfolio/programming", className='slowScrollTo', target="#content") Coder  
+                    Link(to="/portfolio/art", className='slowScrollTo', target="#content") Artist  
+                    Link(to="/about", className='slowScrollTo', target="#content") Me
       
         Gallery16(itemType=PortfolioItem, items=this.props.projects)
+    #fnav
+        .row.text-center
+            Link(to="/portfolio", className="button large slowScrollTo", target="#content")= this.props.translator("More projects")

@@ -20,6 +20,6 @@ module.exports = class __Component extends React.Component {
                 'key': $index,
                 'entry': entry
             }) : null);
-        }))));
+        }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.started_at ? this.props.formatDate(this.props.project.started_at) : '?') + this.props.translator(' to ') + (this.props.project.finished_at ? this.props.formatDate(this.props.project.finished_at) : '?')))));
     }
 };

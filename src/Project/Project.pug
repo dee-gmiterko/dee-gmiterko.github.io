@@ -15,3 +15,4 @@ article.single.project
                         ImageEntry(key=$index, entry=entry)
                     if entry.type === 'text'
                         TextEntry(key=$index, entry=entry)
+            p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')

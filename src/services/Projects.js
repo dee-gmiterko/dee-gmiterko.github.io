@@ -40,6 +40,26 @@ export class Projects {
 		}
 		return null;
 	}
+
+	getProjectWithEcessors(slug) {
+		var project = this.getProject(slug);
+		
+		if(project == null) {
+			return null;
+		}
+
+		var mod = (a, n) => {
+			return ((a%n)+n)%n;
+		}
+
+		var projects = this.getProjects();
+		var projectIndex = projects.indexOf(project);
+		
+		project.predecessor = projects[mod(projectIndex-1, projects.length)];
+		project.successor = projects[mod(projectIndex+1, projects.length)];
+
+		return project;
+	}
 }
 
 export default Projects;

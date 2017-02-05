@@ -1,6 +1,7 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
 import __map from 'pug-react-compiler/runtimes/map.js';
+import {Link} from 'react-router';
 import TextEntry from '../components/projectEntries/TextEntry/TextEntry';
 import ImageEntry from '../components/projectEntries/ImageEntry/ImageEntry';
 module.exports = class __Component extends React.Component {
@@ -20,6 +21,14 @@ module.exports = class __Component extends React.Component {
                 'key': $index,
                 'entry': entry
             }) : null);
-        }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.started_at ? this.props.formatDate(this.props.project.started_at) : '?') + this.props.translator(' to ') + (this.props.project.finished_at ? this.props.formatDate(this.props.project.finished_at) : '?')))));
+        }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {
+            'to': 'project/' + this.props.project.predecessor.slug,
+            'target': '#content',
+            className: 'button tiny left slowScrollTo'
+        }, this.props.translator('Previous project')), React.createElement(Link, {
+            'to': 'project/' + this.props.project.successor.slug,
+            'target': '#content',
+            className: 'button tiny right slowScrollTo'
+        }, this.props.translator('Next project')))))));
     }
 };

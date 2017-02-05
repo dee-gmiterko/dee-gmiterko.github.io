@@ -3,6 +3,9 @@ import React from 'react';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
-        return React.DOM.p({ 'dangerouslySetInnerHTML': { '__html': this.props.entry.text } });
+        return React.DOM.div({
+            'dangerouslySetInnerHTML': { '__html': this.props.entry.text },
+            className: 'text-entry'
+        });
     }
 };

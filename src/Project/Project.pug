@@ -1,3 +1,4 @@
+- const {Link} = require('react-router')
 - const TextEntry = require('../components/projectEntries/TextEntry/TextEntry')
 - const ImageEntry = require('../components/projectEntries/ImageEntry/ImageEntry')
 article.single.project
@@ -16,3 +17,7 @@ article.single.project
                     if entry.type === 'text'
                         TextEntry(key=$index, entry=entry)
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
+            .row
+                .project-navigation
+                    Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left slowScrollTo", target="#content")=this.props.translator("Previous project")
+                    Link(to="project/"+this.props.project.successor.slug, className="button tiny right slowScrollTo", target="#content")=this.props.translator("Next project")

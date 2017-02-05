@@ -1,7 +1,6 @@
 $global-bg-shadow: 0 0 64px rgba(0, 0, 0, 0.2) inset;
 $global-bg-shadow-hard: 0 0 64px rgba(0, 0, 0, 0.8) inset;
 $global-bg-shadow-darkness: -10;
-$panorama-height: rem-calc(380);
 
 #menu {
     height: 100%;
@@ -340,145 +339,6 @@ li.empty {
     }
 }
 
-#panorama {
-	display: block;
-    height: $panorama-height;
-    overflow: hidden;
-    position: relative;
-    box-shadow: $global-bg-shadow-hard;
-
-    .panorama-content {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        z-index: -1;
-
-        p {
-            color: black;
-            font-size: rem-calc(40);
-            text-align: center;
-            margin-top: rem-calc(300);
-        }
-    }
-
-    > a {
-        position: absolute;
-        display: block;
-        top: 0; right: 0; bottom: 0; left: 0;
-        background: rgba(0, 0, 0, 0.5);
-
-		p {
-			font-size: rem-calc(20);
-			font-weight: lighter;
-			color: rgba(255, 255, 255, 0.75);
-
-
-			text-align: center;
-			max-width: $panorama-height;
-			display: block;
-			margin: 0 auto;
-			margin-top: rem-calc(80);
-
-			span.line {
-				display: block;
-				padding-top: rem-calc(32);
-			}
-		}
-    }
-
-    a.pagination {
-        display: none;
-    }
-
-    .panorama-content * {
-        pointer-events: none;
-    }
-}
-
-#area-knowledgebase {
-    background: scale-color($secondary-color, $lightness: -8);
-    box-shadow: $global-bg-shadow;
-
-    h2 {
-        color: white;
-        text-align: center;
-        margin-top: rem-calc(8);
-        margin-bottom: rem-calc(16);
-        font-size: rem-calc(28);
-    }
-
-    @media #{$large-up} {
-        h2 {
-            margin-top: 0;
-        }
-    }
-
-	p {
-		color: mix($secondary-color, white, 50%);
-		text-align: center;
-	}
-
-    .know-how {
-        min-height: 150px;
-        max-width: 150px;
-        margin: 0 auto;
-        display: block;
-        font-size: 0;
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        transition: transform 300ms ease-in-out;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-
-    @each $icon in 'php', 'java', 'html', 'css', 'nette', 'unity', 'sass', 'jquery', 'foundation', 'js', 'lua', 'mysql', 'bukkit', 'nodejs', 'git', 'more' {
-        .know-how.#{$icon} {
-            background-image: url('../images/know-how/#{$icon}.png')
-        }
-    }
-
-    .row {
-        position: relative;
-        background: $secondary-color;
-        box-shadow: $global-bg-shadow;
-
-        @media #{$large-up} {
-            &:before {
-                content: " ";
-                position: absolute;
-                pointer-events: none;
-                top: -50px;
-                left: 0;
-
-                width: 0;
-                height: 0;
-
-                border-style: solid;
-                border-width: 0 $row-width / 2 50px $row-width / 2;
-                border-color: transparent transparent scale-color($secondary-color, $lightness: $global-bg-shadow-darkness) transparent;
-            }
-        }
-    }
-
-    .questions {
-
-        @media #{$large-up} {
-            column-count: 3;
-        }
-
-        @media #{$medium} {
-            column-count: 2;
-        }
-    }
-}
-
 #about-columns {
 
     .columns {
@@ -612,8 +472,27 @@ article.single {
         .project-meta {
             color: scale-color($body-font-color, $lightness: 32);
         }
+
+        .project-navigation {
+            padding: rem-calc(0 105);
+        }
     }
 
+    .text-entry {
+
+    }
+
+    .image-entry {
+        display: block;
+        text-align: center;
+        padding-bottom: rem-calc(32);
+
+        img {
+            max-width: 80%;
+        }
+    }
+
+    /*
     .attachments-container {
         background: black;
         padding-top: rem-calc(16 + 64);
@@ -650,6 +529,7 @@ article.single {
     &.post .attachments-container {
         background: $secondary-color;
     }
+    */
 }
 
 #fnav {
@@ -660,37 +540,4 @@ article.single {
 	.button {
 		margin: rem-calc(14);
 	}
-}
-
-#first-lang-select {
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-
-    .language-change {
-        text-align: center;
-
-        h3 {
-            background: $secondary-color;
-            color: white;
-			margin: 0;
-        }
-
-        p {
-            background: white;
-            box-shadow: $global-bg-shadow;
-
-            a {
-                display: inline-block;
-                @include button();
-                margin: 0 rem-calc(32);
-                height: rem-calc(100);
-                line-height: rem-calc(74);
-            }
-        }
-    }
 }

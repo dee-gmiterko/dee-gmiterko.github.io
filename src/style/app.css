@@ -3656,7 +3656,7 @@ code {
   max-height: 80vh;
   overflow-y: auto; }
 
-img.pixels {
+.pixels {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
@@ -3913,6 +3913,26 @@ article.single {
     padding-bottom: 2rem; }
     article.single .image-entry img {
       max-width: 80%; }
+  article.single .file-entry {
+    display: inline-block;
+    width: 200px;
+    text-align: center; }
+    article.single .file-entry .file-icon {
+      width: 200px;
+      height: 200px;
+      background-image: url(../images/fileTypes/default.png);
+      background-size: cover;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor; }
+      article.single .file-entry .file-icon.media {
+        background-image: url(../images/fileTypes/media.png); }
+      article.single .file-entry .file-icon.source {
+        background-image: url(../images/fileTypes/source.png); }
+      article.single .file-entry .file-icon.text {
+        background-image: url(../images/fileTypes/text.png); }
 
 #fnav {
   border-top: #5f6f80 2px solid;
@@ -3970,7 +3990,11 @@ article.single {
       bottom: 0;
       left: 0;
       background: url(../images/chessBg.png) center;
-      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: nearest-neighbor;
       opacity: 0.5; }
     .navigation-wrapper .background div:last-child {
       filter: invert(38%);
@@ -4289,12 +4313,24 @@ ul.gallery16 {
       opacity: 1.0; }
   ul.gallery16 .category.programming .project-meta {
     background: rgba(52, 73, 94, 0.8); }
+  ul.gallery16 .category.programming .project-meta.noimage {
+    background: transparent;
+    opacity: 1.0; }
   ul.gallery16 .category.websites .project-meta {
     background: rgba(165, 78, 104, 0.8); }
+  ul.gallery16 .category.websites .project-meta.noimage {
+    background: transparent;
+    opacity: 1.0; }
   ul.gallery16 .category.art .project-meta {
     background: rgba(119, 192, 70, 0.8); }
+  ul.gallery16 .category.art .project-meta.noimage {
+    background: transparent;
+    opacity: 1.0; }
   ul.gallery16 .category.other .project-meta {
     background: rgba(170, 170, 170, 0.8); }
+  ul.gallery16 .category.other .project-meta.noimage {
+    background: transparent;
+    opacity: 1.0; }
 
 /* FIX dont show x-scroll-bar */
 /*body {    overflow-x: hidden;}*/

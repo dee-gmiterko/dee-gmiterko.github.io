@@ -57,7 +57,7 @@ $metro-node-active-color: $secondary-color;
             top: 0; right: 0; bottom: 0; left: 0;
 
             background: url(../images/chessBg.png) center;
-            image-rendering: pixelated;
+            @include pixelated-bg();
 
             opacity: 0.5;
         }

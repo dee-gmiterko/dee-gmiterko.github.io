@@ -212,12 +212,8 @@ code {
 	overflow-y: auto;
 }
 
-img.pixels {
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-	-ms-interpolation-mode: nearest-neighbor;
+.pixels {
+	@include pixelated-bg();
 }
 
 a.externalLink {
@@ -505,6 +501,29 @@ article.single {
         img {
             max-width: 80%;
         }
+    }
+
+    .file-entry {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        
+        .file-icon {
+            width: 200px;
+            height: 200px;
+            background-image: url(../images/fileTypes/default.png);
+            background-size: cover;
+            @include pixelated-bg();
+
+            $icons: 'media', 'source', 'text';
+
+            @each $icon in $icons {
+                &.#{$icon} {
+                    background-image: url(../images/fileTypes/#{$icon}.png);
+                }
+            }
+        }
+
     }
 
     /*

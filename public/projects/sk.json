@@ -5,7 +5,7 @@
             "other"
         ],
         "title": "Less\/Sass kalkula\u010dka rozdielu farieb",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-09-04",
         "finishedAt": "2015-09-04",
         "description": "N\u00e1stroj na vygenerovanie funkci\u00ed potrebn\u00fdch na dosiahnutie po\u017eadovanej farby.",
@@ -27,7 +27,7 @@
             "other"
         ],
         "title": "Syst\u00e9m",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-12-20",
         "finishedAt": "2015-12-20",
         "description": "Nahodny clanok z nahodnymi myslienkami a nahodnymi chybami",
@@ -45,7 +45,7 @@
             "other"
         ],
         "title": "HTTP\/?.?",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-10-12",
         "finishedAt": "2015-10-12",
         "description": "Ienze blog. Porovnanie verzii HTTP protokolov. Hra Remember Me a HTTP.",
@@ -63,7 +63,7 @@
             "other"
         ],
         "title": "Interakt\u00edvne pozadie",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-09-20",
         "finishedAt": "2015-09-20",
         "description": null,
@@ -81,7 +81,7 @@
             "other"
         ],
         "title": "Pol roka",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-12-21",
         "finishedAt": "2015-12-21",
         "description": "M\u00f4j poh\u013ead na contenful po pol roku pou\u017e\u00edvania.",
@@ -99,7 +99,7 @@
             "other"
         ],
         "title": "Harmonogram 2minD",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-07-12",
         "finishedAt": "2015-07-12",
         "description": "Pre\u010do a ako vzniklo 2minD, aka je jeho bud\u00facnos\u0165?",
@@ -116,34 +116,12 @@
         ]
     },
     {
-        "slug": "preco-musim-kliknut-na-start-ked-chcem-windows-vypnut",
-        "tags": [
-            "other"
-        ],
-        "title": "Pre\u010do mus\u00edm klikn\u00fa\u0165 na \u0160tart, ke\u010f chcem Windows vypn\u00fa\u0165?",
-        "image": ".png",
-        "startedAt": "2015-05-25",
-        "finishedAt": "2015-05-25",
-        "description": "Okerm in\u00e9ho aj sp\u00f4soby vypnutia Windowsu. Informa\u010dn\u00fd blog..",
-        "keywords": "ienze, blog, \u010dl\u00e1nok, WAME, windows, vypnutie, st\u00e1\u017e",
-        "entries": [
-            {
-                "type": "text",
-                "text": "*WAME, Windows*\n\nNemus\u00edm. Pre\u010do by som musel? Ve\u010f existuje to\u013eko r\u00f4znych sp\u00f4sobov ako vypn\u00fa\u0165 Windows aj bez toho.\n\nHne\u010f ma napad\u00e1 Alt+F4 na pracovnej ploche.\nAlebo u\u017e m\u00f4\u017eeme aj jednoducho stla\u010di\u0165 tla\u010didlo na vypnutie niekde na po\u010d\u00edtac\u00ed. Ke\u010f\u017ee u\u017e je \u0165a\u017ek\u00e9 n\u00e1js\u0165 zariadenie ktor\u00e9 by nepodporovalo APM(Advanced Power Management). Toto zabezpe\u010duje ze sa okam\u017eite nezastav\u00ed, ale vy\u0161le OS sign\u00e1l na vypnutie.\nA \u010diste teoreticky nemus\u00edm \"klikn\u00fa\u0165\" na \u0161tart ke\u010f\u017ee tam m\u00f4\u017eem d\u00f4js\u0165 aj kl\u00e1vesnicou.\n\nA teraz niektor\u00fdch z v\u00e1s zau\u00edma pre\u010do to p\u00ed\u0161em. Odpove\u010f n\u00e1jdete na str\u00e1nke [wame.sk](http:\/\/wame.sk\/stazista-bardejov). Jedna z po\u017eadovan\u00fdch inform\u00e1cii je pr\u00e1ve odpove\u010f na t\u00fato ot\u00e1zku. To je d\u00f4vod.. u\u017e len uvid\u00edme ako sa to vyvinie."
-            },
-            {
-                "type": "file",
-                "path": "assets\/6geFfbp33i2w4w0e8yCmw4.schematic"
-            }
-        ]
-    },
-    {
         "slug": "rotating-layers",
         "tags": [
             "other"
         ],
         "title": "Ako vytvori\u0165 \"Ot\u00e1\u010dacie vrstvy\"",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-07-26",
         "finishedAt": "2015-07-26",
         "description": "Blog z mojim napadom a jeho realizaciou. Otacacie vrstvy z obsahom. Vyuzite prvky, problemy, riesenia.",
@@ -169,7 +147,7 @@
             "other"
         ],
         "title": "Pluginy, ako na ne?",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-08-06",
         "finishedAt": "2015-08-06",
         "description": "M\u00f4j n\u00e1vrh vyu\u017eitia pluginov pri vytv\u00e1ran\u00ed CMS syst\u00e9mu postaven\u00e9ho na Nette",
@@ -191,7 +169,7 @@
             "other"
         ],
         "title": "Leto 2015",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-10-19",
         "finishedAt": "2015-10-19",
         "description": "Na \u010dom som pracoval v lete 2015. V\u00fdlet do Slovinsko. Programovanie v WAME.",
@@ -225,7 +203,7 @@
             "other"
         ],
         "title": "Shadre v css",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-12-22",
         "finishedAt": "2015-12-22",
         "description": "Ienze testuje vlastne css filtre (shadre).",
@@ -243,7 +221,7 @@
             "other"
         ],
         "title": "\u00daprava priamo na str\u00e1nke",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-08-10",
         "finishedAt": "2015-08-10",
         "description": "N\u00e1vrh jednoduch\u00e9ho editora obsahu priamo na str\u00e1nke.",
@@ -261,7 +239,7 @@
             "other"
         ],
         "title": "Ako vzniklo ienze.me",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-05-30",
         "finishedAt": "2015-05-30",
         "description": null,
@@ -283,7 +261,7 @@
             "other"
         ],
         "title": "20(4[89]|50)\\s",
-        "image": ".png",
+        "image": null,
         "startedAt": "2015-11-23",
         "finishedAt": "2015-11-23",
         "description": "Ako vyzer\u00e1 \u0161peci\u00e1lna skupina predmetu IB111 z\u00e1klady programovania",
@@ -301,7 +279,7 @@
             "other"
         ],
         "title": "efil fo emaG",
-        "image": ".png",
+        "image": null,
         "startedAt": "2016-03-25",
         "finishedAt": "2016-03-25",
         "description": "Nezvy\u010dajn\u00e9 vyu\u017eitia Conway's Game of life a ich zlo\u017eitos\u0165.",
@@ -319,7 +297,7 @@
             "other"
         ],
         "title": "Ako ovl\u00e1da\u0165 PC v Minecrafte",
-        "image": ".png",
+        "image": null,
         "startedAt": "2016-01-11",
         "finishedAt": "2016-01-11",
         "description": null,
@@ -738,24 +716,6 @@
         ]
     },
     {
-        "slug": "srm",
-        "tags": [
-            null
-        ],
-        "title": null,
-        "image": null,
-        "startedAt": null,
-        "finishedAt": null,
-        "description": null,
-        "keywords": null,
-        "entries": [
-            {
-                "type": "text",
-                "text": null
-            }
-        ]
-    },
-    {
         "slug": "py-2050",
         "tags": [
             "programming"
@@ -825,6 +785,7 @@
             },
             {
                 "type": "file",
+                "icon": "media",
                 "path": "assets\/6geFfbp33i2w4w0e8yCmw4.schematic"
             }
         ]
@@ -1044,7 +1005,7 @@
                 "path": "assets\/6OK3MOeHnysSoms2oE884q.png"
             },
             {
-                "type": "file",
+                "type": "image",
                 "path": "assets\/2FNXiXqqDSCk8OOSKkMMO6.JPG"
             }
         ]

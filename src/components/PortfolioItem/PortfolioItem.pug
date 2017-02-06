@@ -1,8 +1,8 @@
 - const {Link} = require('react-router')
 li(class="category " + this.props.project.tags[0])
-    Link(to="/project/"+this.props.project.slug, className="slowScrollTo galleryItem", style={"backgroundImage": "url(" + this.props.project.image + ")"}, target='#content')
+    Link(to="/project/"+this.props.project.slug, className="slowScrollTo galleryItem", style={"backgroundImage": "url(" + (this.props.project.image || require("../../images/noimage.png")) + ")"}, target='#content')
         img(src=this.props.project.image)
-    .this.props.project-meta
+    .this.props.project-meta(className=(!this.props.project.image ? "noimage" : ""))
         .meta
             h2= this.props.project.title
             p= this.props.project.description

@@ -1,7 +1,7 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
-import Menu from './components/Menu/Menu';
-import Footer from './components/Footer/Footer';
+import Menu from './../Menu/Menu';
+import Footer from './../Footer/Footer';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;

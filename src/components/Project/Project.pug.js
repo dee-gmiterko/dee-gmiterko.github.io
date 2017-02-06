@@ -2,9 +2,9 @@
 import React from 'react';
 import __map from 'pug-react-compiler/runtimes/map.js';
 import {Link} from 'react-router';
-import TextEntry from '../components/projectEntries/TextEntry/TextEntry';
-import ImageEntry from '../components/projectEntries/ImageEntry/ImageEntry';
-import FileEntry from '../components/projectEntries/FileEntry/FileEntry';
+import TextEntry from './../projectEntries/TextEntry/TextEntry';
+import ImageEntry from './../projectEntries/ImageEntry/ImageEntry';
+import FileEntry from './../projectEntries/FileEntry/FileEntry';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;

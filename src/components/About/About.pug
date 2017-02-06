@@ -1,11 +1,11 @@
-- const Person = require('../components/Person/Person')
+- const Person = require('../Person/Person')
 - const {Link} = require('react-router')
 div
     #title-screen
         .row.white-triange-bottom-border
             .corners
                 .blog-profile.small
-                    img.enlarge(src=require('../images/profile_16.png'))
+                    img.enlarge(src=require('../../images/profile_16.png'))
                 h1.hide= this.props.translator("About me")
                 h2
                     Link(to="/about", className='slowScrollTo', target="#content")= this.props.siteSettings.me.name
@@ -28,4 +28,4 @@ div
   
     #about-pointless-image
         .row
-            img(src=require('../images/me.png'), alt=this.props.translator('Just') + ' ' + this.props.siteSettings.siteTitle)
+            img(src=require('../../images/me.png'), alt=this.props.translator('Just') + ' ' + this.props.siteSettings.siteTitle)

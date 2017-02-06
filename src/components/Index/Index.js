@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Seedrandom from 'seedrandom';
-import siteSettings from './../../config/site.json';
+import siteSettings from './../../../config/site.json';
 
 import Template from './Index.pug.js';
 

@@ -1,12 +1,12 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
-import Person from '../components/Person/Person';
+import Person from '../Person/Person';
 import {Link} from 'react-router';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
         return React.DOM.div(null, React.DOM.div({ 'id': 'title-screen' }, React.DOM.div({ className: 'row' + ' ' + 'white-triange-bottom-border' }, React.DOM.div({ className: 'corners' }, React.DOM.div({ className: 'blog-profile' + ' ' + 'small' }, React.DOM.img({
-            'src': require('../images/profile_16.png'),
+            'src': require('../../images/profile_16.png'),
             className: 'enlarge'
         })), React.DOM.h1({ className: 'hide' }, this.props.translator('About me')), React.DOM.h2(null, React.createElement(Link, {
             'to': '/about',
@@ -31,7 +31,7 @@ module.exports = class __Component extends React.Component {
             'translator': this.props.translator,
             'person': this.props.siteSettings.me
         }))), React.DOM.div({ 'id': 'about-pointless-image' }, React.DOM.div({ className: 'row' }, React.DOM.img({
-            'src': require('../images/me.png'),
+            'src': require('../../images/me.png'),
             'alt': this.props.translator('Just') + ' ' + this.props.siteSettings.siteTitle
         }))));
     }

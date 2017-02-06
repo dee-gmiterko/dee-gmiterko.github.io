@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
-import Layout from './Layout';
-import Index from './Index/Index';
-import About from './About/About';
-import Portfolio from './Portfolio/Portfolio';
-import Project from './Project/Project';
-import NotFound from './NotFound/NotFound';
+import Layout from './../Layout/Layout';
+import Index from './../Index/Index';
+import About from './../About/About';
+import Portfolio from './../Portfolio/Portfolio';
+import Project from './../Project/Project';
+import NotFound from './../NotFound/NotFound';
 
-import Locales from './services/Locales';
-import Projects from './services/Projects';
+import Locales from './../../services/Locales';
+import Projects from './../../services/Projects';
 
 export class App extends Component {
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import dateformat from 'dateformat';
-import siteSettings from './../../config/site.json';
+import siteSettings from './../../../config/site.json';
 
 import Template from './Project.pug.js';
 import TemplateNotFound from './ProjectNotFound.pug.js';

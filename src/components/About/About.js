@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Template from './About.pug.js';
-import siteSettings from './../../config/site.json';
+import siteSettings from './../../../config/site.json';
 
 class About extends Component {
 

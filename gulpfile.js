@@ -9,7 +9,7 @@ var pug = require('gulp-pug');
 var siteSettings = require('./config/site.json');
 
 gulp.task('compile-pug-react', function() {
-	return gulp.src('src/**/*.pug')
+	return gulp.src('src/components/**/*.pug')
 	.pipe(foreach(function(stream, file) {
 		return stream.pipe(modify({
 			fileModifier: function(file, contents) {
@@ -33,7 +33,7 @@ gulp.task('compile-pug-react', function() {
 			path.extname = ".pug.js"
 		}));
 	}))
-	.pipe(gulp.dest('src'));
+	.pipe(gulp.dest('src/components'));
 });
 
 gulp.task('compile-sass', function () {
@@ -51,7 +51,7 @@ gulp.task('compile-pug-public', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch(['src/**/*.pug'], ['compile-pug-react']);
+	gulp.watch(['src/components/**/*.pug'], ['compile-pug-react']);
 	gulp.watch(['src/public/**/*.pug'], ['compile-pug-public']);
 	gulp.watch(['src/style/**/*.scss'], ['compile-sass']);
 });

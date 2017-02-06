@@ -4,8 +4,11 @@ var modify = require('gulp-modify');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var pact = require('pug-react-compiler');
+var pug = require('gulp-pug');
 
-gulp.task('compile-pug', function() {
+var siteSettings = require('./config/site.json');
+
+gulp.task('compile-pug-react', function() {
 	return gulp.src('src/**/*.pug')
 	.pipe(foreach(function(stream, file) {
 		return stream.pipe(modify({
@@ -34,16 +37,25 @@ gulp.task('compile-pug', function() {
 });
 
 gulp.task('compile-sass', function () {
-  return gulp.src('./src/style/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/style'));
+	return gulp.src('./src/style/**/*.scss')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(gulp.dest('./src/style'));
+});
+
+gulp.task('compile-pug-public', function() {
+	return gulp.src('./src/public/index.pug')
+	.pipe(pug({
+		'data': siteSettings
+	}))
+	.pipe(gulp.dest('./public/'));
 });
 
 gulp.task('watch', function() {
-	gulp.watch(['src/**/*.pug'], ['compile-pug']);
+	gulp.watch(['src/**/*.pug'], ['compile-pug-react']);
+	gulp.watch(['src/public/**/*.pug'], ['compile-pug-public']);
 	gulp.watch(['src/style/**/*.scss'], ['compile-sass']);
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('build', ['compile-pug', 'compile-sass']);
+gulp.task('build', ['compile-pug-public', 'compile-pug-react', 'compile-sass']);
 gulp.task('default', ['build', 'watch']);

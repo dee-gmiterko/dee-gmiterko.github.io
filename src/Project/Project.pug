@@ -1,6 +1,7 @@
 - const {Link} = require('react-router')
 - const TextEntry = require('../components/projectEntries/TextEntry/TextEntry')
 - const ImageEntry = require('../components/projectEntries/ImageEntry/ImageEntry')
+- const FileEntry = require('../components/projectEntries/FileEntry/FileEntry')
 article.single.project
     .image
         .img-container(style={backgroundImage: "url(" + this.props.project.image + ")"})
@@ -13,9 +14,11 @@ article.single.project
             each entry in this.props.project.entries
                 div.entry(key=$index)
                     if entry.type === 'image'
-                        ImageEntry(key=$index, entry=entry)
+                        ImageEntry(key=$index, translator=this.props.translator, entry=entry)
                     if entry.type === 'text'
-                        TextEntry(key=$index, entry=entry)
+                        TextEntry(key=$index, translator=this.props.translator, entry=entry)
+                    if entry.type === 'file'
+                        FileEntry(key=$index, translator=this.props.translator, entry=entry)
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
             .row
                 .project-navigation

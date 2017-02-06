@@ -1,0 +1,4 @@
+div.file-entry
+    a(href=this.props.entry.path)
+        .file-icon(className=(this.props.entry.icon || "default"))
+        p= this.props.translator("Download file")

@@ -10,7 +10,7 @@ export class TextEntry extends Component {
   		text: Namp(this.props.entry.text).html
   	}
 
-    return <Template entry={entry} />
+    return <Template translator={this.props.translator} entry={entry} />
   }
 }
 

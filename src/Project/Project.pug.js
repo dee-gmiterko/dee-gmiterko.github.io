@@ -4,6 +4,7 @@ import __map from 'pug-react-compiler/runtimes/map.js';
 import {Link} from 'react-router';
 import TextEntry from '../components/projectEntries/TextEntry/TextEntry';
 import ImageEntry from '../components/projectEntries/ImageEntry/ImageEntry';
+import FileEntry from '../components/projectEntries/FileEntry/FileEntry';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
@@ -16,9 +17,15 @@ module.exports = class __Component extends React.Component {
                 className: 'entry'
             }, entry.type === 'image' ? React.createElement(ImageEntry, {
                 'key': $index,
+                'translator': this.props.translator,
                 'entry': entry
             }) : null, entry.type === 'text' ? React.createElement(TextEntry, {
                 'key': $index,
+                'translator': this.props.translator,
+                'entry': entry
+            }) : null, entry.type === 'file' ? React.createElement(FileEntry, {
+                'key': $index,
+                'translator': this.props.translator,
                 'entry': entry
             }) : null);
         }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {

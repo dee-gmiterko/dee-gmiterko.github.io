@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Template from './ImageEntry.pug.js';
+import Template from './FileEntry.pug.js';
 
-export class ImageEntry extends Component {
+export class FileEntry extends Component {
   render() {
     return <Template translator={this.props.translator} entry={this.props.entry} />
   }
 }
 
-export default ImageEntry;
+export default FileEntry;

@@ -1,5 +1,6 @@
 /*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */
 import React from 'react';
+import {slowScrollTo} from '../../javascript/utils';
 import Menu from './../Menu/Menu';
 import Footer from './../Footer/Footer';
 module.exports = class __Component extends React.Component {
@@ -13,8 +14,8 @@ module.exports = class __Component extends React.Component {
             className: 'menu-open-container'
         }, React.DOM.a({
             'id': 'menu-open',
-            'target': '#menu',
-            className: 'text-center' + ' ' + 'slowScrollTo'
+            'onClick': slowScrollTo('#menu'),
+            className: 'text-center'
         }, React.DOM.span(null, this.props.translator('Menu')))), React.DOM.div({ 'id': 'content' }, this.props.children), React.DOM.div({ 'id': 'footer-space' }), React.DOM.div({ 'id': 'footer' }, React.createElement(Footer, {
             'translator': this.props.translator,
             'changeLocale': this.props.changeLocale

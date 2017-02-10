@@ -2,6 +2,7 @@
 import React from 'react';
 import Person from '../Person/Person';
 import {Link} from 'react-router';
+import {slowScrollTo} from '../../javascript/utils';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
@@ -10,20 +11,16 @@ module.exports = class __Component extends React.Component {
             className: 'enlarge'
         })), React.DOM.h1({ className: 'hide' }, this.props.translator('About me')), React.DOM.h2(null, React.createElement(Link, {
             'to': '/about',
-            'target': '#content',
-            className: 'slowScrollTo'
+            'onClick': slowScrollTo('#top')
         }, this.props.siteSettings.me.name)), React.DOM.p(null, React.createElement(Link, {
             'to': '/portfolio/programming',
-            'target': '#content',
-            className: 'slowScrollTo'
+            'onClick': slowScrollTo('#top')
         }, 'Coder  '), React.createElement(Link, {
             'to': '/portfolio/art',
-            'target': '#content',
-            className: 'slowScrollTo'
+            'onClick': slowScrollTo('#top')
         }, 'Artist  '), React.createElement(Link, {
             'to': '/about',
-            'target': '#content',
-            className: 'slowScrollTo'
+            'onClick': slowScrollTo('#top')
         }, 'Me'))))), React.DOM.div({ 'id': 'about-columns' }, React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_1').replace(/\%/g, this.props.siteAuthorYears))), React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_2').replace(/\%/g, this.props.siteAuthorYears - 10))), React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_3'))))), React.DOM.div({
             'id': 'about-contact',
             className: 'row'

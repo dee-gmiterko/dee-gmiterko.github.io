@@ -1,3 +1,4 @@
+- const {slowScrollTo} = require('../../javascript/utils')
 - const {Link} = require('react-router')
 .navigation-wrapper
     .background
@@ -13,31 +14,31 @@
     nav.metroNavigation.passive
         ul
             li.hide-connection
-                Link(to='/', className='slowScrollTo', target="#content")= this.props.translator(this.props.siteSettings.siteTitle)
+                Link(to='/', onClick=slowScrollTo("#top"))= this.props.translator(this.props.siteSettings.siteTitle)
                          
                 ul
                     li
-                        Link(to='/about', className='slowScrollTo', target="#content")= this.props.translator("About")
+                        Link(to='/about', onClick=slowScrollTo("#top"))= this.props.translator("About")
                                          
                         //- ul                    
                             li.force-l-t
-                                Link(to='/', className='slowScrollTo', target="#content")= this.props.translator("Blog")
+                                Link(to='/', onClick=slowScrollTo("#top"))= this.props.translator("Blog")
                     
                     li
-                        Link(to='/portfolio', className='slowScrollTo', target="#content")= this.props.translator("Portfolio")
+                        Link(to='/portfolio', onClick=slowScrollTo("#top"))= this.props.translator("Portfolio")
                                          
                         ul
                             li
-                                Link(to='/portfolio/programming', className='slowScrollTo', target="#content")= this.props.translator("Programming")
+                                Link(to='/portfolio/programming', onClick=slowScrollTo("#top"))= this.props.translator("Programming")
 
                                 ul
                                     li
-                                        Link(to='/portfolio/websites', className='slowScrollTo', target="#content")= this.props.translator("Websites")
+                                        Link(to='/portfolio/websites', onClick=slowScrollTo("#top"))= this.props.translator("Websites")
                              
                             li.force-l-b
-                                Link(to='/portfolio/other', className='slowScrollTo', target="#content")= this.props.translator("Other")
+                                Link(to='/portfolio/other', onClick=slowScrollTo("#top"))= this.props.translator("Other")
 
                                 ul
                                     li
-                                        Link(to='/portfolio/art', className='slowScrollTo', target="#content")= this.props.translator("Art")
+                                        Link(to='/portfolio/art', onClick=slowScrollTo("#top"))= this.props.translator("Art")
         .mover

@@ -1,3 +1,4 @@
+- const {slowScrollTo} = require('../../javascript/utils')
 - const Menu = require('./../Menu/Menu')
 - const Footer = require('./../Footer/Footer')
 div.page
@@ -7,7 +8,7 @@ div.page
         Menu(translator=this.props.translator)
 
     #top.menu-open-container
-        a#menu-open.text-center.slowScrollTo(target="#menu")
+        a#menu-open.text-center(onClick=slowScrollTo("#menu"))
             span= this.props.translator("Menu")
 
     #content= this.props.children

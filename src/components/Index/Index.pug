@@ -1,4 +1,5 @@
 - const {Link} = require('react-router')
+- const {slowScrollTo} = require('../../javascript/utils')
 - const Gallery16 = require('./../Gallery16/Gallery16')
 - const PortfolioItem = require('./../PortfolioItem/PortfolioItem')
 div
@@ -8,11 +9,11 @@ div
                 h1
                     span= this.props.siteSettings.siteTitle
                 h2
-                    Link(to="/about", className='slowScrollTo', target="#content") Dominik Gmiterko
+                    Link(to="/about", onClick=slowScrollTo("#top")) Dominik Gmiterko
                 p
-                    Link(to="/portfolio/programming", className='slowScrollTo', target="#content") Coder  
-                    Link(to="/portfolio/art", className='slowScrollTo', target="#content") Artist  
-                    Link(to="/about", className='slowScrollTo', target="#content") Me
+                    Link(to="/portfolio/programming", onClick=slowScrollTo("#top")) Coder  
+                    Link(to="/portfolio/art", onClick=slowScrollTo("#top")) Artist  
+                    Link(to="/about", onClick=slowScrollTo("#top")) Me
       
         Gallery16(itemType=PortfolioItem, items=this.props.projects)
     #fnav

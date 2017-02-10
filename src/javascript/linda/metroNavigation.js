@@ -20,54 +20,54 @@ $.fn.metroNavigation = function (settingsIn) {
         }
     }
 
-    var findConnectedNodes = function (metroNavigation, node) {
-        var connectedNodes = [];
+    // var findConnectedNodes = function (metroNavigation, node) {
+    //     var connectedNodes = [];
 
-        if (settings.only_connected_nodes) {
-            connectedNodes.push(node);
+    //     if (settings.only_connected_nodes) {
+    //         connectedNodes.push(node);
 
-            var p = node.parents('li');
-            if (p.size() > 0)
-                connectedNodes.push(p.get(0));
+    //         var p = node.parents('li');
+    //         if (p.size() > 0)
+    //             connectedNodes.push(p.get(0));
 
-            node.children('ul').children('li').each(function (index, node) {
-                connectedNodes.push(node);
-            });
-        } else {
+    //         node.children('ul').children('li').each(function (index, node) {
+    //             connectedNodes.push(node);
+    //         });
+    //     } else {
 
-            metroNavigation.find('li').each(function (index, node) {
-                connectedNodes.push(node);
-            });
-        }
+    //         metroNavigation.find('li').each(function (index, node) {
+    //             connectedNodes.push(node);
+    //         });
+    //     }
 
-        return connectedNodes;
-    };
+    //     return connectedNodes;
+    // };
 
-    var findNodeByMouse = function (metroNavigation, activeNode, x, y) {
+    // var findNodeByMouse = function (metroNavigation, activeNode, x, y) {
 
-        var nodes = findConnectedNodes(metroNavigation, activeNode);
+    //     var nodes = findConnectedNodes(metroNavigation, activeNode);
 
-        var closestNode = null;
-        var closestNodeDistance = -1;
+    //     var closestNode = null;
+    //     var closestNodeDistance = -1;
 
-        $.each(nodes, function (index, node) {
+    //     $.each(nodes, function (index, node) {
 
-            var jnode = $(node);
+    //         var jnode = $(node);
 
-            var no = jnode.offset();
+    //         var no = jnode.offset();
 
-            var dx = Math.abs(x - no.left);
-            var dy = Math.abs(y - no.top);
-            var distance = Math.sqrt(dx * dx + dy * dy);
+    //         var dx = Math.abs(x - no.left);
+    //         var dy = Math.abs(y - no.top);
+    //         var distance = Math.sqrt(dx * dx + dy * dy);
 
-            if (closestNodeDistance < 0 || distance < closestNodeDistance) {
-                closestNodeDistance = distance;
-                closestNode = jnode;
-            }
-        });
+    //         if (closestNodeDistance < 0 || distance < closestNodeDistance) {
+    //             closestNodeDistance = distance;
+    //             closestNode = jnode;
+    //         }
+    //     });
 
-        return closestNode;
-    };
+    //     return closestNode;
+    // };
 
     var findActiveNode = function (metroNavigation) {
         var active = metroNavigation.find('li.active');
@@ -111,21 +111,21 @@ $.fn.metroNavigation = function (settingsIn) {
 
         centerOnNode(metroNavigation, activeNode, true);
 
-        metroNavigation.click(function (event) {
+        // metroNavigation.click(function (event) {
 
-            var x = event.pageX, y = event.pageY;
+        //     var x = event.pageX, y = event.pageY;
 
-            var activeNode = findActiveNode(metroNavigation);
+        //     var activeNode = findActiveNode(metroNavigation);
 
-            var closestNode = findNodeByMouse(metroNavigation, activeNode, x, y);
+        //     var closestNode = findNodeByMouse(metroNavigation, activeNode, x, y);
 
-            activeNode.removeClass('active');
-            closestNode.addClass('active');
+        //     activeNode.removeClass('active');
+        //     closestNode.addClass('active');
 
-            if (closestNode) {
-                centerOnNode(metroNavigation, closestNode, false);
-            }
-        });
+        //     if (closestNode) {
+        //         centerOnNode(metroNavigation, closestNode, false);
+        //     }
+        // });
 
         metroNavigation.find("a").click(function () {
 

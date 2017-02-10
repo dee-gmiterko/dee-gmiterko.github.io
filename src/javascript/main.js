@@ -4,7 +4,6 @@ import './linda/42.js';
 import './linda/metroNavigation.js';
 import './linda/metroNavigationGrab.js';
 import './linda/menuAddons.js';
-import './linda/slowAnchorScroll.js';
 import './linda/imagePopup.js';
 
 var attach = (element) => {
@@ -24,12 +23,6 @@ var attach = (element) => {
 				$(this).height(wh);
 			}
 		});
-	} catch (e) {
-		console.warn(e);
-	}
-
-	try {
-		element.find('a.slowScrollTo').slowAnchorScroll();
 	} catch (e) {
 		console.warn(e);
 	}

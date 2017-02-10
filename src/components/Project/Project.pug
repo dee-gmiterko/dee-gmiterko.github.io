@@ -1,10 +1,11 @@
 - const {Link} = require('react-router')
+- const {slowScrollTo} = require('../../javascript/utils')
 - const TextEntry = require('./../projectEntries/TextEntry/TextEntry')
 - const ImageEntry = require('./../projectEntries/ImageEntry/ImageEntry')
 - const FileEntry = require('./../projectEntries/FileEntry/FileEntry')
 article.single.project
     .image
-        .img-container(style={backgroundImage: "url(" + this.props.project.image + ")"})
+        .img-container(style={backgroundImage: "url(" + (this.props.project.image ? this.props.project.image : require("../../images/noimage.png")) + ")"})
         .row
             .to-bottom
                 .corners
@@ -22,5 +23,5 @@ article.single.project
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
             .row
                 .project-navigation
-                    Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left slowScrollTo", target="#content")=this.props.translator("Previous project")
-                    Link(to="project/"+this.props.project.successor.slug, className="button tiny right slowScrollTo", target="#content")=this.props.translator("Next project")
+                    Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left", onClick=slowScrollTo("#top"))=this.props.translator("Previous project")
+                    Link(to="project/"+this.props.project.successor.slug, className="button tiny right", onClick=slowScrollTo("#top"))=this.props.translator("Next project")

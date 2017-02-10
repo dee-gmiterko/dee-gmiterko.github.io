@@ -2,7 +2,11 @@
     {
         "slug": "less-sass-color-difference-calculator",
         "tags": [
-            "other"
+            "websites",
+            "other",
+            "tool",
+            "css",
+            "color"
         ],
         "title": "Less\/Sass color difference calculator",
         "image": "\/assets\/46IWsMpj9Yq6eKwUkyc8Cu.png",
@@ -24,7 +28,8 @@
     {
         "slug": "http",
         "tags": [
-            "other"
+            "websites",
+            "game"
         ],
         "title": "HTTP\/?.?",
         "image": "\/assets\/trains.png",
@@ -42,7 +47,8 @@
     {
         "slug": "interaktivne-pozadie",
         "tags": [
-            "other"
+            "websites",
+            "css"
         ],
         "title": "Interakt\u00edvne pozadie",
         "image": "\/assets\/ienze-bg.png",
@@ -60,7 +66,8 @@
     {
         "slug": "rotating-layers",
         "tags": [
-            "other"
+            "websites",
+            "css"
         ],
         "title": "How to make \"Rotating layers\"",
         "image": "\/assets\/4K1OTMj9ksUACIOY4Ik0QY.jpg",
@@ -98,7 +105,8 @@
     {
         "slug": "pluginy-ako-na-ne",
         "tags": [
-          "other"
+          "websites",
+          "php"
         ],
         "title": "Pluginy, ako na ne?",
         "image": "/assets/4mr6yd632U2Q62a40SyeGW.png",
@@ -161,7 +169,8 @@
     {
         "slug": "shaders-in-css",
         "tags": [
-            "other"
+            "websites",
+            "css"
         ],
         "title": "Shaders in css",
         "image": "\/assets\/css_shader.png",
@@ -183,7 +192,8 @@
     {
         "slug": "uprava-priamo-na-stranake",
         "tags": [
-            "other"
+            "websites",
+            "php"
         ],
         "title": "Page content editor",
         "image": null,
@@ -201,7 +211,9 @@
     {
         "slug": "20-4-89-or-50",
         "tags": [
-            "other"
+            "other",
+            "programming"
+            "python"
         ],
         "title": "20(4[89]|50)\\s",
         "image": null,
@@ -219,7 +231,8 @@
     {
         "slug": "efil-fo-emag",
         "tags": [
-            "other"
+            "programming",
+            "python"
         ],
         "title": "efil fo emaG",
         "image": "\/assets\/life_title.png",
@@ -237,7 +250,9 @@
     {
         "slug": "ako-ovladat-pc-v-minecrafte",
         "tags": [
-            "other"
+            "other",
+            "minecraft",
+            "lua"
         ],
         "title": "Ako ovl\u00e1da\u0165 PC v Minecrafte",
         "image": null,
@@ -255,7 +270,9 @@
     {
         "slug": "minecraft-bulldozer",
         "tags": [
-            "programming"
+            "programming",
+            "minecraft",
+            "java"
         ],
         "title": "Bulldozer (Minecraft)",
         "image": "\/assets\/FrrRiIpTQkwwyqwKy2EmK.png",
@@ -285,7 +302,8 @@
     {
         "slug": "jeden-den",
         "tags": [
-            "art"
+            "art",
+            "digital"
         ],
         "title": "One day",
         "image": "\/assets\/7eOo4fWOWWC0m6Oi4CWsO4.jpg",
@@ -323,7 +341,8 @@
     {
         "slug": "icons-extractor",
         "tags": [
-            "programming"
+            "programming",
+            "java"
         ],
         "title": "Icons extractor",
         "image": "\/assets\/4NEzejr3xmSsG0c2s8U0Mw.png",
@@ -447,7 +466,8 @@
     {
         "slug": "py-2050",
         "tags": [
-            "programming"
+            "programming",
+            "python"
         ],
         "title": "py-2050",
         "image": "\/assets\/3Weu4HYDs4OQ0I0kcskEaU.png",
@@ -477,7 +497,9 @@
     {
         "slug": "wordpress-tus",
         "tags": [
-            "websites"
+            "websites",
+            "wordpress",
+            "php"
         ],
         "title": "TuS Mingolsheim (Wordpress)",
         "image": "\/assets\/7xTThOX57yAyY2WC8eMkWo.png",
@@ -525,7 +547,10 @@
     {
         "slug": "wordpress-maintain",
         "tags": [
-            "websites"
+            "websites",
+            "wordpress",
+            "php",
+            "css"
         ],
         "title": "Maintain (Wordpress)",
         "image": "\/assets\/4IGlP2IJD2cusa0CoYWqqw.png",
@@ -547,7 +572,10 @@
     {
         "slug": "mech5",
         "tags": [
-            "programming"
+            "programming",
+            "java",
+            "websites",
+            "game"
         ],
         "title": "MECH5",
         "image": "\/assets\/2W1SQ9MiPmkGUYeC4oW2Ei.jpg",
@@ -573,7 +601,10 @@
     {
         "slug": "wordpress-farny",
         "tags": [
-            "websites"
+            "websites",
+            "wordpress",
+            "php",
+            "css"
         ],
         "title": "Farny (Wordpress)",
         "image": "\/assets\/2rzzo0yGJSCca8uO0Scoke.png",
@@ -595,7 +626,9 @@
     {
         "slug": "life-of-snow",
         "tags": [
-            "programming"
+            "programming",
+            "unity",
+            "game"
         ],
         "title": "The Life of Snow",
         "image": "\/assets\/R9ikHkIEg0wMAeisOKO6Y.png",
@@ -625,7 +658,10 @@
     {
         "slug": "wordpress-erhard",
         "tags": [
-            "websites"
+            "websites",
+            "wordpress",
+            "php",
+            "css"
         ],
         "title": "Erhard (Wordpress)",
         "image": "\/assets\/2raJaZxQvSsOqACmA2aS6I.png",
@@ -647,7 +683,8 @@
     {
         "slug": "wame",
         "tags": [
-            "websites"
+            "websites",
+            "php"
         ],
         "title": "WAME",
         "image": "\/assets\/4iQj9vVUHuy84Y6w0gSmoQ.jpg",
@@ -665,7 +702,9 @@
     {
         "slug": "map-london",
         "tags": [
-            "other"
+            "other",
+            "minecraft",
+            "level-design"
         ],
         "title": "London map",
         "image": "\/assets\/4mBUiBxHuooEMWKUSGOEAq.png",
@@ -692,7 +731,9 @@
     {
         "slug": "minecraft-scarecrows",
         "tags": [
-            "programming"
+            "programming",
+            "minecraft",
+            "java"
         ],
         "title": "Scarecrows (Minecraft)",
         "image": "\/assets\/ldycdqgZJ6QQE2gmg0oo4.jpg",
@@ -714,7 +755,8 @@
     {
         "slug": "2minD",
         "tags": [
-            "websites"
+            "websites",
+            "php"
         ],
         "title": "2minD",
         "image": "\/assets\/3KBxpGv0hOEgisIO4wuUaq.png",
@@ -766,7 +808,8 @@
     {
         "slug": "rocnikovy-projekt",
         "tags": [
-            "websites"
+            "websites",
+            "php"
         ],
         "title": "Ro\u010dn\u00edkov\u00fd projekt",
         "image": "\/assets\/3j9QtTVIsw2eK0O6yOwQum.png",
@@ -792,7 +835,8 @@
     {
         "slug": "papercraft",
         "tags": [
-            "other"
+            "other",
+            "paper"
         ],
         "title": "Papercraft",
         "image": "\/assets\/5mhpOOHDQQqwaM0GaAwySy.jpg",
@@ -822,7 +866,10 @@
     {
         "slug": "wordpress-ped",
         "tags": [
-            "websites"
+            "websites",
+            "wordpress",
+            "php",
+            "css"
         ],
         "title": "p(e)d World (Wordpress)",
         "image": "\/assets\/1nXqmgq9ZC0ga648uGAmAa.png",
@@ -844,7 +891,9 @@
     {
         "slug": "slenderman",
         "tags": [
-            "art"
+            "art",
+            "digital",
+            "painting"
         ],
         "title": "Slenderman",
         "image": "\/assets\/6OIYB3BzwIYMU8wOo6IKsc.jpg",
@@ -878,7 +927,8 @@
     {
         "slug": "ee-antic",
         "tags": [
-            "other"
+            "other",
+            "level-design"
         ],
         "title": "Antic map",
         "image": "\/assets\/6jgvGHN7X2gkckayGqOuEe.png",
@@ -964,7 +1014,10 @@
     {
         "slug": "gamehive",
         "tags": [
-            "programming"
+            "programming",
+            "minecraft",
+            "java",
+            "websites"
         ],
         "title": "Gamehive",
         "image": "\/assets\/VZsGAcJhEQEeMqwyqQUm6.jpg",

@@ -5,6 +5,7 @@ $.fn.imagePopup = function (e) {
     var image = imageContainer.find("img");
 
     var open = function (e) {
+        console.log("open");
         
         var url = imageContainer.attr("href");
 
@@ -44,6 +45,7 @@ $.fn.imagePopup = function (e) {
     };
 
     var close = function () {
+        console.log("close");
         
         imageContainer.find("div").animate({
             top: image.offset().top - $(window).scrollTop(),
@@ -57,6 +59,8 @@ $.fn.imagePopup = function (e) {
 
     imageContainer.click(function(e) {
         e.preventDefault();
+
+        console.log("click");
 
         if (imageContainer.find("div").size() === 0) {
             open(e);

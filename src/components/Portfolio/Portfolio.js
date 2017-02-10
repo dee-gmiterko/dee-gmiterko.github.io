@@ -25,7 +25,11 @@ class Portfolio extends Component {
         window.myAttachScript();
     }
     componentDidUpdate(e) {
+        window.myDetachScript();
         window.myAttachScript();
+    }
+    componentWillUnmount(e) {
+        window.myDetachScript();
     }
 }
 

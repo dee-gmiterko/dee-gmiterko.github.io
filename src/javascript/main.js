@@ -39,13 +39,20 @@ var attach = (element) => {
 	} catch (e) {
 		console.warn(e);
 	}
-
 };
 
+var detach = (element) => {
+	element.find("*").off();
+}
+
 window.myAttachScript = () => {
-	// setTimeout(() => {
-		attach($("#content"));
-	// });
+	console.log("attach");
+	attach($("#content"));
+}
+
+window.myDetachScript = () => {
+	console.log("detach");
+	detach($("#content"));
 }
 
 $(() => {

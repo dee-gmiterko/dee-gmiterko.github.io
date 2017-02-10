@@ -6,10 +6,7 @@ import Footer from './../Footer/Footer';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
-        return React.DOM.div({ className: 'page' }, React.DOM.a({
-            'href': '#content',
-            className: 'hide'
-        }, 'Skip to content'), React.DOM.div({ 'id': 'menu' }, React.createElement(Menu, { 'translator': this.props.translator })), React.DOM.div({
+        return React.DOM.div({ className: 'page' }, React.DOM.div({ 'id': 'menu' }, React.createElement(Menu, { 'translator': this.props.translator })), React.DOM.div({
             'id': 'top',
             className: 'menu-open-container'
         }, React.DOM.a({

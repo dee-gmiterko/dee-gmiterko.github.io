@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Less/Sass kalkulačka rozdielu farieb</title>
+		<meta name="description" content="Kalkulačka rozdielu dvoch farieb pre využitie v Less alebo Sass">
+		<meta name="keywords" content="Less,Sass,Css,Farby,Kalkulacka,Calculator">
+		<meta name="author" content="Dominik Gmiterko">
+	</head>
+	<body>
+		<style>
+			main {
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+      h1 {
+				color: #F1C40F;
+				font-size: 2em;
+				font: bold 200% Helvetica Neue,sans-serif;
+				text-align: center;
+				padding: 1em;
+        padding-bottom: 0;
+			}
+      p {
+        font-size: 1.5em;
+        color: #ccc;
+        padding-bottom: 1em;
+      }
+      .preview, .color-form {
+				display:flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+			}
+      .color-form .input-box {
+				width: 200px;
+			}
+      .color-form input {
+				font-size: 1.25em;
+				padding: 0.25em;
+				width: 100%;
+				box-sizing: border-box;
+			}
+      .color-form .swap {
+				width: 30px;
+				font-size: 0;
+			}
+			.color-form .swap img {
+				margin: 2.5px;
+				margin-top: 6px;
+			}
+			.preview div {
+				width: 200px;
+				height: 200px;
+				box-shadow: 5px 5px 0 rgba(255, 255, 255, 0.4) inset, -5px -5px 0 rgba(0, 0, 0, 0.4) inset;
+				margin: 15px;
+			}
+			.output {
+				width: 100%;
+				background: #EEE;
+				margin: 15px auto 0 auto;
+				font-size: 1.25em;
+				padding: 1em;
+				box-sizing: border-box;
+			}
+		</style>
+		<main>
+			<h1>Less/Sass kalkulačka rozdielu farieb</h1>
+      <p>Nástroj na vygenerovanie funkcií potrebných na dosiahnutie požadovanej farby.</p>
+			<form class="color-form">
+				<div class="input-box">
+					<input type="text" id="color1" value="rgb(200, 50, 50)" />
+				</div>
+				<a class="swap" href="#">
+					Vymenit
+					<img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI1cHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDUxMiAzOTguMjIzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgMzk4LjIyMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxwYXRoIGQ9Ik0xMTMuNDkzLDE3MC42NjdMMCwyODQuNDQ0bDExMy40OTMsMTEzLjc3OHYtODUuMzM0aDE5OS4zOTZWMjU2SDExMy40OTNWMTcwLjY2N3ogTTUxMiwxMTMuNzc3TDM5OC41LDB2ODUuMzMzSDE5OS4xMTEgIHY1Ni44OUgzOTguNXY4NS4zMzNMNTEyLDExMy43Nzd6Ii8+Cjwvc3ZnPg==" />
+				</a>
+				<div class="input-box">
+					<input type="text" id="color2" value="red" />
+				</div>
+			</form>
+			<pre class="output"></pre>
+			<div class="preview">
+				<div id="color1preview"></div>
+				<div id="color2preview"></div>
+			</div>
+		</main>
+
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="tinycolor.js"></script>
+		<script type="text/javascript">
+
+			var output = $('.output');
+
+			var settings = {
+				forceFade: false
+			};
+
+			$('#color1, #color2').on("change keyup", function () {
+				calc($("#color1").val(), $("#color2").val());
+				return false;
+			});
+
+			$('a.swap').on("click", function () {
+				var v1 = $('#color1').val();
+				var v2 = $('#color2').val();
+				$('#color1').val(v2);
+				$('#color2').val(v1);
+				previewColor();
+				calc(v1, v2);
+			});
+
+			function isdiff(a1, a2) {
+				return Math.abs(a1 - a2) > 0.0000001;
+			}
+
+			function previewColor() {
+				$("#color1preview").css('background', $('#color1').val());
+				$("#color2preview").css('background', $('#color2').val());
+			}
+
+			function calc(color1, color2) {
+
+				previewColor();
+
+				var c1 = tinycolor(color1);
+				var c2 = tinycolor(color2);
+
+				var hsl1 = c1.toHsl();
+				var hsl2 = c2.toHsl();
+
+				var dh = isdiff(hsl1.h, hsl2.h);
+				var ds = isdiff(hsl1.s, hsl2.s);
+				var dl = isdiff(hsl1.l, hsl2.l);
+
+				var diffCollors = [];
+
+				if (dh) {
+					var hueDiff = hsl2.h - hsl1.h;
+					var hueStr = Math.round(hueDiff);
+
+					diffCollors.push("spin(*, " + hueStr + ")");
+				}
+
+				if (ds) {
+					var saturationDiff = hsl2.s - hsl1.s;
+					var saturationStr = Math.abs(Math.round(saturationDiff * 100));
+
+					if (saturationDiff > 0) {
+						diffCollors.push("saturate(*, " + saturationStr + "%)");
+					} else {
+						diffCollors.push("desaturate(*, " + saturationStr + "%)");
+					}
+				}
+
+				if (dl) {
+					var lighnessDiff = hsl2.l - hsl1.l;
+					var lighnessStr = Math.abs(Math.round(lighnessDiff * 100));
+
+					if (lighnessDiff > 0)
+						diffCollors.push("lighten(*, " + lighnessStr + "%)");
+					else
+						diffCollors.push("darken(*, " + lighnessStr + "%)");
+				}
+
+				if (hsl2.a != hsl1.a) {
+					var transparencyDiff = hsl2.a - hsl1.a;
+					var transparencyStr = Math.abs(Math.round(transparencyDiff * 100));
+
+					if (settings.forceFade) {
+						diffCollors.push("fade(*, " + (Math.abs(Math.round(hsl2.a * 100))) + "%)");
+					} else {
+						if (transparencyDiff > 0)
+							diffCollors.push("fadeout(*, " + transparencyStr + "%)");
+						else
+							diffCollors.push("fadein(*, " + transparencyStr + "%)");
+					}
+				}
+
+				if (hsl1.s != 0 && hsl2.s == 0) {
+					diffCollors.push("greyscale(*)");
+				}
+
+				var inside = color1;
+				$.each(diffCollors, function (index, value) {
+					inside = value.replace('*', inside);
+				});
+
+				output.text(inside);
+			}
+
+			var v1 = $('#color1').val();
+			var v2 = $('#color2').val();
+			calc(v1, v2);
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<style>
+  .shader{
+    -webkit-filter: custom(none url(shader.fs), amount 0.6, mouseAmount 0.3);
+  }
+  .half {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+  }
+  .half.left {
+    left: 0;
+  }
+  .half.right {
+    right: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<script src="http://niklasvh.github.io/WebGL-CSS-Shaders/src/jquery.min.js"></script>
+<script src="http://niklasvh.github.io/WebGL-CSS-Shaders/src/gl-matrix.js"></script>
+<script src="http://niklasvh.github.io/WebGL-CSS-Shaders/src/html2canvas.js"></script>
+<script src="http://niklasvh.github.io/WebGL-CSS-Shaders/src/Tween.js"></script>
+<script src="http://niklasvh.github.io/WebGL-CSS-Shaders/src/css-shaders.js"></script>
+
+<div class="half left">
+  <img src="img.jpg" alt="Original image" />
+</div>
+<div class="half right">
+  <img src="img.jpg" alt="Image with shader" class="shader" />
+</div>
+
+<script>
+(function( d, w ){
+     w.onload = function() {
+       CSSshaders.init();  
+     };
+})( document, window )
+</script>

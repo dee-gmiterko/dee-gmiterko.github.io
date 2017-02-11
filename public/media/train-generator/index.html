@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train generator</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript" src="../jquery.js"></script>
+        <script type="text/javascript">
+
+            $(function () {
+
+                var rangeRandom = function (minimum, maximum) {
+                    return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+                };
+
+                var generate = function (rails, trainsMin, trainsMax, cartsMin, cartsMax) {
+                    $(".rails").empty();
+                    for (var i = 0; i < rails; i++) {
+                        generateRail(rangeRandom(trainsMin, trainsMax), cartsMin, cartsMax);
+                    }
+                };
+
+                var generateRail = function (trains, cartsMin, cartsMax) {
+                    var rail = $('<div class="rail"></div>');
+                    $(".rails").append(rail);
+
+                    for (var i = 0; i < trains; i++) {
+                        var train = $('<div class="train"></div>');
+                        rail.append(train);
+                        generateTrain(train, rangeRandom(cartsMin, cartsMax));
+                    }
+                    rail.append(train);
+                };
+
+                var generateTrain = function (train, carts) {
+                    for (var i = 0; i < carts; i++) {
+                        train.append('<div class="cart"></div>');
+                    }
+                };
+
+                var generateByInput = function () {
+
+                    var rails = parseInt($('form input[name="rails"]').val());
+                    var trainsMin = parseInt($('form input[name="trainsMin"]').val());
+                    var trainsMax = parseInt($('form input[name="trainsMax"]').val());
+                    var cartsMin = parseInt($('form input[name="cartsMin"]').val());
+                    var cartsMax = parseInt($('form input[name="cartsMax"]').val());
+                    if (rails == NaN || trainsMin == NaN || trainsMax == NaN || cartsMin == NaN || cartsMax == NaN) {
+
+                    } else {
+                        generate(rails, trainsMin, trainsMax, cartsMin, cartsMax);
+                    }
+                };
+
+                $("form input").on("change keyup", generateByInput);
+                $("form button.generate").on("click", function () {
+                    generateByInput();
+                    return false;
+                });
+                generateByInput();
+            });
+        </script>
+
+        <form>
+            <table>
+                <tr>
+                    <th>Rails</th>
+                    <th>Trains min</th>
+                    <th>Trains max</th>
+                    <th>Carts min</th>
+                    <th>Carts max</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="rails" value="1" />
+                    </td>
+                    <td>
+                        <input type="number" name="trainsMin" value="2" />
+                    </td>
+                    <td>
+                        <input type="number" name="trainsMax" value="3" />
+                    </td>
+                    <td>
+                        <input type="number" name="cartsMin" value="2" />
+                    </td>
+                    <td>
+                        <input type="number" name="cartsMax" value="5" />
+                    </td>
+                    <td>
+                        <button class="generate">Generate</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <style>
+            html, body, .rails {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            form {
+                position: fixed;
+                top: 5px;
+                left: 5px;
+            }
+        </style>
+        
+        <!-- Trains style -->
+        <style>
+            .rails {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+
+            .rail {
+                width: 100%;
+                height: 10px;
+                background: #5e746b;
+                margin: 15px 0;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+            }
+
+            .train {
+                margin-top: -20px;
+            }
+
+            .cart {
+                width: 50px;
+                height: 30px;
+                background: #63979f;
+                display: inline-block;
+                margin: 0 1px;
+            }
+
+            .cart:last-child {
+                background: #0c2020;
+                position: relative;
+            }
+
+            .cart:last-child:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: -6px; top: 0; width: 0; height: 0;
+                border-style: solid;
+                border-width: 30px 0 0 6px;
+                border-color: transparent transparent transparent #0c2020;
+            }
+
+            .cart.short {
+                width: 10px;
+            }
+        </style>
+
+        <div class="rails">
+        </div>
+
+    </body>
+</html>

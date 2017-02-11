@@ -5,6 +5,7 @@ import './linda/metroNavigation.js';
 import './linda/metroNavigationGrab.js';
 import './linda/menuAddons.js';
 import './linda/imagePopup.js';
+import {slowScrollTo} from './utils';
 
 var attach = (element) => {
 
@@ -46,12 +47,11 @@ var detach = (element) => {
 }
 
 window.myAttachScript = () => {
-	console.log("attach");
 	attach($("#content"));
+	slowScrollTo("#top")();
 }
 
 window.myDetachScript = () => {
-	console.log("detach");
 	detach($("#content"));
 }
 

@@ -23,5 +23,5 @@ article.single.project
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
             .row
                 .project-navigation
-                    Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left", onClick=slowScrollTo("#top"))=this.props.translator("Previous project")
-                    Link(to="project/"+this.props.project.successor.slug, className="button tiny right", onClick=slowScrollTo("#top"))=this.props.translator("Next project")
+                    Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left")=this.props.translator("Previous project")
+                    Link(to="project/"+this.props.project.successor.slug, className="button tiny right")=this.props.translator("Next project")

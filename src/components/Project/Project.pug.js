@@ -31,11 +31,9 @@ module.exports = class __Component extends React.Component {
             }) : null);
         }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {
             'to': 'project/' + this.props.project.predecessor.slug,
-            'onClick': slowScrollTo('#top'),
             className: 'button tiny left'
         }, this.props.translator('Previous project')), React.createElement(Link, {
             'to': 'project/' + this.props.project.successor.slug,
-            'onClick': slowScrollTo('#top'),
             className: 'button tiny right'
         }, this.props.translator('Next project')))))));
     }

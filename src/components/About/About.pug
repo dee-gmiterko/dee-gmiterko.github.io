@@ -9,11 +9,11 @@ div
                     img.enlarge(src=require('../../images/profile_16.png'))
                 h1.hide= this.props.translator("About me")
                 h2
-                    Link(to="/about", onClick=slowScrollTo("#top"))= this.props.siteSettings.me.name
+                    Link(to="/about")= this.props.siteSettings.me.name
                 p
-                    Link(to="/portfolio/programming", onClick=slowScrollTo("#top")) Coder  
-                    Link(to="/portfolio/art", onClick=slowScrollTo("#top")) Artist  
-                    Link(to="/about", onClick=slowScrollTo("#top")) Me
+                    Link(to="/portfolio/programming") Coder  
+                    Link(to="/portfolio/art") Artist  
+                    Link(to="/about") Me
     #about-columns
         .row
             .small-12.large-4.columns.corners

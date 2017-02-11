@@ -9,13 +9,13 @@ div
                 h1
                     span= this.props.siteSettings.siteTitle
                 h2
-                    Link(to="/about", onClick=slowScrollTo("#top")) Dominik Gmiterko
+                    Link(to="/about") Dominik Gmiterko
                 p
-                    Link(to="/portfolio/programming", onClick=slowScrollTo("#top")) Coder  
-                    Link(to="/portfolio/art", onClick=slowScrollTo("#top")) Artist  
-                    Link(to="/about", onClick=slowScrollTo("#top")) Me
+                    Link(to="/portfolio/programming") Coder  
+                    Link(to="/portfolio/art") Artist  
+                    Link(to="/about") Me
       
         Gallery16(itemType=PortfolioItem, items=this.props.projects)
     #fnav
         .row.text-center
-            Link(to="/portfolio", className="button large slowScrollTo", target="#content")= this.props.translator("More projects")
+            Link(to="/portfolio", className="button large")= this.props.translator("More projects")

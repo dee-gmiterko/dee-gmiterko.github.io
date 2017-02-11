@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ako vytvoriť "Otacacie vrstvy"</title>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			.rotating-layers {
+				position: relative;
+				width: 50%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.rotating-layers .layer {
+				position: absolute;
+				top: 0;	right: 0; bottom: 0; left: 0;
+				padding: 42px;
+				padding-right: 0;
+
+				transform-origin: left center;
+				animation-name: layers-rotation;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				animation-play-state: running;
+
+				backface-visibility: visible;
+			}
+			.rotating-layers .content-container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.rotating-layers .content-container img.center-img {
+				display: block;
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				max-width: 100%;
+				width: auto;
+				max-height: 100%;
+				height: auto;
+
+				border: 5px solid rgba(0, 0, 0, 0.6);
+				box-sizing: border-box;
+			}
+			.rotating-layers:hover .layer {
+				animation-play-state: paused;
+			}
+			@keyframes layers-rotation { 
+				0% {
+					opacity: 1;
+					transform: perspective( 4200px ) rotateY(0deg);
+					z-index: 0;
+				}
+				25% {
+					opacity: 0;
+				}
+				75% { 
+					opacity: 0.9;
+
+				}
+				82% { 
+					opacity: 1;
+				}
+				100% {
+					transform: perspective( 4200px ) rotateY(360deg);
+					z-index: 4;
+				}
+			}
+			@keyframes layers-rotation-right { 
+				0% {
+					opacity: 1;
+					transform: perspective( 4200px ) rotateY(360deg);
+					z-index: 0;
+				}
+				25% {
+					opacity: 0;
+				}
+				75% { 
+					opacity: 0.9;
+
+				}
+				82% { 
+					opacity: 1;
+				}
+				100% {
+					transform: perspective( 4200px ) rotateY(0deg);
+					z-index: 4;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="rotating">
+			<div>
+				<h1>Ako vytvoriť "Otacacie vrstvy"</h1>
+				<p>Budeme potrebovať zopár základných surovín. Nieje ťažké ich zohnať.</p>
+				<ul>
+					<li>HTML</li>
+					<li>CSS 3</li>
+					<li>Schopnoť animovať</li>
+					<li>Obsah, aby sme aj niečo videli</li>
+				</ul>
+				<p><strong>Ak sa nič nehýbe, je to preto, že más na tom myš, vtedy sa to zastaví.</strong></p>
+			</div>
+			<img class="center-img" src="http://ienze.me/assets/4DZVZqMlDOOmq8uomM8Suu.jpg" alt="2" />
+			<img class="center-img" src="http://ienze.me/assets/2NlMhalyeICsGm62meAIe4.png" alt="4"/>
+			<img class="center-img" src="http://ienze.me/assets/ovce.jpg" alt="3" />
+		</div>
+
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+		<script type="text/javascript">
+			$.fn.rotatingLayers = function (settingsIn) {
+
+				var settings = $.extend({}, {
+					speed: 10000,
+					side: 'left'
+				}, settingsIn);
+
+				var rotatingLayers = $(this);
+
+				//setup structure
+				var contents = rotatingLayers.children();
+				$.each(contents, function (index, contentItem) {
+					var toAppend = $('<div class="layer"><div class="content-container"></div></div>');
+					rotatingLayers.append(toAppend);
+					toAppend.find('.content-container').append(contentItem);
+				});
+
+				//strt animation
+
+				var layers = rotatingLayers.find(".layer");
+
+				rotatingLayers.addClass('rotating-layers');
+
+				$.each(layers, function (index, layer) {
+					var delay = -1 * (index / layers.size()) * settings.speed;
+
+					$(layer).css({
+						'animation-delay': delay + 'ms',
+						'animation-duration': settings.speed + 'ms'
+					});
+
+					if (settings.side == 'right') {
+						$(layer).css({
+							'transform-origin': 'right center',
+							'animation-name': 'layers-rotation-right'
+						});
+					}
+				});
+			}
+		</script>
+
+		<script type="text/javascript">
+			$(function () {
+				$("#rotating").rotatingLayers({
+					speed: 8000,
+					side: 'left'
+				});
+			});
+		</script>
+	</body>
+</html>

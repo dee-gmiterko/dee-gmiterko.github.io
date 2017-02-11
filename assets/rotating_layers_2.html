@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<title>Ako vytvoriť "Otacacie vrstvy"</title>
+    <style type="text/css">
+		html, body {
+			height: 100%;
+		}
+    .rotating-mockup {
+			position: relative;
+			width: 50%;
+			height: 100%;
+		}
+		.rotating-mockup .img {
+			background-size: cover;
+			background-position: center;
+			backface-visibility: visible;
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			transform-origin: left center;
+			animation: mockup-rotation 8s linear;
+			animation-iteration-count: infinite;
+			animation-play-state: running;
+		}
+		.rotating-mockup:hover .img {
+			animation-play-state: paused;
+		}
+		@keyframes mockup-rotation { 
+			from {
+				transform: perspective( 4200px ) rotateY(0deg);
+				z-index: 0;
+			} to {
+				transform: perspective( 4200px ) rotateY(360deg);
+				z-index: 4;
+			}
+		}
+	</style>
+	</head><body><div class="rotating-mockup">
+    <div class="img" style="animation-delay: 0s;">
+      <h1>Ako vytvoriť "Otacacie vrstvy"</h1>
+			<p>Budeme potrebovať zopár základných surovín. Nieje ťažké ich zohnať.</p>
+			<ul>
+				<li>HTML</li>
+				<li>CSS 3</li>
+				<li>Schopnoť animovať</li>
+				<li>Obsah, aby sme aj niečo videli</li>
+			</ul>
+			<p><strong>Ak sa nič nehýbe, je to preto, že más na tom myš, vtedy sa to zastaví.</strong></p>
+    </div>
+		<div class="img" style="background-image: url(http://ienze.me/assets/4DZVZqMlDOOmq8uomM8Suu.jpg); animation-delay: -2s;"></div>
+		<div class="img" style="background-image: url(http://ienze.me/assets/2NlMhalyeICsGm62meAIe4.png); animation-delay: -4s;"></div>
+		<div class="img" style="background-image: url(http://ienze.me/assets/ovce.jpg); animation-delay: -6s;"></div>
+	</div>                  
+</body></html>

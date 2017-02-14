@@ -1,0 +1,13 @@
+{
+	"short_name": "ienze.me",
+	"name": "Ienze",
+	"icons": [
+	{
+		"src": "favicon.ico",
+		"sizes": "16x16",
+		"type": "image/png"
+	}
+	],
+	"start_url": "./",
+	"display": "standalone"
+}

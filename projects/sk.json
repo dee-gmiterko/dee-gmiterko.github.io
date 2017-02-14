@@ -209,45 +209,6 @@
         ]
     },
     {
-        "slug": "ee-antic",
-        "tags": [
-            "other",
-            "level-design"
-        ],
-        "title": "Antick\u00e1 mapa",
-        "image": "assets\/6jgvGHN7X2gkckayGqOuEe.png",
-        "startedAt": "2014-04-01",
-        "finishedAt": "2014-04-09",
-        "description": null,
-        "keywords": null,
-        "entries": [
-            {
-                "type": "text",
-                "text": "Takto vyzer\u00e1 mapa postaven\u00e1 v hre [Everybody Edits](http:\/\/everybodyedits.com\/). T\u00fato mapu sme postavili spolu z sestrou. Ide o mapu na prejdenie ktorej mus\u00ed n\u00e1v\u0161tevn\u00edk prekona\u0165 mno\u017estvo n\u00e1ro\u010dn\u00fdch prek\u00e1\u017eok. V mape je vyu\u017eit\u00fd syst\u00e9m zbierania bodov. \u010c\u00edm viac ich \u010dlovek nazber\u00e1 t\u00fdm ma pr\u00edstup k v\u00e4\u010d\u0161iemu mno\u017estvu \u00faloh teda \u010dasti mapy sa postupne odomykaj\u00fa.\n\nMapa je dostupn\u00e1 na: [http:\/\/everybodyedits.com\/games\/PWAHRSDFloa0I](http:\/\/everybodyedits.com\/games\/PWAHRSDFloa0I)\n\nV\u0161etky mapy: [http:\/\/everybodyedits.com\/profiles\/?\/seg](http:\/\/everybodyedits.com\/profiles\/?\/seg)\n\nZ\u00edskane sk\u00fasenosti: 2D level design, pixel art"
-            },
-            {
-                "type": "image",
-                "path": "assets\/6jgvGHN7X2gkckayGqOuEe.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/5CG7eqJpIcA2gKiAOuo26K.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/6SRDAW54HYq84SgIQs8g8c.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/6OK3MOeHnysSoms2oE884q.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/2FNXiXqqDSCk8OOSKkMMO6.JPG"
-            }
-        ]
-    },
-    {
         "slug": "gamehive",
         "tags": [
             "programming",
@@ -289,6 +250,45 @@
             {
                 "type": "image",
                 "path": "assets\/2czzsMjkU4ogiuaYMU2KiS.png"
+            }
+        ]
+    },
+    {
+        "slug": "ee-antic",
+        "tags": [
+            "other",
+            "level-design"
+        ],
+        "title": "Antick\u00e1 mapa",
+        "image": "assets\/6jgvGHN7X2gkckayGqOuEe.png",
+        "startedAt": "2014-04-01",
+        "finishedAt": "2014-04-09",
+        "description": null,
+        "keywords": null,
+        "entries": [
+            {
+                "type": "text",
+                "text": "Takto vyzer\u00e1 mapa postaven\u00e1 v hre [Everybody Edits](http:\/\/everybodyedits.com\/). T\u00fato mapu sme postavili spolu z sestrou. Ide o mapu na prejdenie ktorej mus\u00ed n\u00e1v\u0161tevn\u00edk prekona\u0165 mno\u017estvo n\u00e1ro\u010dn\u00fdch prek\u00e1\u017eok. V mape je vyu\u017eit\u00fd syst\u00e9m zbierania bodov. \u010c\u00edm viac ich \u010dlovek nazber\u00e1 t\u00fdm ma pr\u00edstup k v\u00e4\u010d\u0161iemu mno\u017estvu \u00faloh teda \u010dasti mapy sa postupne odomykaj\u00fa.\n\nMapa je dostupn\u00e1 na: [http:\/\/everybodyedits.com\/games\/PWAHRSDFloa0I](http:\/\/everybodyedits.com\/games\/PWAHRSDFloa0I)\n\nV\u0161etky mapy: [http:\/\/everybodyedits.com\/profiles\/?\/seg](http:\/\/everybodyedits.com\/profiles\/?\/seg)\n\nZ\u00edskane sk\u00fasenosti: 2D level design, pixel art"
+            },
+            {
+                "type": "image",
+                "path": "assets\/6jgvGHN7X2gkckayGqOuEe.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/5CG7eqJpIcA2gKiAOuo26K.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/6SRDAW54HYq84SgIQs8g8c.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/6OK3MOeHnysSoms2oE884q.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/2FNXiXqqDSCk8OOSKkMMO6.JPG"
             }
         ]
     },
@@ -703,6 +703,41 @@
         ]
     },
     {
+        "slug": "ienze-me",
+        "tags": [
+            "websites",
+            "other"
+        ],
+        "title": "ienze.me",
+        "image": "\/assets\/2usljIEJ9Gmyyqc6ya0ycU.png",
+        "startedAt": "2015-05-01",
+        "finishedAt": null,
+        "description": "Poh\u013ead z vn\u00fatra na moju osobn\u00fa str\u00e1nku a jej predch\u00e1dzaj\u00face verzie.",
+        "keywords": "GitHub Pages, React, Node.js, osobn\u00e1 str\u00e1nka, node.js, api-first, cms, contenful",
+        "entries": [
+            {
+                "type": "text",
+                "text": "\u00c1no, je to t\u00e1to str\u00e1nka.\n\nTato stranka mala za svoj \u017eivot nieko\u013eko verzi\u00ed. Tieto s\u00fa tu pop\u00edsan\u00e9."
+            },
+            {
+                "type": "text",
+                "text": "## Aktualna verzia\n\u010eal\u0161ia gener\u00e1cia mojej osobn\u00e9j webstr\u00e1nkz. Tento kr\u00e1t prep\u00edsana na prehliada\u010dov\u00fa aplik\u00e1ciu vyu\u017e\u00edvaj\u00facu React. Preto\u017ee to mi dovo\u013euje nasadi\u0165 kdeko\u013evek bez po\u017eiadavok na konk\u00e9tny server. Nie ako predt\u00fdm (nodejs). Napr\u00edklad teraz je hostovan\u00e1 pomocou GitHub Pages. To je \u00fa\u017easn\u00fd sp\u00f4sob ako jednoducho a zadarmo hostovat statick\u00fa str\u00e1nku. Jedinou nev\u00fdhodou m\u00f4\u017ee by\u0165, \u017ee zdrojov\u00fd k\u00f3d str\u00e1nky mus\u00ed by\u0165 otvoren\u00fd. Ale to je statick\u00e1 str\u00e1nka st\u00e1le :D. Zdroj\u00e1k tejto str\u00e1nky n\u00e1jdete na [GitHube](https:\/\/github.com\/Linzee\/Linzee.github.io). Taktie\u017e je to m\u00f4j prv\u00fd projekt vyu\u017e\u00edvajuci React."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/2usljIEJ9Gmyyqc6ya0ycU.png"
+            },
+            {
+                "type": "text",
+                "text": "Toto je prv\u00e1 dokon\u010den\u00e1 a publikovan\u00e1 verzia str\u00e1nky. Pri jej vytv\u00e1ran\u00ed som vyu\u017eil som hne\u010f nieko\u013eko pre m\u0148a nov\u00fdch prostriedkov.\n\n### Pou\u017eite technol\u00f3gie\n#### Node.js\nMo\u017eno by ste o\u010dak\u00e1vali \u017ee som na dynamick\u00e9 \u010dasti str\u00e1nky pou\u017eil php, ale to by ste sa m\u00fdlili. Tento kr\u00e1t som zvolil nie\u010do zauj\u00edmavej\u0161ie. Chcel som sa obozn\u00e1mi\u0165 z vyu\u017e\u00edvan\u00edm JavaScriptu na strane serveru. Je to mo\u017en\u00e9 pomocou Node.js.\n\nBol som zvyknut\u00fd na PHP. A tak vid\u00edm obrovsk\u00fa v\u00fdhodu in\u00fdch mo\u017enosti. Z\u00e1kladn\u00fd rozdiel je v tom ze tu sa programuje priamo server. Nieje to ako pri PHP kde s\u00fa skripty spusten\u00e9 pri otvoren\u00ed s\u00faborov ale skripty s\u00fa st\u00e1le na\u010d\u00edtan\u00e9 ke\u010f\u017ee tvoria \u010dast serveru. To prin\u00e1\u0161a aj obrovsk\u00fa variabilitu vyu\u017eit\u00ed. Na rozdiel od PHP (a hlavne z vyu\u017eit\u00edm nejak\u00e9ho frameworku) ktor\u00e9 je tot\u00e1lne \u0161pecifikovan\u00e9 na vytvorenie dynamickej str\u00e1nky si viem Node.js predstavi\u0165 vyu\u017e\u00edva\u0165 pri ove\u013ea v\u00e4\u010d\u0161om rozsahu \u00faloh. \u010co je v\u00fdhodn\u00e9 ale pri vytv\u00e1ran\u00ed str\u00e1nky to pravda\u017ee znamen\u00e1, \u017ee som si viac vec\u00ed musel dorobi\u0165 s\u00e1m.\n\n#### Contentful\nKe\u010f som u\u017e zmenil sp\u00f4sob programovania, neostal som len pri tom, rozhodol som sa celkom zmeni\u0165 poh\u013ead na d\u00e1ta. Zistil som ze existuj\u00fa api-first CMS syst\u00e9my. Tieto redak\u010dne syst\u00e9my m\u00e1ju len jednu funkciu. Uklada\u0165 \u00fadaje. Nezaoberaj\u00fa sa vzh\u013eadom str\u00e1nky alebo jej \u0161trukt\u00farou. K \u00fadajom ulo\u017een\u00fdm v nich je mo\u017ene pristupova\u0165 pomocou API. Syst\u00e9my ktor\u00e9 som na\u0161iel poskytuj\u00fa d\u00e1ta pomocou http dotazov a vracaj\u00fa ich v form\u00e1te JSON.\n\nNa\u0161iel by som aj zop\u00e1r v\u00fdhod pri api-first CMS Contentful. Prvou v\u00fdhodou ktor\u00e1 mi u\u0161etrila nejak\u00fd \u010das je ze nieje potrebne vytv\u00e1ra\u0165 pre str\u00e1nku administr\u00e1ciu, ke\u010f\u017ee Contentful u\u017e jednu m\u00e1. Takisto sa stara aj o ukladanie s\u00faborov. \u010eal\u0161ia ktor\u00e1 sa spom\u00edna ale zatia\u013e som ju nevyu\u017eil je mo\u017enos\u0165 k d\u00e1tam pristupova\u0165 z r\u00f4znych zdrojov. Je mo\u017ene vytvori\u0165 viacero sp\u00f4sobov prezerania obsahu. Napr\u00edklad webov\u00fa str\u00e1nku a mobiln\u00fa aplik\u00e1ciu.\n\n#### Jade\nJade je jazyk na generovanie HTML, vyu\u017eil som ho aj na pridanie dynamick\u00e9ho obsahu na str\u00e1nku. Na str\u00e1nke vyu\u017e\u00edvam aj responz\u00edvny front-end framework ZURB Foundation. A preto vytv\u00e1ranie elementov len pomocou triedy bolo naozaj u\u017eito\u010dn\u00e9. Je mo\u017en\u00e9 takto vytvori\u0165 \u0161trukt\u00faru str\u00e1nky naozaj za p\u00e1r sek\u00fand.\n\nZdrojov\u00fd k\u00f3d tejto str\u00e1nky je dostupn\u00fd na mojom [bitbuckete](https:\/\/bitbucket.org\/ienze\/ienze.me-predecessor\/)"
+            },
+            {
+                "type": "text",
+                "text": "### Contentful\nUplynulo pol roka od spustenia tejto stranky. M\u00f4\u017eem zhodnoti\u0165 ako str\u00e1nka (alebo server) be\u017e\u00ed. Be\u017e\u00ed naozaj r\u00fdchlo a pohodlne sa spravuje. Ako obsah, tak aj server. Napr\u00edklad po vypnut\u00ed p\u00f4vodn\u00e9ho serveru som ju bol schopn\u00fd za p\u00e1r min\u00fat presun\u00fa\u0165 na in\u00fd.\n\nAle za pol roka som narazil na nejak\u00e9 obmedzenia. A to hlavne v slu\u017ebe Contentful, ktor\u00fa pou\u017e\u00edvam na spr\u00e1vu obsahu. Mus\u00edm poveda\u0165, \u017ee je naozaj u\u017eito\u010dn\u00fd. Ja na \u0148om mo\u017eem bez probl\u00e9mov vytv\u00e1ra\u0165 ak\u00fdko\u013evek obsah. Ja si s\u00e1m m\u00f4\u017eem navrhnu\u0165 \u0161trukt\u00faru v akej sa bud\u00fa \u00fadaje uklada\u0165. Ale aj na tak jednoduchej str\u00e1nke ako je moja mi za\u010dala ch\u00fdba\u0165 mo\u017enos\u0165 vkladania obsahu u\u017e\u00edvate\u013emi. Presnej\u0161ie mi ch\u00fdbaju koment\u00e1re. Druhou nev\u00fdhodov ktor\u00fa netreba \u010falej rozobera\u0165 je cena. Za pol roka som vy\u010derpal vo\u013en\u00fd limit na po\u010det obr\u00e1zkov.\nJe \u00fa\u017easn\u00e9 na na\u0161tartovanie jednoduch\u00e9ho projektu (ktor\u00fd sa nikdy nerozrastie). Ale pou\u017e\u00edva\u0165 ho sa oplat\u00ed iba ak si ochotn\u00fd zaplati\u0165.\n\nEdit: Teraz som zistil \u017ee free verzia u\u017e neobsahuje podporu viacer\u00fdch jazykov. \u010co bola jedna z v\u00fdhod ktor\u00fa som spom\u00ednal. Ja ju m\u00e1m preto \u017ee som si ju nastavil pred t\u00fdm ako to obmedzili, u\u017e si ju ani ja nem\u00f4\u017eem upravi\u0165.\n\nTak\u017ee budem musie\u0165 pou\u017ei\u0165 nejak\u00e9 in\u00e9 rie\u0161enie."
+            }
+        ]
+    },
+    {
         "slug": "wame",
         "tags": [
             "websites",
@@ -936,37 +971,6 @@
         ]
     },
     {
-        "slug": "py-2050",
-        "tags": [
-            "programming",
-            "python"
-        ],
-        "title": "py-2050",
-        "image": "assets\/3Weu4HYDs4OQ0I0kcskEaU.png",
-        "startedAt": "2015-11-03",
-        "finishedAt": "2015-11-18",
-        "description": "Python projekt generuj\u00faci obr\u00e1zky vesm\u00edru pod\u013ea zadan\u00fdch parametrov.",
-        "keywords": "python, projekt, IB111, proceduralne generovanie, bitmap, obr\u00e1zky, vrstvy",
-        "entries": [
-            {
-                "type": "text",
-                "text": "Je program nap\u00edsan\u00fd v Pythone, ktor\u00fd vznikol ako zadanie na predmet \"IB111 \u00davod do programov\u00e1n\u00ed\". Jeho cie\u013eom je generovanie tak\u00fdchto obr\u00e1zkov vesm\u00edru pod\u013ea zadan\u00fdch parametrov. Objekty na obr\u00e1zku s\u00fa generovane postupne prid\u00e1van\u00edm vrstiev. Jednotliv\u00e9 vrstvy s\u00fa na sebe z\u00e1visl\u00e9. Pri tomto programe som si chcel vysk\u00fa\u0161a\u0165 generovanie nekone\u010dn\u00e9ho priestoru t\u00fdmto sp\u00f4sobom.\n\nObr\u00e1zky m\u00f4\u017eu by\u0165 ulo\u017een\u00e9 v aktu\u00e1lnom prie\u010dinku alebo len zobrazen\u00e9.\n\n### Pou\u017eitie\n```python 2050.py -h```\n\n```python 2050.py -W 800 -H 400 -s 96 -z 80```\n\n### GitHub\nCel\u00fd projekt je dostupn\u00fd na GitHub [py-2050](https:\/\/github.com\/Linzee\/py-2050)."
-            },
-            {
-                "type": "image",
-                "path": "assets\/3Weu4HYDs4OQ0I0kcskEaU.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/3H23GdyqoUqOg26eaIgeIG.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/7FKdITVSCc8AoCOWGoucIU.png"
-            }
-        ]
-    },
-    {
         "slug": "py-2049",
         "tags": [
             "programming",
@@ -994,6 +998,37 @@
             {
                 "type": "image",
                 "path": "assets\/4lzyiRV90QUeMYKQkGwUyG.png"
+            }
+        ]
+    },
+    {
+        "slug": "py-2050",
+        "tags": [
+            "programming",
+            "python"
+        ],
+        "title": "py-2050",
+        "image": "assets\/3Weu4HYDs4OQ0I0kcskEaU.png",
+        "startedAt": "2015-11-03",
+        "finishedAt": "2015-11-18",
+        "description": "Python projekt generuj\u00faci obr\u00e1zky vesm\u00edru pod\u013ea zadan\u00fdch parametrov.",
+        "keywords": "python, projekt, IB111, proceduralne generovanie, bitmap, obr\u00e1zky, vrstvy",
+        "entries": [
+            {
+                "type": "text",
+                "text": "Je program nap\u00edsan\u00fd v Pythone, ktor\u00fd vznikol ako zadanie na predmet \"IB111 \u00davod do programov\u00e1n\u00ed\". Jeho cie\u013eom je generovanie tak\u00fdchto obr\u00e1zkov vesm\u00edru pod\u013ea zadan\u00fdch parametrov. Objekty na obr\u00e1zku s\u00fa generovane postupne prid\u00e1van\u00edm vrstiev. Jednotliv\u00e9 vrstvy s\u00fa na sebe z\u00e1visl\u00e9. Pri tomto programe som si chcel vysk\u00fa\u0161a\u0165 generovanie nekone\u010dn\u00e9ho priestoru t\u00fdmto sp\u00f4sobom.\n\nObr\u00e1zky m\u00f4\u017eu by\u0165 ulo\u017een\u00e9 v aktu\u00e1lnom prie\u010dinku alebo len zobrazen\u00e9.\n\n### Pou\u017eitie\n```python 2050.py -h```\n\n```python 2050.py -W 800 -H 400 -s 96 -z 80```\n\n### GitHub\nCel\u00fd projekt je dostupn\u00fd na GitHub [py-2050](https:\/\/github.com\/Linzee\/py-2050)."
+            },
+            {
+                "type": "image",
+                "path": "assets\/3Weu4HYDs4OQ0I0kcskEaU.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/3H23GdyqoUqOg26eaIgeIG.png"
+            },
+            {
+                "type": "image",
+                "path": "assets\/7FKdITVSCc8AoCOWGoucIU.png"
             }
         ]
     },
@@ -1076,6 +1111,78 @@
             {
                 "type": "text",
                 "text": "Zauj\u00edmalo ma, \u010di by sa dal navrhnu\u0165 algoritmus, ktor\u00fd by spo\u010d\u00edtal predch\u00e1dzajuci krok Conway's Game of life. Mal som obr\u00e1zok ktor\u00fd som chcel vr\u00e1ti\u0165 o jeden krok dozadu.\n\n![gol](assets\/life.png)\n\nPodarilo sa mi to, ale nepodarilo sa mi vymyslie\u0165 ni\u010d lep\u0161ie, tak\u017ee sk\u00fa\u0161am v\u0161etky mo\u017enosti a\u017e k\u00fdm nen\u00e1jdem nejak\u00fa spr\u00e1vnu. Ka\u017ed\u00e9 pole m\u00f4\u017ee ma\u0165 2 r\u00f4zne stavy (je tam cell alebo nieje). To znamen\u00e1, \u017ee po\u010det mo\u017enost\u00ed je 2^n (n je po\u010det pixelov obr\u00e1zku).\nTo znamen\u00e1 \u017ee mno\u017estvo rastie r\u00fdchlo, ve\u013emi r\u00fdchlo. Preto maj\u00fa ve\u010d\u0161ie obr\u00e1zky u\u017e pr\u00edli\u0161 ve\u013ek\u00e9 mno\u017estvo mo\u017enost\u00ed na vysk\u00fa\u0161anie. Obr\u00e1zok k\u00f4li ktor\u00e9mu som to chcel urobi\u0165 mal rozmer 7x40. Zistil som, \u017ee to je 1942668892225729070919461906823518906642406839052139521251812409738904285205208498176 r\u00f4znych mo\u017en\u00fdch predch\u00e1dzaj\u00facich pl\u00f4ch. Z tohto mno\u017estva je len zop\u00e1r spr\u00e1vnych.\n\nPreto som sa nejak sna\u017eil zmen\u0161i\u0165 toto mno\u017estvo. Najprv ma napadlo, \u017ee budem sk\u00fa\u0161a\u0165 meni\u0165 iba tie pixeli z ktor\u00fdch re\u00e1lne m\u00f4\u017ee vzniknu\u0165 po\u017eadovan\u00fd v\u00fdsledok. To znamen\u00e1 vzdalenos\u0165 1 od nejak\u00e9ho bodu v vstupnom obr\u00e1zku. To ve\u013emi nepomohlo. Na\u0161\u0165astie ma napadlo, \u017ee po rozdelen\u00ed obr\u00e1zka na \u010dasti, ktor\u00e9 sa navz\u00e1jom nem\u00f4\u017eu ovplivni\u0165 (medzera aspo\u0148 4 pixely) sa po\u010det mo\u017enosti v\u00fdrazne zmen\u0161\u00ed. \n\nPo rozdelen\u00ed obr\u00e1zku na mali\u010dk\u00e9 k\u00fasky 7*5 (ked\u017ee to je ve\u013ekos\u0165 ka\u017ed\u00e9ho p\u00edsmena na obr\u00e1zku) sa mi to u\u017e podarilo spo\u010d\u00edta\u0165 v schopnom \u010dase.\n\n### Game of life je \u00fa\u017easn\u00e1 ha\u0161ovacia funkcia\nNa tento z\u00e1ver som pri\u0161iel, ke\u010f som sa sna\u017eil n\u00e1js\u0165 algoritmus ktor\u00fd by vypo\u010d\u00edtal predch\u00e1dzajuc\u00ed krok Conway's Game of life. Uvedomil som si, \u017ee mi to stra\u0161ne nie\u010do pripom\u00edna.. ha\u0161ovacie funkcie, preto\u017ee ich je mo\u017en\u00e9 pou\u017ei\u0165 len jedn\u00fdm smerom. Okam\u017eite som z recesie implementoval GOL-hash. M\u00f4\u017eete ju n\u00e1js\u0165 na [GitHub](https:\/\/github.com\/Linzee\/gol-hash).\n\nPri h\u013eadan\u00ed inform\u00e1cii som si e\u0161te v\u0161imol, \u017ee google m\u00e1 \u0161peci\u00e1lu str\u00e1nku ak h\u013ead\u00e1\u0161 \"Conway's Game of life\". V pozad\u00ed be\u017e\u00ed simul\u00e1cia.\n\n![googleGol](assets\/googleGol.png)"
+            }
+        ]
+    },
+    {
+        "slug": "hexaflexagon",
+        "tags": [
+            "other",
+            "art",
+            "generative-design"
+        ],
+        "title": "Hexaflexagon",
+        "image": "\/assets\/hexaflexagon_paper.jpg",
+        "startedAt": "2016-10-01",
+        "finishedAt": "2016-11-15",
+        "description": "O tom ako som navrhoval obrazky pre hexaflexagon",
+        "keywords": "hexaflexagon, generative design, Processing, vector spaces",
+        "entries": [
+            {
+                "type": "text",
+                "text": "O Processingu som sa dozvedel na predmete ktor\u00fd som si zap\u00edsal ([PV259](https:\/\/is.muni.cz\/predmet\/1433\/PV259)) ktor\u00fd sa venuje generat\u00edvnemu dizajnu. Na konci semestra sme mali\nvypracova\u0165 nejak\u00fd vlastn\u00fd projekt. Nenapadlo ma\nnic zauimave, ale mal som pri sebe hexaflexagon. A tak som\nsa rozhodol ho vyu\u017ei\u0165.\n\nHexaflexagon je papierova skladacka. Ma 6 stran a na kazdej strane moze iny obrazok. Ale naraz je\nvidiet len 2 z nich. Ja som sa o tomto \u00fatvare dozvedel od youtuberky menom [Vi Hart](https:\/\/www.youtube.com\/watch?v=VIVIegSt81k).\n\nZacal som rozmyslat ako by sa dali vygenrovat obrazky na\njeho jednotlive strany. Nedaju sa pouzit obycajne\ndvojrozmerne obrazky, pretoze kazda strana hexaflexagonu sa moze spojit dokopy\nv dvoch roznych stavoch. A tak by sa niekedy rozbili.\n\nMoj prototyp #1:"
+            },
+            {
+                "type": "image",
+                "path": "assets\/hexaflexagon_prototype.jpg"
+            },
+            {
+                "type": "text",
+                "text": "### Casti projektu\n```[OK] Prototyp hexaflexagonu na testovanie (podaril sa mi asi az na treti pokus)\n[OK] Navrh generovanych obrazcov\n[OK] Navrh suradnicoveho systemu, folding\n[OK] Konvertovanie obrazkov na rozlozeny hexaflexagon```"
+            },
+            {
+                "type": "text",
+                "text": "### Navrh generovanych obrazcov\nStrom, na ktorom som to testoval ako prvom, tam nakoniec ostal az do konca ako prvy motiv. Dokopy som urobil asi 12 roznych vygenerovanych patternov. Jednotliv\u00e9 obr\u00e1zky ako aj vzgenerovan\u00e9 hexaflexafony sa daju [stiahnu\u0165](media\/hexaflexagon\/index.html)."
+            },
+            {
+                "type": "text",
+                "text": "### Generaovanie v \"poskladanom sestuholnikovom priestore\"\nSnazil som sa vymysliet funkciu, ktora by dokazala pri kresleni do obyajneho\npriestoru preklapat nakreslene objekty na vsetky miesta kam maju pokracovat. Ale ako zacat? Pri pohlade na hexaflexagon neviidm ziadne rady aby som zistil ake vsetky strany spolu musia suvisiet. Tak som to zacal kreslit.. po case sa mi podarilo nakreslit takyto nacrt."
+            },
+            {
+                "type": "image",
+                "path": "assets\/hexaflexagon_space.jpg"
+            },
+            {
+                "type": "text",
+                "text": "Tu je viediet niekolko veci ktore sa opakuju, Ale s priestorom tvorenym trojuholnikmi sa pracuje tazko a pri genrovani obrazkov budem chciet pouzivat obycajny dvojrozmerny priestor. Preto som skusil tento nacrt trochu sklopit. Na to som pouzil trochu matematiky a vektorov\u00e9 priestory. Dostal som nieco podobne ale jednoduchsie. V tomto obrazku uz je vidiet, ze sa stale dookola opakuje oblast s rozmermi 3x3."
+            },
+            {
+                "type": "image",
+                "path": "assets\/hexaflexagon_shear.jpg"
+            },
+            {
+                "type": "text",
+                "text": "Stravil som na tom dost vela casu, ale nakoneic sa mi podarilo navrhnut funkcny algoritmus na prepocet suradnic z celeho plocheho priesotru do plochy hexaflexagonu, tak aby na seba sedeli strany ktore sa mozu spojit pri jaho preskladavani. Pomocou neho som si vykreslil ako vlastne ten priestor vizera. Zelenou farbou som znazornil na aku suradnicu x sa bod zobrazi. A modrou y. Strasne ma prekvapilo aky jednoduchy vysledok vznikol."
+            },
+            {
+                "type": "image",
+                "path": "assets\/hexaflexagon_shocking.png"
+            },
+            {
+                "type": "text",
+                "text": "Po tomto movom zisteni som navrhol este jeden algoritmus ktory posuva a otaca cele sestuholniky u\u017e sa nestar\u00e1 o ka\u017ed\u00fd trojuholn\u00edk ako p\u00f4vodn\u00fd. Je ove\u013ea jednoduchs\u00ed. Ale ten p\u00f4vodn\u00fd bol potrebn\u00fd na to aby som na toto pravidlo pri\u0161iel. V\u00fdsledn\u00fd n\u00e1stroj je dostupn\u00fd na [GitHube](https:\/\/github.com\/Linzee\/hexaflexaspace)"
+            },
+            {
+                "type": "image",
+                "path": "assets\/hexaflexagon_fold.png"
+            },
+            {
+                "type": "text",
+                "text": "### Konvertovanie obrazkov na rozlozeny hexaflexagon\nTejto \u010dasti sa na\u0161tastie u\u017e niekto venoval a nemusel som ju vym\u00fd\u0161\u013ea\u0165. Konkr\u00e9tne to bol Peter Bradshaw a jeho [Flexagon Creator](http:\/\/www.flatfeetpete.com\/flexagon\/). Ja som jeho n\u00e1stroj prep\u00edsal do Javy aby som ho mohol pou\u017ei\u0165 priamo z Processingu. Je dostupn\u00fd na [GitHub](https:\/\/github.com\/Linzee\/flexagon-creator)"
+            },
+            {
+                "type": "text",
+                "text": "### Zhrnutie linkov\n\n- [Vygenerovane hexaflexagony vhodne na tlacenie](media\/hexaflexagon\/index.html)\n- [Nastroj na skladanie obycajnych obrazkov pre hexaflexagon](https:\/\/github.com\/Linzee\/hexaflexaspace)\n- [Nastroj na vygenerovanie hexaflexagonu (.svg) ktory sa da vytlacit z obrazkov](https:\/\/github.com\/Linzee\/flexagon-creator)"
             }
         ]
     }

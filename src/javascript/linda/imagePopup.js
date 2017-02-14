@@ -1,5 +1,7 @@
 /* eslint-env browser, jquery */
 
+import ReactGA from 'react-ga';
+
 $.fn.imagePopup = function (e) {
     var imageContainer = this;
     var image = imageContainer.find("img");
@@ -41,6 +43,12 @@ $.fn.imagePopup = function (e) {
         });
 
         center(e);
+
+        ReactGA.event({
+          category: 'User',
+          action: 'Open image',
+          value: image.src
+        });
     };
 
     var close = function () {

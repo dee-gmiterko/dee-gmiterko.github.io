@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import ReactGA from 'react-ga';
 
 import Layout from './../Layout/Layout';
 import Index from './../Index/Index';
@@ -43,10 +44,15 @@ export class App extends Component {
 		});
 	}
 
+	logPageView() {
+		ReactGA.set({ page: window.location.hash });
+		ReactGA.pageview( window.location.hash );
+	}
+
 	render() {
 		var translator = this.locales.getTranslator();
 
-		return  <Router history={hashHistory}>
+		return  <Router history={hashHistory} onUpdate={this.logPageView}>
 					<Route path="/" component={Layout} translator={translator} changeLocale={this.changeLocale.bind(this)} >
 						<IndexRoute component={Index} translator={translator} projectsService={this.projects} />
 						<Route path="about" component={About} translator={translator} />

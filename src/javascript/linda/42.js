@@ -1,5 +1,7 @@
 /* eslint-env browser, jquery */
 
+import ReactGA from 'react-ga';
+
 $(function () {
     var pressedFour = false;
     var title = $("#title-screen h1");
@@ -9,6 +11,11 @@ $(function () {
     var fourtyTwo = function () {
         htmlreplace('Ienze','Linda');
         title.addClass('butterfly-effect');
+
+        ReactGA.event({
+          category: 'User',
+          action: '42'
+        });
     };
 
     $('body').keydown(function (e) {

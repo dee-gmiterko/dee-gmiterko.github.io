@@ -1,5 +1,40 @@
 [
     {
+        "slug": "ienze-me",
+        "tags": [
+            "websites",
+            "other"
+        ],
+        "title": "ienze.me",
+        "image": "/assets/2usljIEJ9Gmyyqc6ya0ycU.png",
+        "startedAt": "2015-05-01",
+        "finishedAt": null,
+        "description": "Internals of my personal website and its previous versions.",
+        "keywords": "GitHub Pages, react, Node.js, personal website, api-first, cms, contentful",
+        "entries": [
+            {
+                "type": "text",
+                "text": "Yes, its this website.\n\nThis website had in its life a few versions. They are described below."
+            },
+            {
+                "type": "text",
+                "text": "## Current version\nNext generation of my personal website. Rewriten to browser app using React. This allows me to easily deloy it anywhere as there are no requirements to server techonoly as before (nodejs). Currenty it's running on GitHub pages. Source is avaleible [here](https://github.com/Linzee/Linzee.github.io).\n\nAnd it's also my first application written using react."
+            },
+            {
+                "type": "image",
+                "path": "/assets/2usljIEJ9Gmyyqc6ya0ycU.png"
+            },
+            {
+                "type": "text",
+                "text": "Toto je prvá dokončená a publikovaná verzia stránky. Pri jej vytváraní som využil som hneď niekoľko pre mňa nových prostriedkov.\n\n### Použite technológie\n#### Node.js\nMožno by ste očakávali že som na dynamické časti stránky použil php, ale to by ste sa mýlili. Tento krát som zvolil niečo zaujímavejšie. Chcel som sa oboznámiť z využívaním JavaScriptu na strane serveru. Je to možné pomocou Node.js.\n\nBol som zvyknutý na PHP. A tak vidím obrovskú výhodu iných možnosti. Základný rozdiel je v tom ze tu sa programuje priamo server. Nieje to ako pri PHP kde sú skripty spustené pri otvorení súborov ale skripty sú stále načítané keďže tvoria čast serveru. To prináša aj obrovskú variabilitu využití. Na rozdiel od PHP (a hlavne z využitím nejakého frameworku) ktoré je totálne špecifikované na vytvorenie dynamickej stránky si viem Node.js predstaviť využívať pri oveľa väčšom rozsahu úloh. Čo je výhodné ale pri vytváraní stránky to pravdaže znamená, že som si viac vecí musel dorobiť sám.\n\n#### Contentful\nKeď som už zmenil spôsob programovania, neostal som len pri tom, rozhodol som sa celkom zmeniť pohľad na dáta. Zistil som ze existujú api-first CMS systémy. Tieto redakčne systémy máju len jednu funkciu. Ukladať údaje. Nezaoberajú sa vzhľadom stránky alebo jej štruktúrou. K údajom uloženým v nich je možne pristupovať pomocou API. Systémy ktoré som našiel poskytujú dáta pomocou http dotazov a vracajú ich v formáte JSON.\n\nNašiel by som aj zopár výhod pri api-first CMS Contentful. Prvou výhodou ktorá mi ušetrila nejaký čas je ze nieje potrebne vytvárať pre stránku administráciu, keďže Contentful už jednu má. Takisto sa stara aj o ukladanie súborov. Ďalšia ktorá sa spomína ale zatiaľ som ju nevyužil je možnosť k dátam pristupovať z rôznych zdrojov. Je možne vytvoriť viacero spôsobov prezerania obsahu. Napríklad webovú stránku a mobilnú aplikáciu.\n\n#### Jade\nJade je jazyk na generovanie HTML, využil som ho aj na pridanie dynamického obsahu na stránku. Na stránke využívam aj responzívny front-end framework ZURB Foundation. A preto vytváranie elementov len pomocou triedy bolo naozaj užitočné. Je možné takto vytvoriť štruktúru stránky naozaj za pár sekúnd.\n\nZdrojový kód tejto stránky je dostupný na mojom [bitbuckete](https://bitbucket.org/ienze/ienze.me-predecessor/)"
+            },
+            {
+                "type": "text",
+                "text": "### Contentful\nUplynulo pol roka od spustenia tejto stranky. Môžem zhodnotiť ako stránka (alebo server) beží. Beží naozaj rýchlo a pohodlne sa spravuje. Ako obsah, tak aj server. Napríklad po vypnutí pôvodného serveru som ju bol schopný za pár minút presunúť na iný.\n\nAle za pol roka som narazil na nejaké obmedzenia. A to hlavne v službe Contentful, ktorú používam na správu obsahu. Musím povedať, že je naozaj užitočný. Ja na ňom možem bez problémov vytvárať akýkoľvek obsah. Ja si sám môžem navrhnuť štruktúru v akej sa budú údaje ukladať. Ale aj na tak jednoduchej stránke ako je moja mi začala chýbať možnosť vkladania obsahu užívateľmi. Presnejšie mi chýbaju komentáre. Druhou nevýhodov ktorú netreba ďalej rozoberať je cena. Za pol roka som vyčerpal voľný limit na počet obrázkov.\nJe úžasné na naštartovanie jednoduchého projektu (ktorý sa nikdy nerozrastie). Ale používať ho sa oplatí iba ak si ochotný zaplatiť.\n\nEdit: Teraz som zistil že free verzia už neobsahuje podporu viacerých jazykov. Čo bola jedna z výhod ktorú som spomínal. Ja ju mám preto že som si ju nastavil pred tým ako to obmedzili, už si ju ani ja nemôžem upraviť.\n\nTakže budem musieť použiť nejaké iné riešenie."
+            }
+        ]
+    },
+    {
         "slug": "snake-necklace",
         "tags": [
             "art"

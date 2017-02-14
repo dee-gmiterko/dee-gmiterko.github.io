@@ -1,0 +1,1074 @@
+
+<svg contentScriptType="text/ecmascript"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css" preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg" version="1.0">
+    <defs>
+        <clipPath id="clipup">
+            <path d="M 0.5 0 L 1 0.8660254037844386 L 0 0.8660254037844386"/>
+        </clipPath>
+        <clipPath id="clipdown">
+            <path d="M 0.5 0.8660254037844386 L 0 0L 1 0"/>
+        </clipPath>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="10.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i0" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="2.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i1" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="11.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i2" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="9.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i3" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="11.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i4" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="10.png" xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i5" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <image width="2" xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="http://www.flatfeetpete.com/flexagon/images/labels.jpg"
+               xlink:type="simple" xlink:actuate="onLoad"
+               height="1.7320508075688772" id="i6" preserveAspectRatio="none"
+               xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p2r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p2r0"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p2r0"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p0r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p0r2"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p0r2"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p4r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p4r4"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p4r4"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p4r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p4r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p4r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p5r0"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p2r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p2r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p2r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p0r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3"
+             xlink:type="simple" xlink:actuate="onLoad" id="i3p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p0r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4"
+             xlink:type="simple" xlink:actuate="onLoad" id="i4p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p0r4"
+             xlink:show="embed"/>
+        <use transform="rotate(240,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5"
+             xlink:type="simple" xlink:actuate="onLoad" id="i5p3r4"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p4r0"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p5r0"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p3r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(60,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p2r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(60,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p5r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p1r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(60,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p2r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p1r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(60,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p2r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p1r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(300,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p5r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p0r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p1r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p0r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(300,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p3r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p0r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(300,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p3r5"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p3r2"
+             xlink:show="embed"/>
+        <use transform="rotate(120,0.5,0.2886751345948129) translate(-0.5,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p1r2"
+             xlink:show="embed"/>
+        <use transform="rotate(0,0.5,0.5773502691896257) translate(-1.0,-0.0) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p2r0"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(300,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p4r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(300,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p3r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(300,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p4r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(60,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p5r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(300,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p4r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(60,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p5r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(60,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p4r1"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(300,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2"
+             xlink:type="simple" xlink:actuate="onLoad" id="i2p5r5"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p4r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1"
+             xlink:type="simple" xlink:actuate="onLoad" id="i1p3r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p4r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-0.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p3r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,0.2886751345948129)rotate(180,0.5,0.2886751345948129) translate(-1.0,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0"
+             xlink:type="simple" xlink:actuate="onLoad" id="i0p5r3"
+             xlink:show="embed"/>
+        <use transform="translate(0,-0.2886751345948129)rotate(180,0.5,0.5773502691896257) translate(-0.5,-0.8660254037844386) "
+             xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"
+             xlink:type="simple" xlink:actuate="onLoad" id="i6p4r3"
+             xlink:show="embed"/>
+    </defs>
+    <g transform=" scale(95) translate(-0.25,-1.299038105676658) rotate(60,0,1.7320508075688772) ">
+        <g transform="translate(0.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p2r0"/>
+        </g>
+        <g transform="translate(0.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p5r0"/>
+        </g>
+        <g transform="translate(1.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r0"/>
+        </g>
+        <g transform="translate(1.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r2"/>
+        </g>
+        <g transform="translate(2.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r0"/>
+        </g>
+        <g transform="translate(2.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r2"/>
+        </g>
+        <g transform="translate(3.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r2"/>
+        </g>
+        <g transform="translate(3.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p1r2"/>
+        </g>
+        <g transform="translate(4.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p0r2"/>
+        </g>
+        <g transform="translate(4.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r4"/>
+        </g>
+        <g transform="translate(5.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p0r2"/>
+        </g>
+        <g transform="translate(5.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p3r4"/>
+        </g>
+        <g transform="translate(6.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p4r4"/>
+        </g>
+        <g transform="translate(6.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p3r4"/>
+        </g>
+        <g transform="translate(7.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p4r4"/>
+        </g>
+        <g transform="translate(7.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p5r0"/>
+        </g>
+        <g transform="translate(8.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p4r4"/>
+        </g>
+        <g transform="translate(8.5,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p5r0"/>
+        </g>
+        <g transform="translate(0.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p4r0"/>
+        </g>
+        <g transform="translate(1.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p5r0"/>
+        </g>
+        <g transform="translate(1.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p4r0"/>
+        </g>
+        <g transform="translate(2.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p5r0"/>
+        </g>
+        <g transform="translate(2.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p4r0"/>
+        </g>
+        <g transform="translate(3.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p5r0"/>
+        </g>
+        <g transform="translate(3.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p2r2"/>
+        </g>
+        <g transform="translate(4.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p1r2"/>
+        </g>
+        <g transform="translate(4.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p2r2"/>
+        </g>
+        <g transform="translate(5.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p1r2"/>
+        </g>
+        <g transform="translate(5.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p2r2"/>
+        </g>
+        <g transform="translate(6.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p1r2"/>
+        </g>
+        <g transform="translate(6.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p0r4"/>
+        </g>
+        <g transform="translate(7.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i3p3r4"/>
+        </g>
+        <g transform="translate(7.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p0r4"/>
+        </g>
+        <g transform="translate(8.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i4p3r4"/>
+        </g>
+        <g transform="translate(8.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p0r4"/>
+        </g>
+        <g transform="translate(9.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i5p3r4"/>
+        </g>
+        <g transform="translate(9.0,0.0)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p4r0"/>
+        </g>
+        <g transform="translate(0.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r0"/>
+        </g>
+    </g>
+    <g transform="translate(360,0) scale(35)">
+        <g transform="translate(0.0,0.4330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.0,0.8920061658979718)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(0.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p2r1"/>
+        </g>
+        <g transform="translate(1.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p5r1"/>
+        </g>
+        <g transform="translate(2.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(1.0,1.7320508075688772)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(1.5,1.7320508075688772)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(1.5,2.5980762113533156)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(2.0,2.5980762113533156)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(3.0,1.7320508075688772)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(3.55,1.7320508075688772)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(4.05,1.7320508075688772)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(4.05,2.5980762113533156)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(4.55,2.5980762113533156)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(0.0,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.125,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.0,4.356107781035726)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(2.0,4.330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(0.0,4.330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(0.55,4.330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(1.05,4.330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(1.05,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(1.55,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(1.55,6.0621778264910695)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(2.05,6.0621778264910695)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p1r3"/>
+        </g>
+        <g transform="translate(3.55,5.222133184820165)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(5.55,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(3.0,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p2r1"/>
+        </g>
+        <g transform="translate(3.5,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p5r1"/>
+        </g>
+        <g transform="translate(4.05,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(4.55,5.196152422706631)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(4.55,6.0621778264910695)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(5.05,6.0621778264910695)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p1r3"/>
+        </g>
+        <g transform="translate(0.0,6.928203230275509)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.125,6.928203230275509)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.25,6.928203230275509)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.5,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(1.6,7.387196694281261)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(3.6,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(1.05,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(1.55,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(2.1,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(2.6,7.3612159321677275)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p1r3"/>
+        </g>
+        <g transform="translate(2.6,8.227241335952167)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p0r3"/>
+        </g>
+        <g transform="translate(3.1,8.227241335952167)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r5"/>
+        </g>
+        <g transform="translate(2.1,9.552260203742357)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(4.1,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(0.5,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p2r1"/>
+        </g>
+        <g transform="translate(1.0,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p5r1"/>
+        </g>
+        <g transform="translate(1.55,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(2.05,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(2.6,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p0r3"/>
+        </g>
+        <g transform="translate(3.1,9.526279441628825)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r5"/>
+        </g>
+        <g transform="translate(3.1,10.392304845413262)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p0r3"/>
+        </g>
+        <g transform="translate(3.6,10.392304845413262)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p3r5"/>
+        </g>
+    </g>
+    <g transform="translate(40,580) scale(35)">
+        <g transform="translate(1.1,2.7712812921102032)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r2"/>
+        </g>
+        <g transform="translate(2.1,1.0392304845413263)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r2"/>
+        </g>
+        <g transform="translate(0.0,0.4330127018922193)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(0.175,0.3464101615137754)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p2r0"/>
+        </g>
+        <g transform="translate(0.0,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p2r1"/>
+        </g>
+        <g transform="translate(0.5,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p5r1"/>
+        </g>
+        <g transform="translate(1.05,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p2r1"/>
+        </g>
+        <g transform="translate(1.55,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p1r3"/>
+        </g>
+        <g transform="translate(2.1,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p0r3"/>
+        </g>
+        <g transform="translate(2.6,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r5"/>
+        </g>
+        <g transform="translate(3.15,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p4r5"/>
+        </g>
+        <g transform="translate(3.65,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p3r5"/>
+        </g>
+        <g transform="translate(4.2,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p4r5"/>
+        </g>
+        <g transform="translate(4.7,0.8660254037844386)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p5r1"/>
+        </g>
+        <g transform="translate(0.0,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(0.55,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(1.05,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(1.6,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(2.1,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p1r3"/>
+        </g>
+        <g transform="translate(2.65,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p0r3"/>
+        </g>
+        <g transform="translate(3.15,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p3r5"/>
+        </g>
+        <g transform="translate(3.7,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p4r5"/>
+        </g>
+        <g transform="translate(4.2,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p5r1"/>
+        </g>
+        <g transform="translate(4.75,1.9052558883257649)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p4r1"/>
+        </g>
+        <g transform="translate(0.05,2.944486372867091)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p2r0"/>
+        </g>
+        <g transform="translate(0.5,3.0310889132455348)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p5r5"/>
+        </g>
+        <g transform="translate(0.0,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p3r3"/>
+        </g>
+        <g transform="translate(0.5,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p4r3"/>
+        </g>
+        <g transform="translate(1.05,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i1p3r3"/>
+        </g>
+        <g transform="translate(2.05,3.8971143170299736)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p1r3"/>
+        </g>
+        <g transform="translate(1.05,4.763139720814412)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p4r3"/>
+        </g>
+        <g transform="translate(1.6,4.763139720814412)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r3"/>
+        </g>
+        <g transform="translate(1.6,5.715767664977294)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(1.05,5.715767664977294)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(0.55,5.715767664977294)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(0.0,5.715767664977294)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(2.7,3.117691453623979)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p2r0"/>
+        </g>
+        <g transform="translate(2.875,3.204293994002423)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(3.5,3.0310889132455348)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p5r3"/>
+        </g>
+        <g transform="translate(4.05,3.0310889132455348)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p4r3"/>
+        </g>
+        <g transform="translate(4.6,3.0310889132455348)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r3"/>
+        </g>
+        <g transform="translate(4.6,3.9837168574084174)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(4.05,3.9837168574084174)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(3.55,3.9837168574084174)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(3.0,3.9837168574084174)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+        <g transform="translate(2.7,4.849742261192856)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p2r0"/>
+        </g>
+        <g transform="translate(2.875,4.9363448015713)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(3.0,4.9363448015713)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6"/>
+        </g>
+        <g transform="translate(3.5,4.9363448015713)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p5r3"/>
+        </g>
+        <g transform="translate(4.05,4.9363448015713)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p4r3"/>
+        </g>
+        <g transform="translate(4.6,4.9363448015713)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p3r3"/>
+        </g>
+        <g transform="translate(4.6,5.888972745734182)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p0r3"/>
+        </g>
+        <g transform="translate(4.05,5.888972745734182)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i0p1r3"/>
+        </g>
+        <g transform="translate(3.55,5.888972745734182)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i2p2r1"/>
+        </g>
+        <g transform="translate(3.55,5.84567147554496)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipdown)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p4r3"/>
+        </g>
+        <g transform="translate(3.0,5.888972745734182)">
+            <use xlink:actuate="onLoad" xlink:type="simple" xlink:show="embed"
+                 clip-path="url(#clipup)"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i6p5r5"/>
+        </g>
+    </g>
+</svg>

@@ -33,7 +33,7 @@ export class App extends Component {
 	}
 
 	componentDidMount() {
-		this.changeLocale('sk');
+		this.changeLocale(this.locales.findBestLocale());
 	}
 
 	changeLocale(locale) {

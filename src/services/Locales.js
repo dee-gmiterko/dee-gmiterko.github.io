@@ -1,4 +1,6 @@
 /* eslint-env browser, jquery */
+import {Locales as LocaleMatcher} from 'locale';
+
 export class Locales {
 
 	constructor(app, localesPaths) {
@@ -34,6 +36,15 @@ export class Locales {
 			}
 			return key;
 		}
+	}
+
+	findBestLocale() {
+		var supported = new LocaleMatcher(['en', 'sk', 'cs']);
+
+		var locales = new LocaleMatcher(navigator.languages || [navigator.language]);
+		var best = locales.best(supported);
+
+		return best.code === 'cs' ? 'sk' : best.code;
 	}
 }
 

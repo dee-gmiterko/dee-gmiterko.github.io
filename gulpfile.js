@@ -1,39 +1,34 @@
 var gulp = require('gulp');
-var foreach = require('gulp-foreach');
 var modify = require('gulp-modify');
 var rename = require("gulp-rename");
 var sass = require('gulp-sass');
-var pact = require('pug-react-compiler');
+var pact = require('../pug-react-compiler'); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var pug = require('gulp-pug');
 
 var siteSettings = require('./config/site.json');
 
 gulp.task('compile-pug-react', function() {
-	return gulp.src('src/components/**/*.pug')
-	.pipe(foreach(function(stream, file) {
-		return stream.pipe(modify({
-			fileModifier: function(file, contents) {
-				var out = "/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */\n"
-				+ "import React from 'react';\n";
-
-				try {
-					s = pact.compileClient(contents);
-					s = s.replace(/(?:var ){0,1}(.+?) = require\((.+?)\)/g, 'import $1 from $2;');
-					out += s;
-				} catch (e) {
-					console.log("Problem in "+file.path+".");
-					console.log(e.stack);
-				}
-
-				return out;
-
+	return gulp.src('src/components/**/*.pug').pipe(modify({
+		fileModifier: function(file, contents) {
+			try {
+				var s = pact.compileClient(contents, {
+					helpers: [
+					'/*eslint-disable no-unused-vars, no-useless-concat, no-useless-escape, no-sequences */',
+					'import React from \'react\';'
+					],
+					outputType: 'component'
+				});
+				s = s.replace(/(?:var ){0,1}(.+?) = require\((.+?)\)/g, 'import $1 from $2;');
+				return s;
+			} catch (e) {
+				console.log("Problem in "+file.path+".");
+				console.log(e.stack);
 			}
-		}))
-		.pipe(rename(function (path) {
-			path.extname = ".pug.js"
-		}));
+		}
 	}))
-	.pipe(gulp.dest('src/components'));
+	.pipe(rename(function (path) {
+		path.extname = ".pug.js"
+	})).pipe(gulp.dest('src/components'));
 });
 
 gulp.task('compile-sass', function () {

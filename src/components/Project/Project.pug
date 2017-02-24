@@ -3,6 +3,7 @@
 - const TextEntry = require('./../projectEntries/TextEntry/TextEntry')
 - const ImageEntry = require('./../projectEntries/ImageEntry/ImageEntry')
 - const FileEntry = require('./../projectEntries/FileEntry/FileEntry')
+- const VideoEntry = require('./../projectEntries/VideoEntry/VideoEntry')
 article.single.project
     .image
         .img-container(style={backgroundImage: "url(" + (this.props.project.image ? this.props.project.image : require("../../images/noimage.png")) + ")"})
@@ -20,6 +21,8 @@ article.single.project
                         TextEntry(key=$index, translator=this.props.translator, entry=entry)
                     if entry.type === 'file'
                         FileEntry(key=$index, translator=this.props.translator, entry=entry)
+                    if entry.type === 'video'
+                        VideoEntry(key=$index, translator=this.props.translator, entry=entry)
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
             .row
                 .project-navigation

@@ -3,7 +3,13 @@
 @import "config/settings";
 
 /* Foundation 5 */
-@import "../../node_modules/foundation-sites/scss/foundation";
+@import "~foundation-sites/scss/foundation";
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-float-classes;
+@include foundation-flex-video;
 
 /* Site structure */
 @import "site/functions";

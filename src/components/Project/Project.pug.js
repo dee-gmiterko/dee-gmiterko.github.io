@@ -6,6 +6,7 @@ import {slowScrollTo} from '../../javascript/utils';
 import TextEntry from './../projectEntries/TextEntry/TextEntry';
 import ImageEntry from './../projectEntries/ImageEntry/ImageEntry';
 import FileEntry from './../projectEntries/FileEntry/FileEntry';
+import VideoEntry from './../projectEntries/VideoEntry/VideoEntry';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
@@ -25,6 +26,10 @@ module.exports = class __Component extends React.Component {
                 'translator': this.props.translator,
                 'entry': entry
             }) : null, entry.type === 'file' ? React.createElement(FileEntry, {
+                'key': $index,
+                'translator': this.props.translator,
+                'entry': entry
+            }) : null, entry.type === 'video' ? React.createElement(VideoEntry, {
                 'key': $index,
                 'translator': this.props.translator,
                 'entry': entry

@@ -1194,7 +1194,7 @@
             "generative-design"
         ],
         "title": "Processing sketches",
-        "image": "https://github.com/Linzee/processing-sketches/blob/master/sketch_161106x/sketch_161106x.png",
+        "image": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/sketch_161106x/sketch_161106x.png",
         "startedAt": "2016-9-29",
         "finishedAt": "2016-11-15",
         "description": "Moje pokusy s Processingom",
@@ -1202,7 +1202,7 @@
         "entries": [
             {
                 "type": "text",
-                "text": "I discovered Processing at course ([PV259](https:\/\/is.muni.cz\/predmet\/1433\/PV259)) about generative design. All sketches I made during this course can be found in this [GitHub repository](https://github.com/Linzee/processing-sketches)."
+                "text": "O Processingu som sa dozvedel na predmete ktor\u00fd som si zap\u00edsal ([PV259](https:\/\/is.muni.cz\/predmet\/1433\/PV259)) ktor\u00fd sa venuje generat\u00edvnemu dizajnu. Všetky moje sketche sa daju pozrieť na [GitHub repozitári](https://github.com/Linzee/processing-sketches)."
             },
             {
                 "type": "image",
@@ -1236,4 +1236,46 @@
                 "type": "image",
                 "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/sketch_161106x/sketch_161106x.png"
             },
+            {
+                "type": "image",
+                "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/sketch_161115a/sketch_161115a.png"
+            },
+            {
+                "type": "image",
+                "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/sketch_161115b/sketch_161115b.png"
+            },
+            {
+                "type": "image",
+                "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/sketch_161115c/sketch_161115c.png"
+            }
+        ]
+    },
+    {
+        "slug": "processing-ponyo",
+        "tags": [
+            "other",
+            "art",
+            "generative-design"
+        ],
+        "title": "Ponyo animation",
+        "image": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/ponyo/ponyo.png",
+        "startedAt": "2016-10-24",
+        "finishedAt": "2016-10-28",
+        "description": "Animacia inspirovana zaciatkom Ponyo",
+        "keywords": "generative design, Processing, ponyo, ghibli",
+        "entries": [
+            {
+                "type": "text",
+                "text": "Ďalšia z vecí ktoré som urobil pomocou Processingu. Ak by vas zauímal zdrojový kód nájdete ho v [GitHub repozitári](https://github.com/Linzee/processing-sketches). Alebo si len pozrite video.."
+            },
+            {
+                "type": "video",
+                "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/ponyo/ponyo.mp4"
+            },
+            {
+                "type": "image",
+                "path": "https://raw.githubusercontent.com/Linzee/processing-sketches/master/ponyo/ponyo.png"
+            }
+        ]
+    }
 ]

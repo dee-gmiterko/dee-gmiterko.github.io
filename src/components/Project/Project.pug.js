@@ -3,10 +3,7 @@ import React from 'react';
 import __map from 'pug-react-compiler/runtimes/map.js';
 import {Link} from 'react-router';
 import {slowScrollTo} from '../../javascript/utils';
-import TextEntry from './../projectEntries/TextEntry/TextEntry';
-import ImageEntry from './../projectEntries/ImageEntry/ImageEntry';
-import FileEntry from './../projectEntries/FileEntry/FileEntry';
-import VideoEntry from './../projectEntries/VideoEntry/VideoEntry';
+import Entry from './../projectEntries/Entry/Entry';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
@@ -17,23 +14,10 @@ module.exports = class __Component extends React.Component {
             return React.DOM.div({
                 'key': $index,
                 className: 'entry'
-            }, entry.type === 'image' ? React.createElement(ImageEntry, {
-                'key': $index,
+            }, React.createElement(Entry, {
                 'translator': this.props.translator,
                 'entry': entry
-            }) : null, entry.type === 'text' ? React.createElement(TextEntry, {
-                'key': $index,
-                'translator': this.props.translator,
-                'entry': entry
-            }) : null, entry.type === 'file' ? React.createElement(FileEntry, {
-                'key': $index,
-                'translator': this.props.translator,
-                'entry': entry
-            }) : null, entry.type === 'video' ? React.createElement(VideoEntry, {
-                'key': $index,
-                'translator': this.props.translator,
-                'entry': entry
-            }) : null);
+            }));
         }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {
             'to': 'project/' + this.props.project.predecessor.slug,
             className: 'button tiny left'

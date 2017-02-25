@@ -1128,6 +1128,59 @@
         "keywords": "hexaflexagon, generative design, Processing, vector spaces",
         "entries": [
             {
+                "type": "gallery",
+                "entries": [
+                                        {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/1.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/2.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/3.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/4.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/5.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/6.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/7.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/8.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/10.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/11.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/12.png"
+                    },
+                    {
+                        "type": "image",
+                        "path": "media\/hexaflexagon\/13.png"
+                    }
+                ]
+            },
+            {
                 "type": "text",
                 "text": "O Processingu som sa dozvedel na predmete ktor\u00fd som si zap\u00edsal ([PV259](https:\/\/is.muni.cz\/predmet\/1433\/PV259)) ktor\u00fd sa venuje generat\u00edvnemu dizajnu. Na konci semestra sme mali\nvypracova\u0165 nejak\u00fd vlastn\u00fd projekt. Nenapadlo ma\nnic zauimave, ale mal som pri sebe hexaflexagon. A tak som\nsa rozhodol ho vyu\u017ei\u0165.\n\nHexaflexagon je papierova skladacka. Ma 6 stran a na kazdej strane moze iny obrazok. Ale naraz je\nvidiet len 2 z nich. Ja som sa o tomto \u00fatvare dozvedel od youtuberky menom [Vi Hart](https:\/\/www.youtube.com\/watch?v=VIVIegSt81k).\n\nZacal som rozmyslat ako by sa dali vygenrovat obrazky na\njeho jednotlive strany. Nedaju sa pouzit obycajne\ndvojrozmerne obrazky, pretoze kazda strana hexaflexagonu sa moze spojit dokopy\nv dvoch roznych stavoch. A tak by sa niekedy rozbili.\n\nMoj prototyp #1:"
             },

@@ -1131,7 +1131,7 @@
             {
                 "type": "gallery",
                 "entries": [
-                                        {
+                    {
                         "type": "image",
                         "path": "media\/hexaflexagon\/1.png"
                     },
@@ -1145,7 +1145,7 @@
                     },
                     {
                         "type": "image",
-                        "path": "media\/hexaflexagon\/4.png"
+                        "path": "media\/hexaflexagon\/7.png"
                     },
                     {
                         "type": "image",
@@ -1157,10 +1157,6 @@
                     },
                     {
                         "type": "image",
-                        "path": "media\/hexaflexagon\/7.png"
-                    },
-                    {
-                        "type": "image",
                         "path": "media\/hexaflexagon\/8.png"
                     },
                     {
@@ -1169,15 +1165,11 @@
                     },
                     {
                         "type": "image",
-                        "path": "media\/hexaflexagon\/11.png"
+                        "path": "media\/hexaflexagon\/4.png"
                     },
                     {
                         "type": "image",
                         "path": "media\/hexaflexagon\/12.png"
-                    },
-                    {
-                        "type": "image",
-                        "path": "media\/hexaflexagon\/13.png"
                     }
                 ]
             },

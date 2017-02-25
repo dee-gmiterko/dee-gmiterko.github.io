@@ -4,13 +4,13 @@
 - const VideoEntry = require('./../VideoEntry/VideoEntry')
 - const GalleryEntry = require('./../GalleryEntry/GalleryEntry')
 div
-    if entry.type === 'image'
-        ImageEntry(translator=this.props.translator, entry=entry)
-    if entry.type === 'text'
-        TextEntry(translator=this.props.translator, entry=entry)
-    if entry.type === 'file'
-        FileEntry(translator=this.props.translator, entry=entry)
-    if entry.type === 'video'
-        VideoEntry(translator=this.props.translator, entry=entry)
-    if entry.type === 'gallery'
-        GalleryEntry(translator=this.props.translator, entry=entry)
+    if this.props.entry.type === 'image'
+        ImageEntry(translator=this.props.translator, entry=this.props.entry)
+    if this.props.entry.type === 'text'
+        TextEntry(translator=this.props.translator, entry=this.props.entry)
+    if this.props.entry.type === 'file'
+        FileEntry(translator=this.props.translator, entry=this.props.entry)
+    if this.props.entry.type === 'video'
+        VideoEntry(translator=this.props.translator, entry=this.props.entry)
+    if this.props.entry.type === 'gallery'
+        GalleryEntry(translator=this.props.translator, entry=this.props.entry)

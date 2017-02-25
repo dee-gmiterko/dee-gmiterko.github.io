@@ -1,0 +1,5 @@
+- const Entry = require('./../Entry/Entry')
+ul.small-block-grid-2.medium-block-grid-3.large-block-grid-5
+    each entry in this.props.entry.entries
+        li.entry(key=$index)
+            Entry(translator=this.props.translator, entry=entry)

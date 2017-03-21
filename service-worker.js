@@ -37,8 +37,8 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","d61057329ff0c224e2e836acdd6ab2e4"],["manifest.json","4612e1ffa1d366c3b6d1bd23b6173e79"],["static/css/main.4612adb7.css","8c56bcd92776d39cf9eabd8db717bd6b"],["static/js/main.fe48bffa.js","a63d83f816b5066e42e612feda9811f6"],["static/media/corner-left-bottom-white.d44b24a8.png","d44b24a84f57f4256e81e5dd915625d7"],["static/media/corner-left-top-green.d195754f.png","d195754f4a7d8479fe1b990b875f6ac5"],["static/media/corner-right-bottom-white.abb6a558.png","abb6a558819d7d0bb9c8ed170653d4ae"],["static/media/corner-right-top-green.b194ae44.png","b194ae4461ba11988c800bbead413e36"],["static/media/error.037ca06f.png","037ca06ffa7befb23ddb88076f694fc9"],["static/media/me.bd4d9d7e.png","bd4d9d7e8c5566bcf03f1fad093bc7c7"],["static/media/noimage.52fdb53a.png","52fdb53a7c2223aec90ddbe8e6cc4012"],["static/media/profile_16.85ea0900.png","85ea09000647a5883e901c0574a9e620"]];
-var cacheName = 'sw-precache-v2-sw-precache-' + (self.registration ? self.registration.scope : '');
+var precacheConfig = [["index.html","97166fc54d910a2e1dcb2ed8e07fc823"],["manifest.json","08aecad5946723af4b4130267ee917f2"],["static/css/main.08a6d286.css","37d9c5bad5a9f96544c18c19c63316b0"],["static/js/main.6734c317.js","6c23a8d2f4478900e482c9afd5d6cc7f"],["static/media/corner-left-bottom-white.d44b24a8.png","d44b24a84f57f4256e81e5dd915625d7"],["static/media/corner-left-top-green.d195754f.png","d195754f4a7d8479fe1b990b875f6ac5"],["static/media/corner-right-bottom-white.abb6a558.png","abb6a558819d7d0bb9c8ed170653d4ae"],["static/media/corner-right-top-green.b194ae44.png","b194ae4461ba11988c800bbead413e36"],["static/media/error.037ca06f.png","037ca06ffa7befb23ddb88076f694fc9"],["static/media/me.bd4d9d7e.png","bd4d9d7e8c5566bcf03f1fad093bc7c7"],["static/media/noimage.52fdb53a.png","52fdb53a7c2223aec90ddbe8e6cc4012"],["static/media/profile_16.85ea0900.png","85ea09000647a5883e901c0574a9e620"]];
+var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
 var ignoreUrlParametersMatching = [/^utm_/];
@@ -53,6 +53,28 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
+var cleanResponse = function (originalResponse) {
+    // If this is not a redirected response, then we don't have to do anything.
+    if (!originalResponse.redirected) {
+      return Promise.resolve(originalResponse);
+    }
+
+    // Firefox 50 and below doesn't support the Response.body stream, so we may
+    // need to read the entire body to memory as a Blob.
+    var bodyPromise = 'body' in originalResponse ?
+      Promise.resolve(originalResponse.body) :
+      originalResponse.blob();
+
+    return bodyPromise.then(function(body) {
+      // new Response() is happy when passed either a stream or a Blob.
+      return new Response(body, {
+        headers: originalResponse.headers,
+        status: originalResponse.status,
+        statusText: originalResponse.statusText
+      });
+    });
+  };
+
 var createCacheKey = function (originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
@@ -61,7 +83,7 @@ var createCacheKey = function (originalUrl, paramName, paramValue,
     // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
     // then add in the extra cache-busting URL parameter.
     if (!dontCacheBustUrlsMatching ||
-        !(url.toString().match(dontCacheBustUrlsMatching))) {
+        !(url.pathname.match(dontCacheBustUrlsMatching))) {
       url.search += (url.search ? '&' : '') +
         encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
     }
@@ -134,10 +156,19 @@ self.addEventListener('install', function(event) {
           Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
             // If we don't have a key matching url in the cache already, add it.
             if (!cachedUrls.has(cacheKey)) {
-              return cache.add(new Request(cacheKey, {
-                credentials: 'same-origin',
-                redirect: 'follow'
-              }));
+              var request = new Request(cacheKey, {credentials: 'same-origin'});
+              return fetch(request).then(function(response) {
+                // Bail out of installation unless we get back a 200 OK for
+                // every request.
+                if (!response.ok) {
+                  throw new Error('Request for ' + cacheKey + ' returned a ' +
+                    'response with status ' + response.status);
+                }
+
+                return cleanResponse(response).then(function(responseToCache) {
+                  return cache.put(cacheKey, responseToCache);
+                });
+              });
             }
           })
         );

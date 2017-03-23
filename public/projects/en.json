@@ -1338,7 +1338,7 @@
     "entries": [
       {
         "type": "text",
-        "text": "#City\nThis image of city was generated using neural netowrk. It's created by combining multiple images together. One image supporting colors and two masks (original and new). I have used setup from this (repository)[https://github.com/awentzonline/image-analogies]. It was realy easy to use once I setuped it and results look awesome!"
+        "text": "#City\nThis image of city was generated using neural netowrk. It's created by combining multiple images together. One image supporting colors and two masks (original and new). I have used setup from this [repository](https://github.com/awentzonline/image-analogies). It was realy easy to use once I setuped it and results look awesome!"
       },
       {
         "type": "image",

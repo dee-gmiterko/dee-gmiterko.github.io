@@ -1324,72 +1324,22 @@
     ]
   },
   {
-    "slug": "neural-networks-analogies",
+    "slug": "trainwreck",
     "tags": [
-      "other",
-      "art",
-      "neural-networks"
+      "programming",
+      "game",
+      "train"
     ],
-    "title": "Image analogies using NN",
-    "image": "assets/neuralTextures/city/out.png",
-    "startedAt": "2017-03-05",
-    "finishedAt": "2017-03-08",
-    "description": "Neural networks used to generate simillar images",
-    "keywords": "neural networks, city, dream, image, analogies",
+    "title": "Trainwreck",
+    "image": "http://ienze.me/trainwreck/media/trainwreck_screen.png",
+    "startedAt": "2017-3-19",
+    "finishedAt": "2017-4-30",
+    "description": "Train your train conductor skills!",
+    "keywords": "game, train, 960x144",
     "entries": [
       {
         "type": "text",
-        "text": "#City\nThis image of city was generated using neural netowrk. It's created by combining multiple images together. One image supporting colors and two masks (original and new). I have used setup from this [repository](https://github.com/awentzonline/image-analogies). It was realy easy to use once I setuped it and results look awesome!"
-      },
-      {
-        "type": "image",
-        "path": "assets/neuralTextures/city/out.png"
-      },
-      {
-        "type": "text",
-        "text": "And this are source images used to generate my little city (colors, original mask and new mask)"
-      },
-      {
-        "type": "gallery",
-        "entries": [
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/image.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/mask.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/mask_new.png"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": "#Dragon\nThis image is also generated using same neural netowrk. But here it isn't so easy to say which image is mask. I used title screen from one Adventure time episode for both colors and mask. Mask image is only blured version of colors. Second \"mask\" is some random image of dragon I googled."
-      },
-      {
-        "type": "image",
-        "path": "assets/neuralTextures/dragon/out.png"
-      },
-      {
-        "type": "gallery",
-        "entries": [
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/image.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/mask.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/mask_new.png"
-          }
-        ]
+        "text": "Zadanie.. hra s rozmermi 960x144. Toto obmedzenie dal [960x144 game jam](https://itch.io/jam/960144) pre zaregistrované hry. To preto, že hladajú hru pre takúto obrazovku ktorá sa nachádza niekde v [múzeu](http://www.centroculturadigital.mx/). Hneď ma napadlo, že tento rozmer musím nejak využiť. Dúfam, že sa mi to podarilo. Hra sa da zahrať..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
       }
     ]
   }

@@ -909,7 +909,8 @@
     "slug": "http",
     "tags": [
       "websites",
-      "game"
+      "game",
+      "train"
     ],
     "title": "HTTP/?.?",
     "image": "assets/trains.png",
@@ -1047,7 +1048,7 @@
     "entries": [
       {
         "type": "text",
-        "text": "Jedným z povinných predmetov sú aj základy programovania. Ja som si zapísal špeciálnu skupinu Python-01. Je to skupina pre ľudí, ktorý majú solídne základy programovania. Cvičenia nieje potrebné navštevovsť pravidelne ale treba vytvoriť 3 projekty. Táto skupina je trochu zložitejšia aj v tom, že som si zadania musel vymyslieť sám. Boli zadané len oblasti. Táto skupina je v roku 2015 otvorená prvýkrát, takže sa ešte len vyvýja. Napríklad až počas semestra sa vymyslelo, že naše projekty budeme aj prezentovať (druhý a tretí). Ja som svoje projeky odprezentoval minulý týždeň.\n\n### 2048\nPrvý projekt má za úlohu simulovať rôzne stratégie pre hru. Ja som vytvoril tri stratégie pre hru 2048. [Viac o projekte]{.button .tiny}(/#/project/py-2048).\n\n### 2049\nĎalšie dva projekty nemali žiadne meno a tak som ich len čísloval zaradom. Druhý projekt sa mal venovať spracovaniu dát. Ja som sa zameral na štatistiku meškania vlakov. [Viac o projekte](/#/project/py-2049).\n\n### 2050\nPosledný projekt mal využívať prácu s bitmapovými obrázkami. Jedným z príkladov v zadaní bolo generovanie obrázokov. To ma zaujalo najviac, takže som sa mu aj začal venovať. [Viac o projekte](/#/project/py-2050)."
+        "text": "Jedným z povinných predmetov sú aj základy programovania. Ja som si zapísal špeciálnu skupinu Python-01. Je to skupina pre ľudí, ktorý majú solídne základy programovania. Cvičenia nieje potrebné navštevovsť pravidelne ale treba vytvoriť 3 projekty. Táto skupina je trochu zložitejšia aj v tom, že som si zadania musel vymyslieť sám. Boli zadané len oblasti. Táto skupina je v roku 2015 otvorená prvýkrát, takže sa ešte len vyvýja. Napríklad až počas semestra sa vymyslelo, že naše projekty budeme aj prezentovať (druhý a tretí). Ja som svoje projeky odprezentoval minulý týždeň.\n\n### 2048\nPrvý projekt má za úlohu simulovať rôzne stratégie pre hru. Ja som vytvoril tri stratégie pre hru 2048. [Viac o projekte](/#/project/py-2048).\n\n### 2049\nĎalšie dva projekty nemali žiadne meno a tak som ich len čísloval zaradom. Druhý projekt sa mal venovať spracovaniu dát. Ja som sa zameral na štatistiku meškania vlakov. [Viac o projekte](/#/project/py-2049).\n\n### 2050\nPosledný projekt mal využívať prácu s bitmapovými obrázkami. Jedným z príkladov v zadaní bolo generovanie obrázokov. To ma zaujalo najviac, takže som sa mu aj začal venovať. [Viac o projekte](/#/project/py-2050)."
       }
     ]
   },
@@ -1323,72 +1324,22 @@
     ]
   },
   {
-    "slug": "neural-networks-analogies",
+    "slug": "trainwreck",
     "tags": [
-      "other",
-      "art",
-      "neural-networks"
+      "programming",
+      "game",
+      "train"
     ],
-    "title": "Image analogies using NN",
-    "image": "assets/neuralTextures/city/out.png",
-    "startedAt": "2017-03-05",
-    "finishedAt": "2017-03-08",
-    "description": "Neural networks used to generate simillar images",
-    "keywords": "neural networks, city, dream, image, analogies",
+    "title": "Trainwreck",
+    "image": "http://ienze.me/trainwreck/media/trainwreck_screen.png",
+    "startedAt": "2017-3-19",
+    "finishedAt": "2017-4-30",
+    "description": "Train your train conductor skills!",
+    "keywords": "game, train, 960x144",
     "entries": [
       {
         "type": "text",
-        "text": "#City\nThis image of city was generated using neural netowrk. It's created by combining multiple images together. One image supporting colors and two masks (original and new). I have used setup from this [repository](https://github.com/awentzonline/image-analogies). It was realy easy to use once I setuped it and results look awesome!"
-      },
-      {
-        "type": "image",
-        "path": "assets/neuralTextures/city/out.png"
-      },
-      {
-        "type": "text",
-        "text": "And this are source images used to generate my little city (colors, original mask and new mask)"
-      },
-      {
-        "type": "gallery",
-        "entries": [
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/image.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/mask.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/city/mask_new.png"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": "#Dragon\nThis image is also generated using same neural netowrk. But here it isn't so easy to say which image is mask. I used title screen from one Adventure time episode for both colors and mask. Mask image is only blured version of colors. Second \"mask\" is some random image of dragon I googled."
-      },
-      {
-        "type": "image",
-        "path": "assets/neuralTextures/dragon/out.png"
-      },
-      {
-        "type": "gallery",
-        "entries": [
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/image.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/mask.png"
-          },
-          {
-            "type": "image",
-            "path": "assets/neuralTextures/dragon/mask_new.png"
-          }
-        ]
+        "text": "Game about controling trains in realy weird screen resolution (960x144). Made for [960x144 game jam](https://itch.io/jam/960144). Game can be played..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
       }
     ]
   }

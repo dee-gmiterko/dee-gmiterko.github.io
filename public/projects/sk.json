@@ -160,7 +160,8 @@
   {
     "slug": "forest",
     "tags": [
-      "art"
+      "art",
+      "forest"
     ],
     "title": "Les #1",
     "image": "assets/1MQjPJOrTmCYc286OaycUy.jpg",
@@ -1056,7 +1057,8 @@
     "slug": "shaders-in-css",
     "tags": [
       "websites",
-      "css"
+      "css",
+      "shader"
     ],
     "title": "Shadre v css",
     "image": "assets/css_shader.png",
@@ -1410,6 +1412,45 @@
       {
         "type": "text",
         "text": "Zadanie.. hra s rozmermi 960x144. Toto obmedzenie dal [960x144 game jam](https://itch.io/jam/960144) pre zaregistrované hry. To preto, že hladajú hru pre takúto obrazovku ktorá sa nachádza niekde v [múzeu](http://www.centroculturadigital.mx/). Hneď ma napadlo, že tento rozmer musím nejak využiť. Dúfam, že sa mi to podarilo. Hra sa da zahrať..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
+      }
+    ]
+  },
+  {
+    "slug": "open-gl-forest",
+    "tags": [
+      "programming",
+      "art",
+      "game",
+      "open-gl",
+      "forest",
+      "3d"
+    ],
+    "title": "OpenGL forest scene",
+    "image": "https://raw.githubusercontent.com/Linzee/opengl-forest/master/media/sc0002.jpg",
+    "startedAt": "2017-4-18",
+    "finishedAt": "2017-5-22",
+    "description": "Look at that water :)",
+    "keywords": "open-gl, forest, scene, game, 3d",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Scena napisana v OpenGL. Vyuziva mnozstvo napisanych funkcii ako:\n- Instanciovane objekty (stromy, kriky, trava)\n- Shader pre vodu s odrazmi\n- Stromy pohybujuce sa v vetre\n- Striedanie dna a noci\n- Triplanar terrain shader\n- Model terenu dynamicky generovany z heightmapy\n- Shadre podporuju viacero svetiel\n- Kamera ovladana \"z prvej osoby\"\n \nZdrojovy kod celej sceny je dostupny na mojom [GitHube](https://github.com/Linzee/opengl-forest)."
+      },
+      {
+        "type": "image",
+        "path": "https://raw.githubusercontent.com/Linzee/opengl-forest/master/media/sc0001.jpg"
+      },
+      {
+        "type": "image",
+        "path": "https://raw.githubusercontent.com/Linzee/opengl-forest/master/media/sc0002.jpg"
+      },
+      {
+        "type": "image",
+        "path": "https://raw.githubusercontent.com/Linzee/opengl-forest/master/media/sc0003.jpg"
+      },
+      {
+        "type": "text",
+        "text": "## Odraz na vode\nOdrazy na vode su vytvorene pomocou prevratenej sceny (```view_matrix = scale(view_matrix, vec3(1.0, -1.0, 1.0))```) vyrendrovanej do textury a zopar jednoduchych riadkov v shadroch:\n```\n// Vertex shader\n    outData.normal = texture(water_normal_tex, tex_coord.st * 10 + vec2(app_time, app_time)).rbg - vec3(0.5, 0.5, 0.5);\n    outData.position = position + vec4(moved_normal * 0.3, 0.0) * 0.05;\n// Fragment shader\n    vec2 reflectOffset = inData.normal.xz * 0.1;\n    color = texture(reflection_tex, (gl_FragCoord.xy) / textureSize(reflection_tex, 0) + reflectOffset);\n```"
       }
     ]
   }

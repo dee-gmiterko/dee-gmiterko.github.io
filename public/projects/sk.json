@@ -1324,6 +1324,76 @@
     ]
   },
   {
+    "slug": "neural-networks-analogies",
+    "tags": [
+      "other",
+      "art",
+      "neural-networks"
+    ],
+    "title": "Image analogies using NN",
+    "image": "assets/neuralTextures/city/out.png",
+    "startedAt": "2017-03-05",
+    "finishedAt": "2017-03-08",
+    "description": "Neural networks used to generate simillar images",
+    "keywords": "neural networks, city, dream, image, analogies",
+    "entries": [
+      {
+        "type": "text",
+        "text": "#City\nThis image of city was generated using neural netowrk. It's created by combining multiple images together. One image supporting colors and two masks (original and new). I have used setup from this [repository](https://github.com/awentzonline/image-analogies). It was realy easy to use once I setuped it and results look awesome!"
+      },
+      {
+        "type": "image",
+        "path": "assets/neuralTextures/city/out.png"
+      },
+      {
+        "type": "text",
+        "text": "And this are source images used to generate my little city (colors, original mask and new mask)"
+      },
+      {
+        "type": "gallery",
+        "entries": [
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/city/image.png"
+          },
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/city/mask.png"
+          },
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/city/mask_new.png"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "#Dragon\nThis image is also generated using same neural netowrk. But here it isn't so easy to say which image is mask. I used title screen from one Adventure time episode for both colors and mask. Mask image is only blured version of colors. Second \"mask\" is some random image of dragon I googled."
+      },
+      {
+        "type": "image",
+        "path": "assets/neuralTextures/dragon/out.png"
+      },
+      {
+        "type": "gallery",
+        "entries": [
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/dragon/image.png"
+          },
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/dragon/mask.png"
+          },
+          {
+            "type": "image",
+            "path": "assets/neuralTextures/dragon/mask_new.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "trainwreck",
     "tags": [
       "programming",

@@ -11,8 +11,8 @@ div
                 h2
                     Link(to="/about")= this.props.siteSettings.me.name
                 p
-                    Link(to="/portfolio/programming") Coder  
-                    Link(to="/portfolio/art") Artist  
+                    Link(to="/portfolio/programming") Coder
+                    Link(to="/portfolio/art") Artist
                     Link(to="/about") Me
     #about-columns
         .row
@@ -26,7 +26,7 @@ div
         .small-12.medium-6.medium-centered.columns
             h3= this.props.translator("Contact")
             Person(translator=this.props.translator, person=this.props.siteSettings.me)
-  
+
     #about-pointless-image
         .row
             img(src=require('../../images/me.png'), alt=this.props.translator('Just') + ' ' + this.props.siteSettings.siteTitle)

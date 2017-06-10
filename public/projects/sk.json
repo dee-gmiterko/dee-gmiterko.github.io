@@ -1412,6 +1412,12 @@
       {
         "type": "text",
         "text": "Zadanie.. hra s rozmermi 960x144. Toto obmedzenie dal [960x144 game jam](https://itch.io/jam/960144) pre zaregistrované hry. To preto, že hladajú hru pre takúto obrazovku ktorá sa nachádza niekde v [múzeu](http://www.centroculturadigital.mx/). Hneď ma napadlo, že tento rozmer musím nejak využiť. Dúfam, že sa mi to podarilo. Hra sa da zahrať..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
+      },
+      {
+        "type": "sandbox",
+        "path": "http://ienze.me/trainwreck/",
+        "width": 960,
+        "height": 144
       }
     ]
   },
@@ -1522,6 +1528,32 @@
       {
         "type": "file",
         "path": "assets\/sheep-simulation\/documentation.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "waterfull",
+    "tags": [
+      "programming",
+      "game",
+      "simulation"
+    ],
+    "title": "Waterfull",
+    "image": "http://ienze.me/waterfull/media/waterfull_screen.png",
+    "startedAt": "2017-6-5",
+    "finishedAt": "2017-6-15",
+    "description": "Plants full of water",
+    "keywords": "simulation, game, javascript, water, plants",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Malá hra pôvodne vytvorená pre [One resource jam](https://itch.io/jam/one-resource-jam). Hneď si ju môžeš zahrať, alebo otvoriť v  [fullscreen](http://ienze.me/waterfull/)."
+      },
+      {
+        "type": "sandbox",
+        "path": "http://ienze.me/waterfull/",
+        "width": 900,
+        "height": 600
       }
     ]
   }

@@ -5,6 +5,7 @@ import ImageEntry from './../ImageEntry/ImageEntry';
 import FileEntry from './../FileEntry/FileEntry';
 import VideoEntry from './../VideoEntry/VideoEntry';
 import GalleryEntry from './../GalleryEntry/GalleryEntry';
+import SandboxEntry from './../SandboxEntry/SandboxEntry';
 module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
@@ -21,6 +22,9 @@ module.exports = class __Component extends React.Component {
             'translator': this.props.translator,
             'entry': this.props.entry
         }) : null, this.props.entry.type === 'gallery' ? React.createElement(GalleryEntry, {
+            'translator': this.props.translator,
+            'entry': this.props.entry
+        }) : null, this.props.entry.type === 'sandbox' ? React.createElement(SandboxEntry, {
             'translator': this.props.translator,
             'entry': this.props.entry
         }) : null);

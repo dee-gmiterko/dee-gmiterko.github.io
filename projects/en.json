@@ -1411,6 +1411,12 @@
       {
         "type": "text",
         "text": "Game about controling trains in realy weird screen resolution (960x144). Made for [960x144 game jam](https://itch.io/jam/960144). Game can be played..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
+      },
+      {
+        "type": "sandbox",
+        "path": "http://ienze.me/trainwreck/",
+        "width": 960,
+        "height": 144
       }
     ]
   },
@@ -1521,6 +1527,32 @@
       {
         "type": "file",
         "path": "assets\/sheep-simulation\/documentation.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "waterfull",
+    "tags": [
+      "programming",
+      "game",
+      "simulation"
+    ],
+    "title": "Waterfull",
+    "image": "http://ienze.me/waterfull/media/waterfull_screen.png",
+    "startedAt": "2017-6-5",
+    "finishedAt": "2017-6-15",
+    "description": "Plants full of water",
+    "keywords": "simulation, game, javascript, water, plants",
+    "entries": [
+      {
+        "type": "text",
+        "text": "Small game originaly made for [One resource jam](https://itch.io/jam/one-resource-jam). You can play it right here or open in [fullscreen](http://ienze.me/waterfull/)."
+      },
+      {
+        "type": "sandbox",
+        "path": "http://ienze.me/waterfull/",
+        "width": 900,
+        "height": 600
       }
     ]
   }

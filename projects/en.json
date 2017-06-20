@@ -1411,12 +1411,6 @@
       {
         "type": "text",
         "text": "Game about controling trains in realy weird screen resolution (960x144). Made for [960x144 game jam](https://itch.io/jam/960144). Game can be played..\n\n- [Play at itch.io](https://ienze.itch.io/trainwreck)\n- [Play directly](http://ienze.me/trainwreck)"
-      },
-      {
-        "type": "sandbox",
-        "path": "http://ienze.me/trainwreck/",
-        "width": 960,
-        "height": 144
       }
     ]
   },
@@ -1455,7 +1449,7 @@
       },
       {
         "type": "text",
-        "text": "## Odraz na vode\nOdrazy na vode su vytvorene pomocou prevratenej sceny (```view_matrix = scale(view_matrix, vec3(1.0, -1.0, 1.0))```) vyrendrovanej do textury a zopar jednoduchych riadkov v shadroch:\n```\n// Vertex shader\n    outData.normal = texture(water_normal_tex, tex_coord.st * 10 + vec2(app_time, app_time)).rbg - vec3(0.5, 0.5, 0.5);\n    outData.position = position + vec4(moved_normal * 0.3, 0.0) * 0.05;\n// Fragment shader\n    vec2 reflectOffset = inData.normal.xz * 0.1;\n    color = texture(reflection_tex, (gl_FragCoord.xy) / textureSize(reflection_tex, 0) + reflectOffset);\n```\nMyslím si, že voda vizerá úžasne na to aký krátky kód využíva."
+        "text": "## Odraz na vode\nOdrazy na vode su vytvorene pomocou prevratenej sceny (```view_matrix = scale(view_matrix, vec3(1.0, -1.0, 1.0))```) vyrendrovanej do textury a zopar jednoduchych riadkov v shadroch:\n```\n// Vertex shader\n    outData.normal = texture(water_normal_tex, tex_coord.st * 10 + vec2(app_time, app_time)).rbg - vec3(0.5, 0.5, 0.5);\n    outData.position = position + vec4(moved_normal * 0.3, 0.0) * 0.05;\n// Fragment shader\n    vec2 reflectOffset = inData.normal.xz * 0.1;\n    color = texture(reflection_tex, (gl_FragCoord.xy) / textureSize(reflection_tex, 0) + reflectOffset);\n```"
       }
     ]
   },
@@ -1476,83 +1470,6 @@
       {
         "type": "text",
         "text": "Multiplayer game where you move by ansvering math questions.\n\nGame is running at [ienze.me/samos/](http://ienze.me/samos). Source at [GitHub](https://github.com/linzee/samos)."
-      }
-    ]
-  },
-  {
-    "slug": "antielemental",
-    "tags": [
-      "programming",
-      "game",
-      "multiplayer"
-    ],
-    "title": "Antielemental",
-    "image": "assets\/antielemental.jpg",
-    "startedAt": "2016-9-30",
-    "finishedAt": "2016-11-20",
-    "description": "Fazulky v akcii!",
-    "keywords": "game, multiplayer, online, elements",
-    "entries": [
-      {
-        "type": "text",
-        "text": "Multiplayer team game based around few abilities each player have. Objective of each player is to defeat others. You will lose one ability with each death."
-      }
-    ]
-  },
-  {
-    "slug": "sheep-simulation",
-    "tags": [
-      "programming",
-      "simulation"
-    ],
-    "title": "Sheep herding simulation",
-    "image": "assets\/sheep-simulation/sheep.png",
-    "startedAt": "2017-5-1",
-    "finishedAt": "2017-6-1",
-    "description": "Few simple rules to produce herds",
-    "keywords": "simulation, sheep, netlogo",
-    "entries": [
-      {
-        "type": "text",
-        "text": "Simulation in NetLogo we made with a friend for a course in school. Look at the video [https://youtu.be/cg_x94_oJkw](https://youtu.be/cg_x94_oJkw). Full description of model can be found in attached pdf. Also NetLogo model is downloadable."
-      },
-      {
-        "type": "text",
-        "text": "There is only few simple rules which this model follows:\n\n### Dog\n- moving forward and stay heading 90 degrees to nearest sheep\n- if too close (3) to nearest sheep go away\n- if too far (5) from sheep go back\n\n### Sheep\n- moving forward with simillar heading than sheeps around\n- if dog is too close (4) run away\n- if too close (1) to another sheep, go away"
-      },
-      {
-        "type": "file",
-        "path": "assets\/sheep-simulation\/model.nlogo"
-      },
-      {
-        "type": "file",
-        "path": "assets\/sheep-simulation\/documentation.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "waterfull",
-    "tags": [
-      "programming",
-      "game",
-      "simulation"
-    ],
-    "title": "Waterfull",
-    "image": "http://ienze.me/waterfull/media/waterfull_screen.png",
-    "startedAt": "2017-6-5",
-    "finishedAt": "2017-6-15",
-    "description": "Plants full of water",
-    "keywords": "simulation, game, javascript, water, plants",
-    "entries": [
-      {
-        "type": "text",
-        "text": "Small game originaly made for [One resource jam](https://itch.io/jam/one-resource-jam). You can play it right here or open in [fullscreen](http://ienze.me/waterfull/)."
-      },
-      {
-        "type": "sandbox",
-        "path": "http://ienze.me/waterfull/",
-        "width": 900,
-        "height": 600
       }
     ]
   }

@@ -18,6 +18,9 @@
             span.icon.twitter
             a(href="//twitter.com/" + this.props.person.twitter, target="_blank")= 'Twitter: ' + this.props.person.twitter
         li
+            span.icon.twitch
+            a(href="//twitch.tv/" + this.props.person.twitch, target="_blank")= 'Twitch: ' + this.props.person.twitch
+        li
             span.icon.skype
             a(href="skype:" + this.props.person.skype)= 'Skype: ' + this.props.person.skype
     p.about-me(itemProp="description")= this.props.translator('ABOUT_ME')

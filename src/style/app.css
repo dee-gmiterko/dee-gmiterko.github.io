@@ -3720,6 +3720,8 @@ a.externalLink {
     background-position: -16px -16px; }
   .icon.feed {
     background-position: -32px -16px; }
+  .icon.twitch {
+    background-position: -48px -16px; }
 
 li.empty {
   visibility: hidden; }

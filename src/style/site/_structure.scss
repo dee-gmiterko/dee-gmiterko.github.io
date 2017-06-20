@@ -273,8 +273,8 @@ a.externalLink {
     }
 
     @include icons-generator(
-    (website, email, twitter, skype, github, date, feed),
-    (0 0, -16px 0, -32px 0, -48px 0, 0 -16px, -16px -16px, -32px -16px)
+    (website, email, twitter, skype, github, date, feed, twitch),
+    (0 0, -16px 0, -32px 0, -48px 0, 0 -16px, -16px -16px, -32px -16px, -48px -16px)
     );
 }
 

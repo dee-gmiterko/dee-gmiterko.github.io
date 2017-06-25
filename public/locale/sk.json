@@ -48,5 +48,6 @@
 	"KNOWLEDGEBASE_DESCRIPTION": "Používal som rôzne prostriedky. Toto je zoznam tých, ktoré som využíval a viem s nimi pracovať:",
 	"Project not found": "Projekt nenajdeny",
 	"Not Found": "Not Found",
-	"Error": "Error"
+	"Error": "Error",
+	"Loading": "Načítavajú sa dáta.."
 }

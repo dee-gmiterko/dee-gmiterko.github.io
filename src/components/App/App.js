@@ -37,11 +37,12 @@ export class App extends Component {
 	}
 
 	changeLocale(locale) {
+		this.setState({
+			'locale': locale,
+			'loading': true
+		});
 		this.locales.ensureLocale(locale);
 		this.projects.ensureLocale(locale);
-		this.setState({
-			'locale': locale
-		});
 	}
 
 	logPageView() {
@@ -49,11 +50,20 @@ export class App extends Component {
 		ReactGA.pageview( window.location.hash );
 	}
 
+	componentWillUpdate() {
+		if(this.state.loading) {
+			if(this.state.locales && this.state.locales[this.state.locale] && this.state.projects && this.state.projects[this.state.locale]) {
+				this.state.loading = false;
+			}
+		}
+	}
+
 	render() {
+
 		var translator = this.locales.getTranslator();
 
 		return  <Router history={hashHistory} onUpdate={this.logPageView}>
-					<Route path="/" component={Layout} translator={translator} changeLocale={this.changeLocale.bind(this)} >
+					<Route path="/" component={Layout} translator={translator} changeLocale={this.changeLocale.bind(this)} projectsService={this.projects} >
 						<IndexRoute component={Index} translator={translator} projectsService={this.projects} />
 						<Route path="about" component={About} translator={translator} />
 						<Route path="portfolio" component={Portfolio} translator={translator} projectsService={this.projects} />

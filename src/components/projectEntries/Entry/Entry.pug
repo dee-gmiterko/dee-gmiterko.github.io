@@ -3,6 +3,7 @@
 - const FileEntry = require('./../FileEntry/FileEntry')
 - const VideoEntry = require('./../VideoEntry/VideoEntry')
 - const GalleryEntry = require('./../GalleryEntry/GalleryEntry')
+- const SandboxEntry = require('./../SandboxEntry/SandboxEntry')
 div
     if this.props.entry.type === 'image'
         ImageEntry(translator=this.props.translator, entry=this.props.entry)
@@ -14,3 +15,5 @@ div
         VideoEntry(translator=this.props.translator, entry=this.props.entry)
     if this.props.entry.type === 'gallery'
         GalleryEntry(translator=this.props.translator, entry=this.props.entry)
+    if this.props.entry.type === 'sandbox'
+        SandboxEntry(translator=this.props.translator, entry=this.props.entry)

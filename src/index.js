@@ -8,7 +8,7 @@ import './style/app.css';
 import 'foundation-sites/js/foundation.js';
 import './javascript/main.js';
 
-ReactGA.initialize('UA-65610184-1', {debug: true});
+ReactGA.initialize('UA-65610184-1');
 
 ReactDOM.render(
   <App/>,

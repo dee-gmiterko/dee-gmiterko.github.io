@@ -48,5 +48,6 @@
 	"KNOWLEDGEBASE_DESCRIPTION": "I have used many components. This is list of things I know how to control:",
 	"Project not found": "Project not found",
 	"Not Found": "Not Found",
-	"Error": "Error"
+	"Error": "Error",
+	"Loading": "Site data are loading.."
 }

@@ -13,7 +13,7 @@ module.exports = class __Component extends React.Component {
             'id': 'menu-open',
             'onClick': slowScrollTo('#menu'),
             className: 'text-center'
-        }, React.DOM.span(null, this.props.translator('Menu')))), React.DOM.div({ 'id': 'content' }, this.props.children), React.DOM.div({ 'id': 'footer-space' }), React.DOM.div({ 'id': 'footer' }, React.createElement(Footer, {
+        }, React.DOM.span(null, this.props.translator('Menu')))), this.props.loading ? React.DOM.div({ 'id': 'content' }, React.DOM.article({ className: 'single' + ' ' + 'project' }, React.DOM.div({ className: 'row' + ' ' + 'content' + ' ' + 'white-triange-bottom-border' }, React.DOM.div({ className: 'corners' }, React.DOM.h2({ className: 'text-center' }, this.props.translator('Loading')))))) : React.DOM.div({ 'id': 'content' }, this.props.children), React.DOM.div({ 'id': 'footer-space' }), React.DOM.div({ 'id': 'footer' }, React.createElement(Footer, {
             'translator': this.props.translator,
             'changeLocale': this.props.changeLocale
         })));

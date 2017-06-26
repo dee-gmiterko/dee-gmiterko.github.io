@@ -11,7 +11,14 @@ div.page
         a#menu-open.text-center(onClick=slowScrollTo("#menu"))
             span= this.props.translator("Menu")
 
-    #content= this.props.children
+    if(this.props.loading)
+        #content
+            article.single.project
+                .row.content.white-triange-bottom-border
+                    .corners
+                        h2.text-center= this.props.translator("Loading")
+    else
+        #content= this.props.children
 
     #footer-space
     #footer

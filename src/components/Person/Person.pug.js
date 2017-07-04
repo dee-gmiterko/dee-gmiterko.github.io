@@ -8,7 +8,7 @@ module.exports = class __Component extends React.Component {
             'itemType': 'http://schema.org/Person',
             className: 'profile'
         }, React.DOM.p({ className: 'name' }, React.DOM.strong({ 'itemProp': 'name' }, this.props.person.name)), React.DOM.p({ className: 'job' }, React.DOM.span({ 'itemProp': 'jobTitle' }, 'Coder, Artist, Me')), React.DOM.img({
-            'src': require('../../images/profile_16.png'),
+            'src': require('../../images/profile_17.png'),
             'itemProp': 'image',
             'alt': 'Photo of ' + this.props.person.name,
             className: 'hide'

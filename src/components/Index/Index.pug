@@ -11,11 +11,12 @@ div
                 h2
                     Link(to="/about") Dominik Gmiterko
                 p
-                    Link(to="/portfolio/programming") Coder  
-                    Link(to="/portfolio/art") Artist  
+                    Link(to="/portfolio/programming") Coder
+                    Link(to="/portfolio/art") Artist
                     Link(to="/about") Me
-      
+
     Gallery16(itemType=PortfolioItem, items=this.props.projects)
     #fnav
         .row.text-center
             Link(to="/portfolio", className="button large")= this.props.translator("More projects")
+            Link(to="/about", className="button large")= this.props.translator("Contact")

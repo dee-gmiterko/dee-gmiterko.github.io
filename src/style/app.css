@@ -3845,7 +3845,7 @@ article.single {
             a, h3 {
                 color: white;
             }
-			a 
+			a
             img {
                 display: block;
                 margin: 0 auto;
@@ -3935,10 +3935,18 @@ article.single {
         background-image: url(../images/fileTypes/source.png); }
       article.single .file-entry .file-icon.text {
         background-image: url(../images/fileTypes/text.png); }
+  article.single .disqus {
+    background: #333;
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.2) inset; }
+    article.single .disqus h3 {
+      text-align: center;
+      color: white; }
+    article.single .disqus .row {
+      padding-top: 4rem; }
 
 #fnav {
   border-top: #5f6f80 2px solid;
-  background: white;
+  background: #EEEEEE;
   box-shadow: 0 0 64px rgba(0, 0, 0, 0.2) inset; }
   #fnav .button {
     margin: 0.875rem; }

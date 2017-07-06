@@ -507,7 +507,7 @@ article.single {
         display: inline-block;
         width: 200px;
         text-align: center;
-        
+
         .file-icon {
             width: 200px;
             height: 200px;
@@ -538,7 +538,7 @@ article.single {
             a, h3 {
                 color: white;
             }
-			a 
+			a
             img {
                 display: block;
                 margin: 0 auto;
@@ -564,11 +564,25 @@ article.single {
         background: $secondary-color;
     }
     */
+
+    .disqus {
+        background: #333;
+        box-shadow: $global-bg-shadow;
+
+        h3 {
+          text-align: center;
+          color: white;
+        }
+
+        .row {
+          padding-top: rem-calc(64);
+        }
+    }
 }
 
 #fnav {
 	border-top: mix(white, $info-color, 21%) 2px solid;
-	background: white;
+	background: #EEEEEE;
 	box-shadow: $global-bg-shadow;
 
 	.button {

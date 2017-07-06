@@ -27,7 +27,13 @@ module.exports = class __Component extends React.Component {
         }, 'Twitter: ' + this.props.person.twitter)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'twitch' }), React.DOM.a({
             'href': '//twitch.tv/' + this.props.person.twitch,
             'target': '_blank'
-        }, 'Twitch: ' + this.props.person.twitch)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'skype' }), React.DOM.a({ 'href': 'skype:' + this.props.person.skype }, 'Skype: ' + this.props.person.skype))), React.DOM.p({
+        }, 'Twitch: ' + this.props.person.twitch)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'skype' }), React.DOM.a({ 'href': 'skype:' + this.props.person.skype }, 'Skype: ' + this.props.person.skype)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'patreon' }), React.DOM.a({
+            'href': '//patreon.com/' + this.props.person.patreon,
+            'target': '_blank'
+        }, 'Patreon: ' + this.props.person.patreon)), React.DOM.li(null, React.DOM.span({ className: 'icon' + ' ' + 'itch' }), React.DOM.a({
+            'href': '//' + this.props.person.itch + '.itch.io/',
+            'target': '_blank'
+        }, 'Itch.io: ' + this.props.person.itch))), React.DOM.p({
             'itemProp': 'description',
             className: 'about-me'
         }, this.props.translator('ABOUT_ME')));

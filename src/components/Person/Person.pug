@@ -23,4 +23,10 @@
         li
             span.icon.skype
             a(href="skype:" + this.props.person.skype)= 'Skype: ' + this.props.person.skype
+        li
+            span.icon.patreon
+            a(href="//patreon.com/" + this.props.person.patreon, target="_blank")= 'Patreon: ' + this.props.person.patreon
+        li
+            span.icon.itch
+            a(href="//"+this.props.person.itch+".itch.io/", target="_blank")= 'Itch.io: ' + this.props.person.itch
     p.about-me(itemProp="description")= this.props.translator('ABOUT_ME')

@@ -1556,5 +1556,25 @@
         "height": 600
       }
     ]
+  },
+  {
+    "slug": "tower-town-visuals",
+    "tags": [
+      "art",
+      "game",
+      "graphics"
+    ],
+    "title": "Visual style of TOWER TOWN",
+    "image": "/assets/towerTown.png",
+    "startedAt": "2017-6-5",
+    "finishedAt": "2017-6-15",
+    "description": "Real tower defense game",
+    "keywords": "game, 2d, unity, tower defense, tower, insects",
+    "entries": [
+      {
+        "type": "text",
+        "text": "TOWER TOWN is tower defense game. However this one is Real tower defense. Players must build tower to sustain attack of humongous insects. \n\nDevelopment team of the game consists of three students. And I am one of them. My job consists mainly of creating game design, graphics and project management. In this article we will look at graphics part. \n\nFirst thing I had to thought of was visual style for the game. Main constraints I put on it were:\n- style has to be fast to make (as we want to use it in first version game which we had to finish in one month)\n- city will be nice to look at and monsters has to be scary\n- using as few tools as possible\n\nI would like to elaborate on the last point. I think it is sometimes easier to achieve really good with restricted tool-set much easier than with all the tools you can think of. In the beginning it is easier to make a first step as there is fewer options to choose from (and not failing in making first step is allways good). Another result of restricting which tools you may use is forcing yourself to think of more creative ways to accomplish your goal.\n\n## My workflow\n\n![Workflow](/assets/towerTownWorkflow.png)\n\nI have choose to use workflow consisting of few steps:\n- Painting really simple color map\n- Painting height map (this is the most important part)\n- Use Blender 3D scene to generate 3d model and render it\n- Transform style\n- Combine to final result\n\nNow when you look at the list you may see that everything after first two steps can be automated. And that’s exactly what I did. I created a Blender scene which loads two textures (color and heightmap). It generates tile from the textures and renders shadows. Next step is adding some style to the image. I used Style Transfer Neural Network with watercolor painting “Flower Market”. Last step is combining watercolor image with render to repair some colors I didn’t like.\n\nSo as you can see, I limited my input to creating color and height map. And I think I achieved visual style which matches my criteria. It’s really quick to create. My toolset is limited to only one tool I created. And it looks good enough even in first version. So I’m going to use it in a game now and maybe even improve it later (for next versions of a game or some other projects).\n\n## TLDR\nThis is example of my underlying color paint and final generated image.\n\n![TT visual style transformation](/assets/towerTownTransformation.png)"
+      }
+    ]
   }
 ]

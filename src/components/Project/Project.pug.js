@@ -19,7 +19,9 @@ module.exports = class __Component extends React.Component {
                 'translator': this.props.translator,
                 'entry': entry
             }));
-        }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {
+        }), React.DOM.p({ className: 'project-meta' + ' ' + 'text-center' }, (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(' to ') + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'more-like-this' }, React.DOM.h4(null, this.props.translator('More like this')), React.DOM.ul(null, __map(this.props.project.tags, (tag, $index) => {
+            return React.DOM.li({ 'key': tag }, React.createElement(Link, { 'to': 'portfolio/' + tag }, tag));
+        })))), React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'project-navigation' }, React.createElement(Link, {
             'to': 'project/' + this.props.project.predecessor.slug,
             className: 'button tiny left'
         }, this.props.translator('Previous project')), React.createElement(Link, {

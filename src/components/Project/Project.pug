@@ -16,6 +16,13 @@ article.single.project
                     Entry(translator=this.props.translator, entry=entry)
             p.project-meta.text-center= (this.props.project.startedAt ? this.props.formatDate(this.props.project.startedAt) : '?') + this.props.translator(" to ") + (this.props.project.finishedAt ? this.props.formatDate(this.props.project.finishedAt) : '?')
             .row
+                .more-like-this
+                    h4=this.props.translator("More like this")
+                    ul
+                        each tag in this.props.project.tags
+                            li(key=tag)
+                                Link(to="portfolio/"+tag)=tag
+            .row
                 .project-navigation
                     Link(to="project/"+this.props.project.predecessor.slug, className="button tiny left")=this.props.translator("Previous project")
                     Link(to="project/"+this.props.project.successor.slug, className="button tiny right")=this.props.translator("Next project")

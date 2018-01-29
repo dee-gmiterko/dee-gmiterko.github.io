@@ -1,7 +1,7 @@
 - const {Link} = require('react-router')
 - const {slowScrollTo} = require('../../javascript/utils')
 - const Gallery16 = require('./../Gallery16/Gallery16')
-- const PortfolioItem = require('./../PortfolioItem/PortfolioItem')
+- const PortfolioItemWithContext = require('./../PortfolioItemWithContext/PortfolioItemWithContext')
 div
     #title-screen
         .row.white-triange-bottom-border
@@ -15,7 +15,7 @@ div
                     Link(to="/portfolio/art") Artist
                     Link(to="/about") Me
 
-    Gallery16(itemType=PortfolioItem, items=this.props.projects)
+    Gallery16(itemType=PortfolioItemWithContext, items=this.props.projects, norandom=0.99)
     #fnav
         .row.text-center
             Link(to="/portfolio", className="button large")= this.props.translator("More projects")

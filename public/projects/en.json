@@ -20,7 +20,8 @@
                 "type": "image",
                 "path": "assets\/5IK5jWbR3GemAIIuiAEMCk.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "create-it",
@@ -52,7 +53,8 @@
                 "type": "image",
                 "path": "assets\/1fT1blPlyIEUUEMaGKoiIw.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "girl-in-park",
@@ -75,7 +77,8 @@
                 "type": "image",
                 "path": "assets\/4DZVZqMlDOOmq8uomM8Suu.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "minecraft-scarecrows",
@@ -100,7 +103,8 @@
                 "type": "image",
                 "path": "assets\/ldycdqgZJ6QQE2gmg0oo4.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "ppl",
@@ -127,7 +131,8 @@
                 "type": "image",
                 "path": "assets\/1KTlETYROMuSeaoaKq2MIK.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "minecraft-bulldozer",
@@ -160,7 +165,8 @@
                 "type": "file",
                 "path": "assets\/2KSrJsMnGwgEYGgyi64sso.zip"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "forest",
@@ -184,7 +190,8 @@
                 "type": "image",
                 "path": "assets\/1MQjPJOrTmCYc286OaycUy.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "mech5",
@@ -213,7 +220,8 @@
                 "type": "image",
                 "path": "assets\/2QmEZej9tSgY2cmoC0Ca6W.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "gamehive",
@@ -258,7 +266,8 @@
                 "type": "image",
                 "path": "assets\/2czzsMjkU4ogiuaYMU2KiS.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "ee-antic",
@@ -298,7 +307,8 @@
                 "type": "image",
                 "path": "assets\/2FNXiXqqDSCk8OOSKkMMO6.JPG"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "map-london",
@@ -328,7 +338,8 @@
                 "icon": "media",
                 "path": "assets\/6geFfbp33i2w4w0e8yCmw4.schematic"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "wordpress-tus",
@@ -357,7 +368,8 @@
                 "type": "image",
                 "path": "assets\/43agWOkwtOKeqiEs4Ek6YS.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "icons-extractor",
@@ -393,7 +405,8 @@
                 "type": "file",
                 "path": "assets\/6AnMuqaqUo2ym8YYCe6asq.jar"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "rocnikovy-projekt",
@@ -422,7 +435,8 @@
                 "type": "file",
                 "path": "assets\/6tPtFHgn4IA80eeUQAiGoM.pdf"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "wordpress-farny",
@@ -448,7 +462,8 @@
                 "type": "image",
                 "path": "assets\/65HKgIb2nKyw4swskskQ0i.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "papercraft",
@@ -480,7 +495,8 @@
                 "type": "file",
                 "path": "assets\/3vyYV5WHkcuGGEQEw08Qco.pdf"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "wordpress-erhard",
@@ -506,7 +522,8 @@
                 "type": "image",
                 "path": "assets\/5cpUzliPeg2ECcCM6wEcqI.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "jeden-den",
@@ -546,7 +563,8 @@
                 "type": "image",
                 "path": "assets\/6pvzlDsWDSW2OwkuWCu0Uq.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "wordpress-maintain",
@@ -572,7 +590,8 @@
                 "type": "image",
                 "path": "assets\/4jNLE6XgV2I4GsUUSSe6eu.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "wordpress-ped",
@@ -598,7 +617,8 @@
                 "type": "image",
                 "path": "assets\/3b11kxqkJaWCq82kwSakgg.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "life-of-snow",
@@ -631,7 +651,8 @@
                 "type": "image",
                 "path": "assets\/6xHV10OqqseUMug8GQuGyq.png"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "2minD",
@@ -659,7 +680,8 @@
                 "type": "text",
                 "text": "## Schedule\n### \u0160tvrtok ve\u010der\n**Dostal som n\u00e1pad na \u010dom budem pracova\u0165. N\u00e1pad dostal meno 2minD.**\nSkr\u00e1tene by sa dalo poveda\u0165: Massive Multiplayer Biela Plocha na kto\u00fa M\u00f4\u017ee Hocikto P\u00edsa\u0165 (skr\u00e1tene MMBPnkMHP)\n### Nasleduj\u00face 2 t\u00fd\u017edne\n**Nap\u00edsanie aplik\u00e1cie.**\nPodarilo sa mi ju spravi\u0165 naozaj v \u00fa\u017easnom \u010dase. Programovanie i\u0161lo dobre. A\u017e som sa \u010dudoval ako m\u00e1lo probl\u00e9mov sa vyskytlo. \n### 20. 2. 2015 (23:59)\n**Zaregistrovanie projektu. Nahratie na webhosting.**\nProjekt som, rovnako ako [niCool](http:\/\/nicool.rocks), zaregistroval a\u017e na posledn\u00fa chv\u00ed\u013eu. Projekt mozete navstivit na [2mind.ienze.me](http:\/\/2mind.ienze.me).\n### 27. a 28. 3. 2015\n**Z\u00fa\u010dastnil som sa konferencie v Bratislave. V piatok som odprezentoval svoj pr\u00edspevok.**\nBod \u010d. 1: Som tot\u00e1lny antitalent na vystupovanie. Jednoducho. Prezent\u00e1cia sa mi v\u00f4bec nevydarila. Hovoril som o veciach ktor\u00e9 niesu naozaj podstatn\u00e9. A naopak zabudol som spomen\u00fa\u0165 to hlavn\u00e9.\n\nPrezent\u00e1ciu som ukon\u010dil slovami \"Som zvedav\u00fd \u010do tam vytvor\u00edte\". Ale neuvedomil som si jedn\u00fa d\u00f4le\u017eit\u00fa vec. Zabudol som tam nap\u00edsa\u0165 adresu [2mind.ienze.me](http:\/\/2mind.ienze.me). To som si uvedomil a\u017e ke\u010f ma zastavil jeden chlapec po ceste sp\u00e4t na miesto. (\u010eakujem. A\u017e zist\u00edm, \u010di m\u00e1\u0161 nejak\u00fa str\u00e1nku prid\u00e1m tu odkaz na \u0148u)\n### Koniec\n**Pre\u010do koniec?**\nJe \u0161koda, \u017ee tento n\u00e1pad zaujme len mal\u00fa \u010das\u0165 \u013eud\u00ed. M\u00e1lokto tam str\u00e1vil dostato\u010dn\u00fd \u010das aby aj nie\u010do nap\u00edsal. Pozval som tam viacero \u013eud\u00ed.. ale d\u00e1 sa poveda\u0165, \u017ee sa tam norm\u00e1lne rozpr\u00e1vali len dvaja. A tak som to aj nap\u00edsal. Pri registr\u00e1cii projektu bolo potrebn\u00e9 vyplni\u0165 po\u010det n\u00e1v\u0161tev za posledn\u00fd mesiac. Nap\u00edsal som 2.\n\t\nNem\u00e1s ty nejak\u00fd n\u00e1pad ako by sa t\u00e1to my\u0161lienka dala poupravi\u0165 tak, aby zaujala viac \u013eud\u00ed?\n\nNo ve\u010f vlastne preto som to hodil na [GitHub](https:\/\/github.com\/linzee\/2mind). Takto m\u00f4\u017ee prispie\u0165 ka\u017ed\u00fd."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "dosr",
@@ -686,7 +708,8 @@
                 "type": "image",
                 "path": "assets\/1wVG5ea5ZiQOSwWuUKcacQ.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "slenderman",
@@ -723,7 +746,8 @@
                 "type": "image",
                 "path": "assets\/181PkHdHN0ASmwocEQWSwm.jpg"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "ienze-me",
@@ -759,7 +783,8 @@
                 "type": "text",
                 "text": "### Contentful\nUplynulo pol roka od spustenia tejto stranky. M\u00f4\u017eem zhodnoti\u0165 ako str\u00e1nka (alebo server) be\u017e\u00ed. Be\u017e\u00ed naozaj r\u00fdchlo a pohodlne sa spravuje. Ako obsah, tak aj server. Napr\u00edklad po vypnut\u00ed p\u00f4vodn\u00e9ho serveru som ju bol schopn\u00fd za p\u00e1r min\u00fat presun\u00fa\u0165 na in\u00fd.\n\nAle za pol roka som narazil na nejak\u00e9 obmedzenia. A to hlavne v slu\u017ebe Contentful, ktor\u00fa pou\u017e\u00edvam na spr\u00e1vu obsahu. Mus\u00edm poveda\u0165, \u017ee je naozaj u\u017eito\u010dn\u00fd. Ja na \u0148om mo\u017eem bez probl\u00e9mov vytv\u00e1ra\u0165 ak\u00fdko\u013evek obsah. Ja si s\u00e1m m\u00f4\u017eem navrhnu\u0165 \u0161trukt\u00faru v akej sa bud\u00fa \u00fadaje uklada\u0165. Ale aj na tak jednoduchej str\u00e1nke ako je moja mi za\u010dala ch\u00fdba\u0165 mo\u017enos\u0165 vkladania obsahu u\u017e\u00edvate\u013emi. Presnej\u0161ie mi ch\u00fdbaju koment\u00e1re. Druhou nev\u00fdhodov ktor\u00fa netreba \u010falej rozobera\u0165 je cena. Za pol roka som vy\u010derpal vo\u013en\u00fd limit na po\u010det obr\u00e1zkov.\nJe \u00fa\u017easn\u00e9 na na\u0161tartovanie jednoduch\u00e9ho projektu (ktor\u00fd sa nikdy nerozrastie). Ale pou\u017e\u00edva\u0165 ho sa oplat\u00ed iba ak si ochotn\u00fd zaplati\u0165.\n\nEdit: Teraz som zistil \u017ee free verzia u\u017e neobsahuje podporu viacer\u00fdch jazykov. \u010co bola jedna z v\u00fdhod ktor\u00fa som spom\u00ednal. Ja ju m\u00e1m preto \u017ee som si ju nastavil pred t\u00fdm ako to obmedzili, u\u017e si ju ani ja nem\u00f4\u017eem upravi\u0165.\n\nTak\u017ee budem musie\u0165 pou\u017ei\u0165 nejak\u00e9 in\u00e9 rie\u0161enie."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "wame",
@@ -778,7 +803,8 @@
                 "type": "text",
                 "text": "Cez pr\u00e1zdniny som pracoval vo [wame.sk](http:\/\/wame.sk) - jedine\u010dn\u00e9 webov\u00e9 rie\u0161enia na mieru (CMS, CRM, IS, SEO). Bol som tam na st\u00e1\u017e na poz\u00edcii Back-end developera. Za ten \u010das som pracoval na r\u00f4znych veciach.\n\n### Leto 2015\n- DynamicForms\n  - Dynamicke generovanie formularov na zaklade roznych udajov\n    - generovane z dat ulozenych v databaze\n    - generovane z anotacii triedy (vyuzite v automatickom editore v mojom systeme)\n  - Editor na upravu formulara ulozeneho v databaze\n  - Wizard na rychle vytvorenie formulara\n  - Ukladanie zozbieranych dat z formularov\n  - Mnozstvo typov ktore je mozne vlozit do formulara (a nastavenia (najprv nazyvane validatory) na ich upravu)\n  - Generovanie css k formularu, sablony\n- \"UserColumns\"\n\t- Triedy repozitara na pristup k zoznamu stlpcomv a udajom\n\t- Napojenie na tabulku user_info a custom stlpce\n- Kompletna stranka z vyuzitim Wame CMS\n- Backend podpora projektov\n\t- Sprava suborov\n\t\t- moznost priradit ich k blogom\n\t- Rozsiahly kontaktny formular z konfigurovatelnymi typmi\n\t- Zobrazovanie produktovych parametrov v kategoriach\n\t- Vylepsenie funkcnosti hromadnych akcii (kontakty, produkty)\n\t- Jednotaky pri cene v eshope (napr: \u20ac\/m\u00b2)\n\t\t- moznost nastavit format v akom sa zobrazuju ceny\n\t- Rozsirenie moznosti upravy objednavky - zmena variacie produktu\n\t- Manazer variant - skopirovanie vybranych vlastnosti do variant produktu\n\t- Kopirovanie produktov\n\t\t- zjednotene z vytvaranim novych variant produktov\n\t- Opravy CMS (zvedca suvisiace z eshopom)\n\t- Nastavenia dostupnosti produktov\n\t\t- akcie pri dosiahnuti urciteho mnozstva na sklade\n- Zrychlenie systemu zbavenim sa niektorych query (v niektorych pripadoch az cez 70)\n- Import\/Export\n\t- System na konvertovanie dat\n\t- Vytvorene podporovane typy: Databaza, XML\n\t- Nakonfigurovany import a export pre MK-soft\n- Realtime aplikacia v webovom protred\u00ed vyu\u017e\u00edvajuca websocket"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "rotating-layers",
@@ -817,7 +843,8 @@
                 "type": "file",
                 "path": "assets\/5i3Oc0ZA3CgsksOgEcUmo8.zip"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "pluginy-ako-na-ne",
@@ -836,7 +863,8 @@
                 "type": "text",
                 "text": "*CMS, pluginy, Nette, WAME, PHP*\n\n> Na za\u010diatok mus\u00edm spomen\u00fa\u0165: Cez pr\u00e1zdniny pracujem vo wame.sk - jedine\u010dn\u00e9 webov\u00e9 rie\u0161enia na mieru (CMS, CRM, IS, SEO). Som tam na st\u00e1\u017e na poz\u00edcii Back-end developera. V\u0161etky aplik\u00e1cie s\u00fa tu postaven\u00e9 na spolo\u010dnom, mas\u00edvnom z\u00e1klade. Tento redak\u010dn\u00fd syst\u00e9m vyu\u017e\u00edva [PHP framework Nette](http:\/\/nette.org\/).\n\nOkam\u017eite som pochopil ak\u00e9 v\u00fdhodn\u00e9 by bolo rozdeli\u0165 syst\u00e9m na men\u0161ie \u010dasti. T\u00fdm z\u00edska\u0165 ve\u013ek\u00fa variabilitu. Prinieslo by to ve\u010d\u0161iu preh\u013eadnos\u0165, zjednodu\u0161enie aktualizovania str\u00e1nok,.. no proste sa mi ten n\u00e1pad p\u00e1\u010dil. Vo vo\u013enom \u010dase som sa za\u010dal s touto my\u0161lienkou pohr\u00e1va\u0165..\n\nPluginy, moduly, roz\u0161\u00edrenia, add-ons\nJe jasn\u00e9, \u017ee je potrebn\u00fd syst\u00e9m na\u010d\u00edtavania pluginov. Ale nie len ten. Sk\u00f4r ako ich m\u00f4\u017eeme na\u010d\u00edta\u0165 budeme ich potrebova\u0165 zoradi\u0165. Zoradi\u0165 ich tak, aby sa pluginy na ktor\u00fdch in\u00e9 z\u00e1visia na\u010d\u00edtali sk\u00f4r. Sch\u00e9ma pluginov m\u00f4\u017ee vyzera\u0165 napr\u00edklad takto:\n\n![Example plugins structure](assets\/4mr6yd632U2Q62a40SyeGW.png)\n\nV tomto pr\u00edpade chceme ako \u00faplne prv\u00fd na\u010d\u00edta\u0165 plugin Main. To preto, \u017ee nem\u00e1 \u017eiadne pluginy na ktor\u00fdch by bol z\u00e1visly. Av\u0161ak na \u0148om je z\u00e1visl\u00fdch mnoho \u010fal\u0161\u00edch pluginov. Neskv\u00f4r treba na\u010d\u00edta\u0165 pluginy ako s\u00fa napr\u00edklad Editor, File,.. A a\u017e \u00faplne na z\u00e1ver Article a Website.\n\nAko ich zorad\u00edme?\nNa zoradenie pluginov ma napadlo pou\u017ei\u0165 PHP funkciu [usort](http:\/\/php.net\/manual\/en\/function.usort.php). Jej v\u00fdhoda je v tom, \u017ee je mo\u017en\u00e9 zoradi\u0165 array pod\u013ea \u010dohoko\u013evek. Ja som na zoradenie vyu\u017eil tak\u00fato funkciu:\n\n```\nusort($this->plugins,\n\tfunction(\\App\\Plugin $p1, \\App\\Plugin $p2) {\n\t\tif (in_array($p2->getName(), p1->getDependencies())) {\n\t\t\treturn 1;\n\t\t}\n\t\treturn 0;\n\t}\n);\n```\n\nFunkcia jednoducho kontroluje \u010di je druh\u00fd z porovn\u00e1van\u00fdch pluginov v zozname z\u00e1vislosti prv\u00e9ho. Ak sa v zozname nach\u00e1dza posunie sa v zozname pluginov vy\u0161\u0161ie, ak nie ost\u00e1va na mieste. T\u00e1to funkcia bude volan\u00e1 dovtedy k\u00fdm nieje zoznam \u00faplne zoraden\u00fd.\n\nK zora\u010fovaniu som takisto pridal kontrolu \u010di s\u00fa v\u0161etky potrebn\u00e9 pluginy dostupn\u00e9. A kontrolu na zacyklenie z\u00e1vislost\u00ed pluginov.\n\nKed\u017ee CMS vyu\u017e\u00edva [composer](https:\/\/getcomposer.org\/) na na\u010d\u00edtanie potrebn\u00fdch komponentov, napadlo ma ho takisto vyu\u017ei\u0165 pre pluginy. Do ka\u017ed\u00e9ho prie\u010dinku pluginu som pridal s\u00fabor composer.json. Pr\u00e1ve v \u0148om s\u00fa zap\u00edsan\u00e9 jeho z\u00e1vislosti (dependencies). Takisto je mo\u017en\u00e9 tieto s\u00fabory nesk\u00f4r vyu\u017eit na automatick\u00e9 s\u0165ahovanie pluginov.\n\nUr\u010dite toho e\u0161te nap\u00ed\u0161em o tomto mojom novom CMS syst\u00e9me viac. Staviam ho pomocou frameworku Nette. Zatia\u013e ho budujem pre vlastn\u00e9 pou\u017eitie. Ale aj ako uk\u00e1\u017eku syst\u00e9mu vyu\u017e\u00edvajuceho pluginy. Zatia\u013e ho nieje mo\u017en\u00e9 akt\u00edvne vyu\u017e\u00edva\u0165 ked\u017ee neobsahuje dostatok funkcii."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "uprava-priamo-na-stranake",
@@ -855,7 +883,8 @@
                 "type": "text",
                 "text": "*CMS, editor, admin, Nette, WAME, PHP*\n\n> Na za\u010diatok mus\u00edm spomen\u00fa\u0165: Cez pr\u00e1zdniny pracujem vo wame.sk - jedine\u010dn\u00e9 webov\u00e9 rie\u0161enia na mieru (CMS, CRM, IS, SEO). Som tam na st\u00e1\u017e na poz\u00edcii Back-end developera. V\u0161etky aplik\u00e1cie s\u00fa tu postaven\u00e9 na spolo\u010dnom, mas\u00edvnom z\u00e1klade. Tento redak\u010dn\u00fd syst\u00e9m vyu\u017e\u00edva [PHP framework Nette](http:\/\/nette.org\/).\n\nAk pou\u017e\u00edvate Nette, ale aj ak nie, tak viete \u017ee neobsahuje edit\u00e1ciu obsahu priamo na str\u00e1nke. Mysl\u00edm \u017ee je to u\u017eito\u010dn\u00e1 funkcia. Preto som ho aj pridal ako \u010fal\u0161\u00ed z prvkov pre syst\u00e9m na ktorom pracujem po pracovnej dobe.\n\n### Tak uk\u00e1\u017e \u010do si navrhol\nChcel som aby vlo\u017eenie editora do \u0161ablony stranky bolo co naj\u013each\u0161ie. Napadlo ma vytvori\u0165 vlastn\u00e9 makro ktor\u00e9 zobrazuje r\u00f4zny obsah pod\u013ea toho \u010di ho pou\u017e\u00edvate\u013e upravuje alebo nie.\n\n```\n{ieo article}\n<article>\n\t<h2>{iev title}<\/h2>\n\t<p>{iev description}<\/p>\n<\/article>\n{\/ieo}\n```\n\nMakro {ieo} sl\u00fa\u017ei na zadefinovanie typu d\u00e1t. Na tomto konkr\u00e9tnom mieste v \u0161abl\u00f3ne sa bud\u00fa zobrazova\u0165 zaradom \u010dl\u00e1nky. Ka\u017ed\u00fd \u010dl\u00e1nok bude ma\u0165 tak\u00fato \u0161trukt\u00faru. Ka\u017ed\u00e9 z makier {iev} v \u010dl\u00e1nku zobraz\u00ed niektor\u00fa jeho vlastnos\u0165 alebo pole na \u00fapravu. T\u00e1to komponenta sa takisto star\u00e1 o str\u00e1nkovanie a zobrazovanie jednotliv\u00fdch objektov (napr. \u010dl\u00e1nkov).\n\nZ posledn\u00fdch mojich sk\u00fasenosti som dos\u0165 kruto zistil, \u017ee to \u010do si ja navrhnem pre backend nieje v\u017edy \u00faplne v\u00fdhodn\u00e1 aj pre pou\u017e\u00edvate\u013ea a vzh\u013ead. Preto som tento prvok nechcel urobi\u0165 obmedzen\u00fd na jednoduch\u00e9 inputy a tla\u010didlo na ulo\u017eenie na konci. A tak som oddelil funkcie vykres\u013eovania do \u0161peci\u00e1lneho objektu. Tento objekt sa d\u00e1 nahradi\u0165 za \u010doko\u013evek \u010do implementuje potrebn\u00fd interface."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "less-sass-color-difference-calculator",
@@ -881,7 +910,8 @@
                 "type": "image",
                 "path": "assets\/46IWsMpj9Yq6eKwUkyc8Cu.png"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "interaktivne-pozadie",
@@ -900,7 +930,8 @@
                 "type": "text",
                 "text": "> \u010eal\u0161ia z s\u00e9rie mojich minul\u00fdch aktiv\u00edt je aj pozadie menu na tejto str\u00e1nke. Je dokonal\u00fdm pr\u00edkladom toho ako zlo\u017eito som to urobil aj ke\u010f sa to dalo aj jednoduch\u0161ie. :D\n\n##### Pozadie menu str\u00e1nky je tvoren\u00e9 z \u0161tyroch vrstiev\n1. Z\u00e1kladn\u00e9 jednofarebn\u00e9 siv\u00e9 pozadie.\n2. Polopriesvitn\u00e9 n\u00e1dpisy tmavej farby.\n3. Radial gradient tej istej farby ako z\u00e1kladne pozadie. (na obr\u00e1zku je ozna\u010den\u00fd zelenou) Ten sa pohybuje pod\u013ea kurzora.\n4. Polopriesvitn\u00e9 n\u00e1dpisy svetlej farby.\n\n![Isometric model pozadia](assets\/ienze-bg.png)\n\nPozri si aj [Isometric model pozadia](\/media\/ienze-bg\/) (nie\u010do tak\u00e9 si e\u0161te nikdy nepo\u010dul ani nevidel)\n\nCel\u00e9 to funguje tak, \u017ee dve vrstvy z nadpismi ktor\u00e9 s\u00fa po celej ploche sa prekr\u00fdvaj\u00fa. T\u00fdm \u017ee s\u00fa poloprieh\u013eadn\u00e9 sa ich farby zmie\u0161aju a vznikne presne tak\u00e1 ist\u00e1 ako je z\u00e1kladne pozadie. Preto ich nevidno. Vidno ich len vtedy, ak medzi nich vlo\u017e\u00edme nie\u010do, \u010do tomuto mie\u0161aniu zabr\u00e1ni. To zabezpe\u010duje maska ktor\u00e1 sa pos\u00fava pod\u013ea poz\u00edcie kurzora.\n\nVie\u0161 ako by sa to dalo urobi\u0165 jednoduch\u0161ie? Len z jednou vrstvou obr\u00e1zku\/n\u00e1pisov?"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "py-2048",
@@ -928,7 +959,8 @@
                 "type": "image",
                 "path": "assets\/6f2GEhnWtaICQmYiOcOWsm.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "http",
@@ -947,7 +979,8 @@
                 "type": "text",
                 "text": "V poslednej dobe sa dos\u0165 s\u00fata\u017e\u00ed v r\u00fdchlosti na\u010d\u00edtania str\u00e1nok. Aj ja som sa zapojil do tejto s\u00fa\u0165a\u017ee, bol som schopn\u00fd dosta\u0165 na\u010d\u00edtanie str\u00e1nky na \u00farove\u0148 pol sekundy. Zr\u00fdchli\u0165 na\u010d\u00edtavanie sa d\u00e1 viacerimi sp\u00f4sobmi. Jeden z sp\u00f4sobov je zmen\u0161enie d\u00e1t potrebn\u00fdch na zobrazenie str\u00e1nky na \u010do najmen\u0161ie mno\u017estvo. Ale spomalenie vznik\u00e1 aj po\u010das prenosu, presnej\u0161ie ide o r\u00fdchlos\u0165 odozvy. Presne na t\u00fato druh\u00fa mo\u017enos\u0165 sa zameriava nov\u00e1 verzia HTTP protokolu. HTTP\/2.0\n\n### HTTP\/1.0\n\n![HTTP 1.0](assets\/train_1_0.png)\n\nToto bol p\u00f4vodn\u00fd n\u00e1vrh webov\u00e9ho protokolu. Cez spojenie tak\u00e9hoto typu nieje mo\u017en\u00e9 prenies\u0165 viac ako jeden s\u00fabor. Otv\u00e1ralo sa nov\u00e9 spojenie pre ka\u017ed\u00fd \u010fal\u0161\u00ed s\u00fabor.\n\n### HTTP\/1.1\n\n![HTTP 1.1](assets\/train_1_1.png)\n\nT\u00e1to verzia protokolu je teraz najroz\u0161\u00edrenej\u0161ia. Je v \u0148om mo\u017en\u00e9 pou\u017ei\u0165 hlavi\u010dku Connection: \"keep-alive\" ktor\u00e1 ponech\u00e1 spojenie otvoren\u00e9 pre na\u010d\u00edtavanie \u010fal\u0161\u00edch s\u00faborov. Prehliada\u010de sa e\u0161te sna\u017eia ur\u00fdchlit komunik\u00e1ciu t\u00fdm, \u017ee vytvoria a\u017e 6 tak\u00fdchto spojen\u00ed s\u00fa\u010dasne.\n\n### HTTP\/2.0\n\n![HTTP 2.0](assets\/train_2_0.png)\n\nJe nov\u00fd protokol ktor\u00fd sa za\u010d\u00edna pou\u017e\u00edva\u0165. D\u00e1 sa poveda\u0165, \u017ee ve\u010d\u0161ie slovo bude ma\u0165 server. Doteraz musel najprv prehliada\u010d poprosi\u0165 o s\u00fabor, a\u017e potom ho mohol dosta\u0165. Server bude m\u00f4c\u0165 zoradzova\u0165 s\u00fabory pod\u013ea priority. Takisto pribudne funkcia Server Push ktor\u00e1 umo\u017en\u00ed posla\u0165 prehliada\u010du s\u00fabory e\u0161te sk\u00f4r ako zist\u00ed, \u017ee ich potrebuje. \n\nPri dne\u0161n\u00fdch str\u00e1nkach sa vcelku \u010dasto stret\u00e1vame z sp\u00e1jan\u00edm s\u00faborov. Napr\u00edklad obr\u00e1zky google sp\u00e1ja takto:\n\n[![https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png](https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png)](https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png)\n\nAk ste o tejto technike nepo\u010duli tak u\u017e ani nemus\u00edte.. ale sp\u00e1janie mal\u00fdch s\u00faborov dokopy sa ur\u00fdchli na\u010d\u00edtavanie. V\u010faka HTTP\/2  to u\u017e nieje potrebne, je to zbyto\u010dn\u00e9. Ked\u017ee nie\u010do podobn\u00e9 sa deje aj priamo pri prenose. \u010eal\u0161ie \u00fa\u017easn\u00e9 v\u00fdhody som na\u0161iel spomenut\u00e9 v tejto [prezent\u00e1ci\u00ed](https:\/\/docs.google.com\/presentation\/d\/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM\/present#slide=id.p19).\n\n### Remember Me\nHral niekto z v\u00e1s hru Remember Me? To len mne sa zdalo, \u017ee tam tvorcovia spomenuli protokol http a\u017e pr\u00edli\u0161 ve\u013ea kr\u00e1t?\n\n1. Prv\u00e9 miesto kde som si to v\u0161imol je u\u017e v prvej epiz\u00f3de. Len \u010do sa ti podar\u00ed utiec\u0165 z vezenia ocitne\u0161 sa v oblasti s n\u00e1zvom Slum 404.\n    \n    *404 je \u010d\u00edslo chyby \"Not found\" ktorou server odpoved\u00e1 ak pozadovan\u00fd s\u00fabor nieje mo\u017en\u00e9 n\u00e1js\u0165.*\n2. V druhej epiz\u00f3de sa stretne\u0161 s svojim fan\u00fa\u0161ikom ktor\u00fd \u00faplnou n\u00e1hodou pou\u017e\u00edva meno \"Bad request\".\n    \n    *Bad request je \u010fal\u0161ia z ch\u00fdb http protokolu. 400*\n3. Potom bolo chv\u00ed\u013eu ticho. (Alebo som si len ja ni\u010d nev\u0161imol.) Ku koncu hry je vidie\u0165, \u017ee sensen pou\u017e\u00edva URL adresy.  Nad zobrazen\u00fdmi d\u00e1tami o Nilin svieti n\u00e1dpis \"sensen:\/\/Nilin\/\"\n    \n    *Pod\u013ea URL sa takto zapisuj\u00fa adresy k s\u00faborom. Tento konkr\u00e9tny z\u00e1pis znamen\u00e1 protokol \"sensen\" a prie\u010dinok \"Nilin\".*\n\nV\u0161imli ste si e\u0161te nejak\u00fa \u010fal\u0161iu nar\u00e1\u017eku?\n\n(Tie obr\u00e1zky som nekreslil, rad\u0161ej som si na nich urobil jednoduch\u00fd [gener\u00e1tor](\/media\/train-generator))"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "leto-2015",
@@ -992,7 +1025,8 @@
                 "type": "image",
                 "path": "assets\/33dQ9JIWgwG8wKeOUeqYCg.jpg"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "py-2049",
@@ -1024,7 +1058,8 @@
                 "type": "image",
                 "path": "assets\/4lzyiRV90QUeMYKQkGwUyG.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "py-2050",
@@ -1056,7 +1091,8 @@
                 "type": "image",
                 "path": "assets\/7FKdITVSCc8AoCOWGoucIU.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "20-4-89-or-50",
@@ -1077,7 +1113,8 @@
                 "type": "text",
                 "text": "Jedn\u00fdm z povinn\u00fdch predmetov s\u00fa aj z\u00e1klady programovania. Ja som si zap\u00edsal \u0161peci\u00e1lnu skupinu Python-01. Je to skupina pre \u013eud\u00ed, ktor\u00fd maj\u00fa sol\u00eddne z\u00e1klady programovania. Cvi\u010denia nieje potrebn\u00e9 nav\u0161tevovs\u0165 pravidelne ale treba vytvori\u0165 3 projekty. T\u00e1to skupina je trochu zlo\u017eitej\u0161ia aj v tom, \u017ee som si zadania musel vymyslie\u0165 s\u00e1m. Boli zadan\u00e9 len oblasti. T\u00e1to skupina je v roku 2015 otvoren\u00e1 prv\u00fdkr\u00e1t, tak\u017ee sa e\u0161te len vyv\u00fdja. Napr\u00edklad a\u017e po\u010das semestra sa vymyslelo, \u017ee na\u0161e projekty budeme aj prezentova\u0165 (druh\u00fd a tret\u00ed). Ja som svoje projeky odprezentoval minul\u00fd t\u00fd\u017ede\u0148.\n\n### 2048\nPrv\u00fd projekt m\u00e1 za \u00falohu simulova\u0165 r\u00f4zne strat\u00e9gie pre hru. Ja som vytvoril tri strat\u00e9gie pre hru 2048. [Viac o projekte](\/#\/project\/py-2048).\n\n### 2049\n\u010eal\u0161ie dva projekty nemali \u017eiadne meno a tak som ich len \u010d\u00edsloval zaradom. Druh\u00fd projekt sa mal venova\u0165 spracovaniu d\u00e1t. Ja som sa zameral na \u0161tatistiku me\u0161kania vlakov. [Viac o projekte](\/#\/project\/py-2049).\n\n### 2050\nPosledn\u00fd projekt mal vyu\u017e\u00edva\u0165 pr\u00e1cu s bitmapov\u00fdmi obr\u00e1zkami. Jedn\u00fdm z pr\u00edkladov v zadan\u00ed bolo generovanie obr\u00e1zokov. To ma zaujalo najviac, tak\u017ee som sa mu aj za\u010dal venova\u0165. [Viac o projekte](\/#\/project\/py-2050)."
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "shaders-in-css",
@@ -1102,7 +1139,8 @@
                 "type": "image",
                 "path": "assets\/css_shader.png"
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "ako-ovladat-pc-v-minecrafte",
@@ -1123,7 +1161,8 @@
                 "type": "text",
                 "text": "### Slovn\u00ed\u010dek pojmov\n**Minecraft** je hra o rozb\u00edjan\u00ed a ukladan\u00ed kociek.\n\n**8-bit ALU** V Minecrafte je mo\u017en\u00e9 postavi\u0165 ve\u013ea veci. Dokonca aj z\u00e1kladn\u00e9 logick\u00e9 \u010dleny \u201credstone obvody\u201d (ako AND, OR) No a z nich sa potom d\u00e1 zlo\u017ei\u0165 aj procesor. Niektor\u00fd \u010fal\u0161\u00ed \u010dl\u00e1nok bude o nie\u010dom takomto \u010do som urobil. Ale tak\u00e9to po\u010d\u00edta\u010de s\u00fa dos\u0165 pomal\u00e9 a ve\u013emi zlo\u017eit\u00e9 na postavenie. E\u0161te som nevidel nikoho nie\u010do tak\u00e9 stava\u0165 na serveri.\n\n**ComputerCraft** je roz\u0161\u00edrenie pre minecraft, ktor\u00e9 prid\u00e1va mo\u017enos\u0165 postavi\u0165 po\u010d\u00edta\u010d trochu jednoduch\u0161ie.\n\n<small>Ked\u017ee mi diev\u010data prik\u00e1zali, \u017ee t\u00fato \u010das\u0165 mam pred\u013a\u017ei\u0165, prid\u00e1vam sch\u00e9mu na osobn\u00fa korytna\u010dku<\/small>\n```\u2554\u2550\u2550\u2550\u2566\u2550\u2550\u2550\u2566\u2550\u2550\u2550\u2557    \u2554\u2550\u2550\u2550\u2566\u2550\u2550\u2550\u2566\u2550\u2550\u2550\u2557\n\u2551 S \u2551 S \u2551 S \u2551    \u2551 I \u2551 I \u2551 I \u2551\n\u2560\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u2563    \u2560\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u2563\n\u2551 S \u2551 R \u2551 S \u2551 -> \u2551 I \u2551 * \u2551 I \u2551 + Pickaxe\n\u2560\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u2563    \u2560\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u256c\u2550\u2550\u2550\u2563\n\u2551 S \u2551 G \u2551 S \u2551    \u2551 I \u2551 C \u2551 I \u2551\n\u255a\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u255d    \u255a\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u2569\u2550\u2550\u2550\u255d```\n\n**LUA**\nLUA je jednoduch\u00fd programovaci jazyk so syntaxou podobnou pythonu. \u010casto sa vyu\u017e\u00edva ako s\u00fa\u010das\u0165 hier na p\u00edsanie skriptov. Daj\u00fa sa v \u0148om okrem in\u00e9ho p\u00edsa\u0165 aj programy pre ComputerCraft. Obsahuje r\u00f4ze funkcie, ktor\u00e9 umo\u017e\u0148uj\u00fa robi\u0165 v\u00fdpo\u010dty, komunikova\u0165 s okol\u00edm, postavi\u0165 GPS a mnoho \u010fal\u0161\u00edch..\n\n### \u010co som z pojmov urobil?\nBolo to d\u00e1vno, ke\u010f som e\u0161te hr\u00e1val minecraft na jednom serveri s technick\u00fdmi roz\u0161\u00edreniami. Postavil som si ComputerCraft po\u010d\u00edta\u010d a sk\u00fa\u0161al, \u010do sa s n\u00edm d\u00e1 dok\u00e1za\u0165. Na wiki som narazil aj na pr\u00edkaz, ktor\u00fdm sa d\u00e1 s lua na\u010d\u00edta\u0165 obsah webstr\u00e1nok. T\u00e1to funkcia mala by\u0165 ur\u010den\u00e1 na na\u010d\u00edtavanie skriptov, aby ich netrebalo p\u00edsa\u0165 st\u00e1le odznova. Ale pravda\u017ee mne hne\u010f napadlo, \u017ee by sa to dalo vyu\u017ei\u0165 aj in\u00e1\u010d. Okam\u017eite som si zalo\u017eil nejak\u00fd free hosting a nap\u00edsal p\u00e1r riadkov php na na\u010d\u00edtavanie pr\u00edkazov pre po\u010d\u00edta\u010d z datab\u00e1zy. Predstav si, \u017ee ten imagin\u00e1rny po\u010d\u00edta\u010d z nejak\u00e9ho \u010desk\u00e9ho serveru si dok\u00e1zal pomocou http stiahnu\u0165 pr\u00edkaz z tej webstr\u00e1nky a spusti\u0165 ho. To, \u010di bol pridan\u00fd nejak\u00fd nov\u00fd pr\u00edkaz si kontroloval ka\u017ed\u00fa min\u00fatu. To mi umo\u017enilo ho na dia\u013eku ovl\u00e1da\u0165 kdeko\u013evek z internetu :D Tak isto by on mohol v http requeste odosiela\u0165 svoj stav aby vznikla obojsmern\u00e1 komunik\u00e1cia.\n\n~~Toto je moj najv\u00eb\u010d\u0161\u00ed \u00faspech v h\u013eadan\u00ed bezpe\u010dnostn\u00fdch medzier.~~ \u0160koda, \u017ee ten skript u\u017e nem\u00e1m."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "efil-fo-emag",
@@ -1143,7 +1182,8 @@
                 "type": "text",
                 "text": "Zauj\u00edmalo ma, \u010di by sa dal navrhnu\u0165 algoritmus, ktor\u00fd by spo\u010d\u00edtal predch\u00e1dzajuci krok Conway's Game of life. Mal som obr\u00e1zok ktor\u00fd som chcel vr\u00e1ti\u0165 o jeden krok dozadu.\n\n![gol](assets\/life.png)\n\nPodarilo sa mi to, ale nepodarilo sa mi vymyslie\u0165 ni\u010d lep\u0161ie, tak\u017ee sk\u00fa\u0161am v\u0161etky mo\u017enosti a\u017e k\u00fdm nen\u00e1jdem nejak\u00fa spr\u00e1vnu. Ka\u017ed\u00e9 pole m\u00f4\u017ee ma\u0165 2 r\u00f4zne stavy (je tam cell alebo nieje). To znamen\u00e1, \u017ee po\u010det mo\u017enost\u00ed je 2^n (n je po\u010det pixelov obr\u00e1zku).\nTo znamen\u00e1 \u017ee mno\u017estvo rastie r\u00fdchlo, ve\u013emi r\u00fdchlo. Preto maj\u00fa ve\u010d\u0161ie obr\u00e1zky u\u017e pr\u00edli\u0161 ve\u013ek\u00e9 mno\u017estvo mo\u017enost\u00ed na vysk\u00fa\u0161anie. Obr\u00e1zok k\u00f4li ktor\u00e9mu som to chcel urobi\u0165 mal rozmer 7x40. Zistil som, \u017ee to je 1942668892225729070919461906823518906642406839052139521251812409738904285205208498176 r\u00f4znych mo\u017en\u00fdch predch\u00e1dzaj\u00facich pl\u00f4ch. Z tohto mno\u017estva je len zop\u00e1r spr\u00e1vnych.\n\nPreto som sa nejak sna\u017eil zmen\u0161i\u0165 toto mno\u017estvo. Najprv ma napadlo, \u017ee budem sk\u00fa\u0161a\u0165 meni\u0165 iba tie pixeli z ktor\u00fdch re\u00e1lne m\u00f4\u017ee vzniknu\u0165 po\u017eadovan\u00fd v\u00fdsledok. To znamen\u00e1 vzdalenos\u0165 1 od nejak\u00e9ho bodu v vstupnom obr\u00e1zku. To ve\u013emi nepomohlo. Na\u0161\u0165astie ma napadlo, \u017ee po rozdelen\u00ed obr\u00e1zka na \u010dasti, ktor\u00e9 sa navz\u00e1jom nem\u00f4\u017eu ovplivni\u0165 (medzera aspo\u0148 4 pixely) sa po\u010det mo\u017enosti v\u00fdrazne zmen\u0161\u00ed. \n\nPo rozdelen\u00ed obr\u00e1zku na mali\u010dk\u00e9 k\u00fasky 7*5 (ked\u017ee to je ve\u013ekos\u0165 ka\u017ed\u00e9ho p\u00edsmena na obr\u00e1zku) sa mi to u\u017e podarilo spo\u010d\u00edta\u0165 v schopnom \u010dase.\n\n### Game of life je \u00fa\u017easn\u00e1 ha\u0161ovacia funkcia\nNa tento z\u00e1ver som pri\u0161iel, ke\u010f som sa sna\u017eil n\u00e1js\u0165 algoritmus ktor\u00fd by vypo\u010d\u00edtal predch\u00e1dzajuc\u00ed krok Conway's Game of life. Uvedomil som si, \u017ee mi to stra\u0161ne nie\u010do pripom\u00edna.. ha\u0161ovacie funkcie, preto\u017ee ich je mo\u017en\u00e9 pou\u017ei\u0165 len jedn\u00fdm smerom. Okam\u017eite som z recesie implementoval GOL-hash. M\u00f4\u017eete ju n\u00e1js\u0165 na [GitHub](https:\/\/github.com\/Linzee\/gol-hash).\n\nPri h\u013eadan\u00ed inform\u00e1cii som si e\u0161te v\u0161imol, \u017ee google m\u00e1 \u0161peci\u00e1lu str\u00e1nku ak h\u013ead\u00e1\u0161 \"Conway's Game of life\". V pozad\u00ed be\u017e\u00ed simul\u00e1cia.\n\n![googleGol](assets\/googleGol.png)"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "hexaflexagon",
@@ -1260,7 +1300,8 @@
                 "type": "text",
                 "text": "### Zhrnutie linkov\n\n- [Vygenerovane hexaflexagony vhodne na tlacenie](media\/hexaflexagon\/index.html)\n- [Nastroj na skladanie obycajnych obrazkov pre hexaflexagon](https:\/\/github.com\/Linzee\/hexaflexaspace)\n- [Nastroj na vygenerovanie hexaflexagonu (.svg) ktory sa da vytlacit z obrazkov](https:\/\/github.com\/Linzee\/flexagon-creator)"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "processing-ponyo",
@@ -1288,7 +1329,8 @@
                 "type": "image",
                 "path": "https:\/\/raw.githubusercontent.com\/Linzee\/processing-sketches\/master\/ponyo\/ponyo.png"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "samos",
@@ -1309,7 +1351,8 @@
                 "type": "text",
                 "text": "Multiplayer game where you move by ansvering math questions.\n\nGame is running at [ienze.me\/samos\/](http:\/\/ienze.me\/samos). Source at [GitHub](https:\/\/github.com\/linzee\/samos)."
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "processing-sketches",
@@ -1373,7 +1416,8 @@
                 "type": "image",
                 "path": "https:\/\/raw.githubusercontent.com\/Linzee\/processing-sketches\/master\/sketch_161115c\/sketch_161115c.png"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "antielemental",
@@ -1394,7 +1438,8 @@
                 "type": "text",
                 "text": "Multiplayer team game based around few abilities each player have. Objective of each player is to defeat others. You will lose one ability with each death."
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "neural-networks-analogies",
@@ -1464,7 +1509,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "featured": false
     },
     {
         "slug": "trainwreck",
@@ -1491,7 +1537,8 @@
                 "width": 960,
                 "height": 144
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "open-gl-forest",
@@ -1530,7 +1577,8 @@
                 "type": "text",
                 "text": "## Odraz na vode\nOdrazy na vode su vytvorene pomocou prevratenej sceny (```view_matrix = scale(view_matrix, vec3(1.0, -1.0, 1.0))```) vyrendrovanej do textury a zopar jednoduchych riadkov v shadroch:\n```\n\/\/ Vertex shader\n    outData.normal = texture(water_normal_tex, tex_coord.st * 10 + vec2(app_time, app_time)).rbg - vec3(0.5, 0.5, 0.5);\n    outData.position = position + vec4(moved_normal * 0.3, 0.0) * 0.05;\n\/\/ Fragment shader\n    vec2 reflectOffset = inData.normal.xz * 0.1;\n    color = texture(reflection_tex, (gl_FragCoord.xy) \/ textureSize(reflection_tex, 0) + reflectOffset);\n```\nMysl\u00edm si, \u017ee voda vizer\u00e1 \u00fa\u017easne na to ak\u00fd kr\u00e1tky k\u00f3d vyu\u017e\u00edva."
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "sheep-simulation",
@@ -1562,7 +1610,8 @@
                 "type": "file",
                 "path": "assets\/sheep-simulation\/documentation.pdf"
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "waterfull",
@@ -1589,7 +1638,8 @@
                 "width": 900,
                 "height": 600
             }
-        ]
+        ],
+        "featured": true
     },
     {
         "slug": "tower-town-visuals",
@@ -1610,6 +1660,7 @@
                 "type": "text",
                 "text": "TOWER TOWN is tower defense game. However this one is Real tower defense. Players must build tower to sustain attack of humongous insects. \n\nDevelopment team of the game consists of three students. And I am one of them. My job consists mainly of creating game design, graphics and project management. In this article we will look at graphics part. \n\nFirst thing I had to thought of was visual style for the game. Main constraints I put on it were:\n- style has to be fast to make (as we want to use it in first version game which we had to finish in one month)\n- city will be nice to look at and monsters has to be scary\n- using as few tools as possible\n\nI would like to elaborate on the last point. I think it is sometimes easier to achieve really good with restricted tool-set much easier than with all the tools you can think of. In the beginning it is easier to make a first step as there is fewer options to choose from (and not failing in making first step is allways good). Another result of restricting which tools you may use is forcing yourself to think of more creative ways to accomplish your goal.\n\n## My workflow\n\n![Workflow](\/assets\/towerTownWorkflow.png)\n\nI have choose to use workflow consisting of few steps:\n- Painting really simple color map\n- Painting height map (this is the most important part)\n- Use Blender 3D scene to generate 3d model and render it\n- Transform style\n- Combine to final result\n\nNow when you look at the list you may see that everything after first two steps can be automated. And that\u2019s exactly what I did. I created a Blender scene which loads two textures (color and heightmap). It generates tile from the textures and renders shadows. Next step is adding some style to the image. I used Style Transfer Neural Network with watercolor painting \u201cFlower Market\u201d. Last step is combining watercolor image with render to repair some colors I didn\u2019t like.\n\nSo as you can see, I limited my input to creating color and height map. And I think I achieved visual style which matches my criteria. It\u2019s really quick to create. My toolset is limited to only one tool I created. And it looks good enough even in first version. So I\u2019m going to use it in a game now and maybe even improve it later (for next versions of a game or some other projects).\n\n## TLDR\nThis is example of my underlying color paint and final generated image.\n\n![TT visual style transformation](\/assets\/towerTownTransformation.png)"
             }
-        ]
+        ],
+        "featured": true
     }
 ]

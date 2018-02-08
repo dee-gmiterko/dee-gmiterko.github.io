@@ -4,5 +4,7 @@ div
     #portfolio-description
         h1= this.props.translator(this.props.siteSettings.siteTitle) + ' : ' + this.props.translator("Portfolio")
         //- p.portfolio-content= this.props.translator(this.props.portfolioDescription)
-    
-    Gallery16(itemType=PortfolioItem, items=this.props.projects)
+
+    Gallery16(itemType=PortfolioItem, items=this.props.projectsFeatured)
+    hr
+    Gallery16(itemType=PortfolioItem, items=this.props.projectsNonfeatured)

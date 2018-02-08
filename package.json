@@ -44,7 +44,7 @@
     "json-loader": "0.5.4",
     "locale": "^0.1.0",
     "namp": "^0.2.25",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.7.2",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "postcss-loader": "1.0.0",

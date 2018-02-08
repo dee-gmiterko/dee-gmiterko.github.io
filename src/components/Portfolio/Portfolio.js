@@ -21,7 +21,18 @@ class Portfolio extends Component {
             return t2 - t1;
         });
 
-        return <Template translator={this.props.route.translator} siteSettings={siteSettings} projects={projects} />;
+        var projectsFeatured = [];
+        var projectsNonfeatured = [];
+
+        projects.forEach(project => {
+          if(project.featured) {
+            projectsFeatured.push(project);
+          } else {
+            projectsNonfeatured.push(project);
+          }
+        });
+
+        return <Template translator={this.props.route.translator} siteSettings={siteSettings} projectsFeatured={projectsFeatured} projectsNonfeatured={projectsNonfeatured} />;
     }
 
     componentDidMount(e) {

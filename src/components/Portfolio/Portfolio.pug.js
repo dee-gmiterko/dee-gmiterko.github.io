@@ -7,7 +7,10 @@ module.exports = class __Component extends React.Component {
         const {props, state} = this;
         return React.DOM.div(null, React.DOM.div({ 'id': 'portfolio-description' }, React.DOM.h1(null, this.props.translator(this.props.siteSettings.siteTitle) + ' : ' + this.props.translator('Portfolio'))), React.createElement(Gallery16, {
             'itemType': PortfolioItem,
-            'items': this.props.projects
+            'items': this.props.projectsFeatured
+        }), React.DOM.hr(), React.createElement(Gallery16, {
+            'itemType': PortfolioItem,
+            'items': this.props.projectsNonfeatured
         }));
     }
 };

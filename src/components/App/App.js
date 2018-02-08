@@ -53,7 +53,9 @@ export class App extends Component {
 	componentWillUpdate() {
 		if(this.state.loading) {
 			if(this.state.locales && this.state.locales[this.state.locale] && this.state.projects && this.state.projects[this.state.locale]) {
-				this.state.loading = false;
+				this.setState({
+					loading: false
+				});
 			}
 		}
 	}

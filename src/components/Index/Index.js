@@ -7,11 +7,11 @@ import Template from './Index.pug.js';
 const PROEJCTS_COUNT = 8;
 
 class Index extends Component {
-	
+
 	render() {
 		var random = new Seedrandom(""+Math.floor(new Date().getTime() / 3600000));
 
-		var projects = this.props.route.projectsService.getProjects().slice();
+		var projects = this.props.route.projectsService.getProjects().filter(project => project.featured);
 
 		//shufle
 		for (let i = projects.length; i; i--) {

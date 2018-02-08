@@ -29,7 +29,12 @@ export class Gallery16 extends Component {
 			return itemsOut;
 		};
 
-		var random = new Seedrandom(""+Math.floor(new Date().getTime() / 3600000));
+		var random;
+		if(this.props.norandom) {
+			random = () => this.props.norandom;
+		} else {
+			random = new Seedrandom(""+Math.floor(new Date().getTime() / 3600000));
+		}
 
 		var items = splitItems(this.props.items, random);
 

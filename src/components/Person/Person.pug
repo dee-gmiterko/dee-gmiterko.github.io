@@ -3,7 +3,7 @@
         strong(itemProp="name")= this.props.person.name
     p.job
         span(itemProp="jobTitle") Coder, Artist, Me
-    img.hide(src=require('../../images/profile_17.png'), itemProp="image", alt="Photo of "+this.props.person.name)
+    img.hide(src=require('../../images/'+this.props.siteSettings.profileImage), itemProp="image", alt="Photo of "+this.props.person.name)
     ul.no-bullet
         li
             span.icon.website
@@ -13,20 +13,26 @@
             a(href="mailto:"+this.props.person.email,itemProp="email")= 'Email: ' + this.props.person.email
         li
             span.icon.github
-            a(href="//github.com/" + this.props.person.github, target="_blank")= 'Github: ' + this.props.person.github
+            a(href="https://github.com/" + this.props.person.github, target="_blank")= 'Github: ' + this.props.person.github
         li
             span.icon.twitter
-            a(href="//twitter.com/" + this.props.person.twitter, target="_blank")= 'Twitter: ' + this.props.person.twitter
+            a(href="https://twitter.com/" + this.props.person.twitter, target="_blank")= 'Twitter: ' + this.props.person.twitter
+        li
+            span.icon.linkedin
+            a(href="https://www.linkedin.com/in/"+this.props.person.linkedin+"/", target="_blank")= 'LinkedIn: ' + this.props.person.linkedin
+        li
+            span.icon.facebook
+            a(href="https://facebook.com/" + this.props.person.facebook, target="_blank")= 'Facebook: ' + this.props.person.facebook
         li
             span.icon.twitch
-            a(href="//twitch.tv/" + this.props.person.twitch, target="_blank")= 'Twitch: ' + this.props.person.twitch
-        li
-            span.icon.skype
-            a(href="skype:" + this.props.person.skype)= 'Skype: ' + this.props.person.skype
+            a(href="https://twitch.tv/" + this.props.person.twitch, target="_blank")= 'Twitch: ' + this.props.person.twitch
         li
             span.icon.patreon
-            a(href="//patreon.com/" + this.props.person.patreon, target="_blank")= 'Patreon: ' + this.props.person.patreon
+            a(href="https://patreon.com/" + this.props.person.patreon, target="_blank")= 'Patreon: ' + this.props.person.patreon
         li
             span.icon.itch
-            a(href="//"+this.props.person.itch+".itch.io/", target="_blank")= 'Itch.io: ' + this.props.person.itch
+            a(href="https://"+this.props.person.itch+".itch.io/", target="_blank")= 'Itch.io: ' + this.props.person.itch
+        li
+            span.icon.deviantart
+            a(href="https://"+this.props.person.deviantart+".deviantart.com/", target="_blank")= 'Deviantart: ' + this.props.person.deviantart
     p.about-me(itemProp="description")= this.props.translator('ABOUT_ME')

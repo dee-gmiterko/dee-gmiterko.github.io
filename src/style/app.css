@@ -3712,16 +3712,24 @@ a.externalLink {
     background-position: -16px 0; }
   .icon.twitter {
     background-position: -32px 0; }
-  .icon.skype {
+  .icon.deviantart {
     background-position: -48px 0; }
   .icon.github {
     background-position: 0 -16px; }
   .icon.date {
     background-position: -16px -16px; }
-  .icon.feed {
+  .icon.patreon {
     background-position: -32px -16px; }
   .icon.twitch {
     background-position: -48px -16px; }
+  .icon.facebook {
+    background-position: 0 -32px; }
+  .icon.itch {
+    background-position: -16px -32px; }
+  .icon.e1 {
+    background-position: -32px -32px; }
+  .icon.e2 {
+    background-position: -48px -32px; }
 
 li.empty {
   visibility: hidden; }
@@ -3765,6 +3773,9 @@ li.empty {
   .blog-profile.small {
     padding: 1.5rem;
     max-width: 280px; }
+  .blog-profile.tiny {
+    padding: 0.625rem;
+    max-width: 160px; }
 
 #about-columns .columns {
   padding: 5.0625rem 1.875rem 1.875rem;
@@ -4245,6 +4256,12 @@ article.single {
     text-align: center;
     margin: 0;
     padding: 0 4rem 1rem 4rem; }
+
+#portfolio-more-projects .special-offer .button {
+  margin-right: 1.625rem; }
+
+#portfolio-more-projects h4 {
+  color: #888; }
 
 ul.gallery16 {
   margin: 0;

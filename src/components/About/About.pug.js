@@ -7,7 +7,7 @@ module.exports = class __Component extends React.Component {
     render() {
         const {props, state} = this;
         return React.DOM.div(null, React.DOM.div({ 'id': 'title-screen' }, React.DOM.div({ className: 'row' + ' ' + 'white-triange-bottom-border' }, React.DOM.div({ className: 'corners' }, React.DOM.div({ className: 'blog-profile' + ' ' + 'small' }, React.DOM.img({
-            'src': require('../../images/profile_17.png'),
+            'src': require('../../images/' + this.props.siteSettings.profileImage),
             className: 'enlarge'
         })), React.DOM.h1({ className: 'hide' }, this.props.translator('About me')), React.DOM.h2(null, React.createElement(Link, { 'to': '/about' }, this.props.siteSettings.me.name)), React.DOM.p(null, React.createElement(Link, { 'to': '/portfolio/programming' }, 'Coder'), React.createElement(Link, { 'to': '/portfolio/art' }, 'Artist'), React.createElement(Link, { 'to': '/about' }, 'Me'))))), React.DOM.div({ 'id': 'about-columns' }, React.DOM.div({ className: 'row' }, React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_1').replace(/\%/g, this.props.siteAuthorYears))), React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_2').replace(/\%/g, this.props.siteAuthorYears - 10))), React.DOM.div({ className: 'small-12' + ' ' + 'large-4' + ' ' + 'columns' + ' ' + 'corners' }, React.DOM.p(null, this.props.translator('ABOUT_3'))))), React.DOM.div({
             'id': 'about-contact',

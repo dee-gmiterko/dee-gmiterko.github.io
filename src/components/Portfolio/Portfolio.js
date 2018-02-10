@@ -32,7 +32,7 @@ class Portfolio extends Component {
           }
         });
 
-        return <Template translator={this.props.route.translator} siteSettings={siteSettings} projectsFeatured={projectsFeatured} projectsNonfeatured={projectsNonfeatured} />;
+        return <Template translator={this.props.route.translator} tag={this.props.params.tag} siteSettings={siteSettings} projectsFeatured={projectsFeatured} projectsNonfeatured={projectsNonfeatured} />;
     }
 
     componentDidMount(e) {

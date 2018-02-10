@@ -1,3 +1,4 @@
+- const {Link} = require('react-router')
 - const Gallery16 = require('./../Gallery16/Gallery16')
 - const PortfolioItem = require('./../PortfolioItem/PortfolioItem')
 div
@@ -6,5 +7,54 @@ div
         //- p.portfolio-content= this.props.translator(this.props.portfolioDescription)
 
     Gallery16(itemType=PortfolioItem, items=this.props.projectsFeatured)
-    hr
+
+    if this.props.projectsFeatured.length > 0 && this.props.projectsNonfeatured.length > 0
+      .row#portfolio-more-projects
+          .column.small-3
+            .blog-profile.tiny.right
+                img(src=require('../../images/'+this.props.siteSettings.profileImage))
+          .column.small-9
+            if ['art', 'game', 'unity', 'programming', 'websites', 'blog'].includes(this.props.tag)
+              div
+                if this.props.tag === 'art'
+                  .special-offer
+                    h4 More art
+                    p My DeviantArt account contains more traditional and digital art.
+                    a.button.large(href="https://"+this.props.siteSettings.me.deviantart+".deviantart.com") Visit DeviantArt
+                if this.props.tag === 'game' || this.props.tag === 'unity'
+                  .special-offer
+                    h4 More games
+                    p You can head to my Itch.io account to find more little indie game experiments.
+                    a.button.large(href="https://"+this.props.siteSettings.me.itch+".itch.io") Visit Itch.io
+                if this.props.tag === 'programming'
+                  .special-offer
+                    h4 More code
+                    p If you want to have a better look at my code you should look at some of my many repositories at GitHub.
+                    a.button.large(href="https://github.com/"+this.props.siteSettings.me.github) Visit GitHub
+                if this.props.tag === 'websites'
+                  .special-offer
+                    h4 More websites
+                    p There isn't place where you can find more my websites. But I'm thinking about making one.
+                    button.button.large Stay here
+                if this.props.tag === 'blog'
+                  .special-offer
+                    h4 More articles
+                    p If you are interested in more articles like this follow me on Tumblr or Patreon
+                    a.button.large(href="https://www.tumblr.com/blog/"+this.props.siteSettings.me.tumblr) Visit Tumblr
+                    a.button.large(href="https://patreon.com/" + this.props.siteSettings.me.patreon) Visit Patreon
+            else
+              .special-offer
+                h4 Dominik Gmiterko
+                p Coder, Artist, Me (/^▽^)/
+                p If you are interested in more than my projects you can also visit this links.
+                Link(to="/about", className="button large") About & Contact
+                a.button.large(href="https://twitter.com/" + this.props.siteSettings.me.twitter) Visit Twitter
+                a.button.large(href="https://"+this.props.siteSettings.me.deviantart+".deviantart.com") Visit DeviantArt
+
     Gallery16(itemType=PortfolioItem, items=this.props.projectsNonfeatured)
+    
+    #fnav
+        .row.text-center
+            if this.props.tag
+              Link(to="/portfolio", className="button large")= this.props.translator("More projects")
+            Link(to="/about", className="button large")= this.props.translator("Contact")

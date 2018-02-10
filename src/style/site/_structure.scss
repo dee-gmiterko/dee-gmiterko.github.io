@@ -273,8 +273,8 @@ a.externalLink {
     }
 
     @include icons-generator(
-    (website, email, twitter, skype, github, date, feed, twitch),
-    (0 0, -16px 0, -32px 0, -48px 0, 0 -16px, -16px -16px, -32px -16px, -48px -16px)
+    (website, email, twitter, deviantart, github, date, patreon, twitch, facebook, itch, e1, e2),
+    (0 0, -16px 0, -32px 0, -48px 0, 0 -16px, -16px -16px, -32px -16px, -48px -16px, 0 -32px, -16px -32px, -32px -32px, -48px -32px)
     );
 }
 
@@ -347,6 +347,11 @@ li.empty {
     &.small {
         padding: rem-calc(24);
         max-width: 280px;
+    }
+
+    &.tiny {
+        padding: rem-calc(10);
+        max-width: 160px;
     }
 }
 

@@ -526,45 +526,28 @@
         "featured": false
     },
     {
-        "slug": "jeden-den",
+        "slug": "percy-s-tower",
         "tags": [
             "art",
-            "digital",
-            "digital"
+            "physical"
         ],
-        "title": "Jeden den",
-        "image": "assets\/7eOo4fWOWWC0m6Oi4CWsO4.jpg",
-        "startedAt": "2014-11-26",
-        "finishedAt": "2014-12-10",
+        "title": "Percy's tower",
+        "image": "assets\/percy_s_tower.jpg",
+        "startedAt": "2017-12-01",
+        "finishedAt": "2018-01-10",
         "description": null,
         "keywords": null,
         "entries": [
             {
                 "type": "text",
-                "text": "Jeden jej den. Zopar nacrtov."
+                "text": "Critical Role fan-art inspired whole CriticalRole. (I finally finished it.) Drawn using hard pastels."
             },
             {
                 "type": "image",
-                "path": "assets\/2NlMhalyeICsGm62meAIe4.png"
-            },
-            {
-                "type": "image",
-                "path": "assets\/7eOo4fWOWWC0m6Oi4CWsO4.jpg"
-            },
-            {
-                "type": "image",
-                "path": "assets\/6vzOQC1VL22yYsSmUoySii.jpg"
-            },
-            {
-                "type": "image",
-                "path": "assets\/2iQPMNUdVGWa8Q2i2kYg22.jpg"
-            },
-            {
-                "type": "image",
-                "path": "assets\/6pvzlDsWDSW2OwkuWCu0Uq.jpg"
+                "path": "assets\/percy_s_tower.jpg"
             }
         ],
-        "featured": false
+        "featured": true
     },
     {
         "slug": "wordpress-maintain",
@@ -978,53 +961,6 @@
             {
                 "type": "text",
                 "text": "V poslednej dobe sa dos\u0165 s\u00fata\u017e\u00ed v r\u00fdchlosti na\u010d\u00edtania str\u00e1nok. Aj ja som sa zapojil do tejto s\u00fa\u0165a\u017ee, bol som schopn\u00fd dosta\u0165 na\u010d\u00edtanie str\u00e1nky na \u00farove\u0148 pol sekundy. Zr\u00fdchli\u0165 na\u010d\u00edtavanie sa d\u00e1 viacerimi sp\u00f4sobmi. Jeden z sp\u00f4sobov je zmen\u0161enie d\u00e1t potrebn\u00fdch na zobrazenie str\u00e1nky na \u010do najmen\u0161ie mno\u017estvo. Ale spomalenie vznik\u00e1 aj po\u010das prenosu. ~~Tak isto ako to je aj z slovenk\u00fdmi me\u0161kajuc\u00edmi vlakmi.~~ Presnejsie de o r\u00fdchlos\u0165 odozvy serveru. Na t\u00fato druh\u00fa mo\u017enos\u0165 sa zameriava nov\u00e1 verzia HTTP protokolu. HTTP\/2.0\n\n### HTTP\/1.0\n\n![HTTP 1.0](assets\/train_1_0.png)\n\nToto bol p\u00f4vodn\u00fd n\u00e1vrh webov\u00e9ho protokolu. Cez spojenie tak\u00e9hoto typu nieje mo\u017en\u00e9 prenies\u0165 viac ako jeden s\u00fabor. Otv\u00e1ralo sa nov\u00e9 spojenie pre ka\u017ed\u00fd \u010fal\u0161\u00ed s\u00fabor.\n\n### HTTP\/1.1\n\n![HTTP 1.1](assets\/train_1_1.png)\n\nT\u00e1to verzia protokolu je teraz najroz\u0161\u00edrenej\u0161ia. Je v \u0148om mo\u017en\u00e9 pou\u017ei\u0165 hlavi\u010dku Connection: \"keep-alive\" ktor\u00e1 ponech\u00e1 spojenie otvoren\u00e9 pre na\u010d\u00edtavanie \u010fal\u0161\u00edch s\u00faborov. Prehliada\u010de sa e\u0161te sna\u017eia ur\u00fdchlit komunik\u00e1ciu t\u00fdm, \u017ee vytvoria a\u017e 6 tak\u00fdchto spojen\u00ed s\u00fa\u010dasne.\n\n### HTTP\/2.0\n\n![HTTP 2.0](assets\/train_2_0.png)\n\nJe nov\u00fd protokol ktor\u00fd sa za\u010d\u00edna pou\u017e\u00edva\u0165. D\u00e1 sa poveda\u0165, \u017ee ve\u010d\u0161ie slovo bude ma\u0165 server. Doteraz musel najprv prehliada\u010d poprosi\u0165 o s\u00fabor, a\u017e potom ho mohol dosta\u0165. Server bude m\u00f4c\u0165 zoradzova\u0165 s\u00fabory pod\u013ea priority. Takisto pribudne funkcia Server Push ktor\u00e1 umo\u017en\u00ed posla\u0165 prehliada\u010du s\u00fabory e\u0161te sk\u00f4r ako zist\u00ed, \u017ee ich potrebuje. \n\nPri dne\u0161n\u00fdch str\u00e1nkach sa vcelku \u010dasto stret\u00e1vame z sp\u00e1jan\u00edm s\u00faborov. Napr\u00edklad obr\u00e1zky google sp\u00e1ja takto:\n\n[![https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png](https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png)](https:\/\/ssl.gstatic.com\/gb\/images\/i2_2ec824b0.png)\n\nAk ste o tejto technike nepo\u010duli tak u\u017e ani nemus\u00edte.. ale sp\u00e1janie mal\u00fdch s\u00faborov dokopy sa ur\u00fdchli na\u010d\u00edtavanie. V\u010faka HTTP\/2  to u\u017e nieje potrebne, je to zbyto\u010dn\u00e9. Ked\u017ee nie\u010do podobn\u00e9 sa deje aj priamo pri prenose. \u010eal\u0161ie \u00fa\u017easn\u00e9 v\u00fdhody som na\u0161iel spomenut\u00e9 v tejto [prezent\u00e1ci\u00ed](https:\/\/docs.google.com\/presentation\/d\/1r7QXGYOLCh4fcUq0jDdDwKJWNqWK1o4xMtYpKZCJYjM\/present#slide=id.p19).\n\n### Remember Me\nHral niekto z v\u00e1s hru Remember Me? To len mne sa zdalo, \u017ee tam tvorcovia spomenuli protokol http a\u017e pr\u00edli\u0161 ve\u013ea kr\u00e1t?\n\n1. Prv\u00e9 miesto kde som si to v\u0161imol je u\u017e v prvej epiz\u00f3de. Len \u010do sa ti podar\u00ed utiec\u0165 z vezenia ocitne\u0161 sa v oblasti s n\u00e1zvom Slum 404.\n    \n    *404 je \u010d\u00edslo chyby \"Not found\" ktorou server odpoved\u00e1 ak pozadovan\u00fd s\u00fabor nieje mo\u017en\u00e9 n\u00e1js\u0165.*\n2. V druhej epiz\u00f3de sa stretne\u0161 s svojim fan\u00fa\u0161ikom ktor\u00fd \u00faplnou n\u00e1hodou pou\u017e\u00edva meno \"Bad request\".\n    \n    *Bad request je \u010fal\u0161ia z ch\u00fdb http protokolu. 400*\n3. Potom bolo chv\u00ed\u013eu ticho. (Alebo som si len ja ni\u010d nev\u0161imol.) Ku koncu hry je vidie\u0165, \u017ee sensen pou\u017e\u00edva URL adresy.  Nad zobrazen\u00fdmi d\u00e1tami o Nilin svieti n\u00e1dpis \"sensen:\/\/Nilin\/\"\n    \n    *Pod\u013ea URL sa takto zapisuj\u00fa adresy k s\u00faborom. Tento konkr\u00e9tny z\u00e1pis znamen\u00e1 protokol \"sensen\" a prie\u010dinok \"Nilin\".*\n\nV\u0161imli ste si e\u0161te nejak\u00fa \u010fal\u0161iu nar\u00e1\u017eku?\n\n(Tie obr\u00e1zky som nekreslil, rad\u0161ej som si na nich urobil jednoduch\u00fd [gener\u00e1tor](\/media\/train-generator))"
-            }
-        ],
-        "featured": false
-    },
-    {
-        "slug": "leto-2015",
-        "tags": [
-            "other"
-        ],
-        "title": "Summer 2015",
-        "image": null,
-        "startedAt": "2015-10-19",
-        "finishedAt": "2015-10-19",
-        "description": "What I did this summer (2015). Trip to Slovenia. Programming in WAME.",
-        "keywords": "summer, 2015, wame, php, programming, holliday, trip, nature, slovenia, slovenian hills",
-        "entries": [
-            {
-                "type": "text",
-                "text": "### Slovinsko\nA\u017e teraz nach\u00e1dzam \u010das nap\u00edsa\u0165 nie\u010do o tomto lete. Dalo by sa rozdeli\u0165 na tri \u010dasti. Za\u010diatkom leta sme str\u00e1vili t\u00fd\u017eden v Slovinsku."
-            },
-            {
-                "type": "image",
-                "path": "assets\/4VOLXricDY2ueeMY6SUAkg.jpg"
-            },
-            {
-                "type": "text",
-                "text": "Zistil som, \u017ee namiesto turistick\u00fdch zna\u010diek \u010dasto kreslia kiklopov. To bude nie\u010do pre [niCool](\/\/nicool.rocks\/)."
-            },
-            {
-                "type": "image",
-                "path": "assets\/6p45R3SsBUS00KUAIsYqsK.jpg"
-            },
-            {
-                "type": "text",
-                "text": "Ako som u\u017e spom\u00ednal, cel\u00e9 leto som pracoval v [wame.sk](\/\/wame.sk). Mojim n\u00e1strojom bolo naj\u010dastej\u0161ie PHP. Za ten \u010das som pracoval na r\u00f4znych veciach. Podarilo sa mi zp\u00edsa\u0165 [ich zoznam](\/#\/project\/wame)."
-            },
-            {
-                "type": "image",
-                "path": "assets\/4FGG1H6cu4QEyoQYQYQIkq.jpg"
-            },
-            {
-                "type": "image",
-                "path": "assets\/5Ft2t1Yxd64aKs8qoKGuKM.jpg"
-            },
-            {
-                "type": "image",
-                "path": "assets\/33dQ9JIWgwG8wKeOUeqYCg.jpg"
             }
         ],
         "featured": false

@@ -1583,6 +1583,7 @@
     {
         "slug": "tmsei",
         "tags": [
+            "data",
             "analysis",
             "similarity",
             "thesis"
@@ -1619,6 +1620,28 @@
             {
                 "type": "text",
                 "text": "I contributed to project [kreativator.eu](https:\/\/kreativator.eu\/) in company InQool as frontend developer for about a year. There is not much to say about this project. I considered it to be recreational project because you usualy do not have to think abstract thoughts when working on frontend. Therefore it was plesant change for a day or two in week of studiing mostly abstract things at an university."
+            }
+        ],
+        "featured": true
+    },
+    {
+        "slug": "2d-color-picker",
+        "tags": [
+            "data",
+            "model",
+            "similarity",
+            "colors"
+        ],
+        "title": "2D color picker",
+        "image": "https://raw.githubusercontent.com/Linzee/2d-color-picker/master/output/colorScheme.png",
+        "startedAt": "2018-12-1",
+        "finishedAt": "2018-12-30",
+        "description": "Rethinked way we pick colors",
+        "keywords": "data, analysis, colors, color picker, machine learning, t-SNE, model",
+        "entries": [
+            {
+                "type": "text",
+                "text": "How does typical color picker look? It's usually a square (or circle) with at least one additional slider.\n\n![Traditional color picker](/assets/traditional-color-picker.png)\n\nThey cannot be less complicated because colors are actually ordered in three dimensional cube. Or can they? I tried to rethink way we approach one very simple task - selection of color.\n\nMy color picker has colors organized only in two dimensional plane (which can be trimed to square or circle). \n\n![2D color picker](https://raw.githubusercontent.com/Linzee/2d-color-picker/master/output/colorScheme.png)\n\n### Model\n\nIt was generated in few steps:\n\n- I processed many photos to small 00×00 images,\n- Relations between each pixel and each image as distance from most similar color in image (Ad-hoc metric). This should represent relations between colors as some colors are more likely to occur together on a image than others,\n- Standard t-SNE model used to compress this multidimensional data into plane,\n- Afterwards I applied tangential transformation to bend model into a circle,\n- Last step was generating a final color palette. Color of each pixel is determined as weighted sum of probabilities of colors extracted in first step.\n\n### Pros and cons\n\nOne apparent problem with this color picker is that it is not multipurpose. Color scheme greatly depicts source images used. But this is also its strength as we can generate color pickers for each purpose (e.g. anime artist surely uses different color palette than photograph for retouching).\n\n### Usage\n\nJust display image to user and read a color of pixel on position where he pointed.\n\n### Links\n\n- [GitHub repository with sources](https://github.com/Linzee/2d-color-picker)\n- [Color picker](https://raw.githubusercontent.com/Linzee/2d-color-picker/master/output/colorScheme.png)"
             }
         ],
         "featured": true

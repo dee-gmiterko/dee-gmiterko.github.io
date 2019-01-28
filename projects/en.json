@@ -104,7 +104,7 @@
                 "path": "assets\/ldycdqgZJ6QQE2gmg0oo4.jpg"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "ppl",
@@ -166,7 +166,7 @@
                 "path": "assets\/2KSrJsMnGwgEYGgyi64sso.zip"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "forest",
@@ -191,7 +191,7 @@
                 "path": "assets\/1MQjPJOrTmCYc286OaycUy.jpg"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "mech5",
@@ -463,7 +463,7 @@
                 "path": "assets\/65HKgIb2nKyw4swskskQ0i.jpg"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "papercraft",
@@ -601,7 +601,7 @@
                 "path": "assets\/3b11kxqkJaWCq82kwSakgg.jpg"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "life-of-snow",
@@ -635,7 +635,7 @@
                 "path": "assets\/6xHV10OqqseUMug8GQuGyq.png"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "2minD",
@@ -730,7 +730,7 @@
                 "path": "assets\/181PkHdHN0ASmwocEQWSwm.jpg"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "ienze-me",
@@ -874,7 +874,7 @@
                 "path": "assets\/46IWsMpj9Yq6eKwUkyc8Cu.png"
             }
         ],
-        "featured": true
+        "featured": false
     },
     {
         "slug": "interaktivne-pozadie",
@@ -976,7 +976,7 @@
                 "path": "assets\/4lzyiRV90QUeMYKQkGwUyG.png"
             }
         ],
-        "featured": false
+        "featured": true
     },
     {
         "slug": "py-2050",
@@ -1266,7 +1266,7 @@
         "entries": [
             {
                 "type": "text",
-                "text": "Multiplayer game where you move by ansvering math questions.\n\nGame is running at [ienze.me\/samos\/](http:\/\/ienze.me\/samos). Source at [GitHub](https:\/\/github.com\/linzee\/samos)."
+                "text": "Multiplayer game where you move by ansvering math questions. It was a small project for Adaptive learning group.\n\nInteresting bit about it is that I did not implement any low-level communication mechanism between clients. Instead each game state is stored in single JSON object which is synchronized between clients using [diffsync](https:\/\/github.com\/janmonschke\/diffsync) library.\n\nGame is running at [ienze.me\/samos\/](http:\/\/ienze.me\/samos). Source at [GitHub](https:\/\/github.com\/linzee\/samos)."
             }
         ],
         "featured": true
@@ -1282,7 +1282,7 @@
         "image": "https:\/\/raw.githubusercontent.com\/Linzee\/processing-sketches\/master\/sketch_161106x\/sketch_161106x.png",
         "startedAt": "2016-9-29",
         "finishedAt": "2016-11-15",
-        "description": "My experiments with Processingom",
+        "description": "My experiments with Processing",
         "keywords": "generative design, Processing, sketches",
         "entries": [
             {
@@ -1428,6 +1428,64 @@
             }
         ],
         "featured": false
+    },
+    {
+        "slug": "image-analogies-experiments",
+        "tags": [
+            "other",
+            "experiment",
+            "machine-learning",
+            "neural-networks"
+        ],
+        "title": "Experiments with image analogies",
+        "image": "assets\/neuralTextures\/experiments\/seamless-texture.jpg",
+        "startedAt": "2017-06-01",
+        "finishedAt": "2017-07-01",
+        "description": "Neural network used to generate images",
+        "keywords": "neural networks, machine learning, image analogies, images",
+        "entries": [
+            {
+                "type": "text",
+                "text": "This post lists some (more successful) of my experiments with [image-analogies](https:\/\/github.com\/awentzonline\/image-analogies).\n\nFirst thing I tried was generating larger images from small sample."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/enlarge.jpg"
+            },
+            {
+                "type": "text",
+                "text": "I also experimented with using heightmap instead of black-white mask. I think result looks more realistic. (Heightmap on top-right is also generated using original black-white mask.)"
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/enlarge-heightmap.jpg"
+            },
+            {
+                "type": "text",
+                "text": "So, can you add simple shading to image using image analogies? Interestingly, yes. However result is not very good because we only told model how to draw convex objects, especially balls."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/draw.jpg"
+            },
+            {
+                "type": "text",
+                "text": "Therefore straightforward option is to use more descriptive source source image with all kinds of shapes. Result is much better."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/draw-complex.jpg"
+            },
+            {
+                "type": "text",
+                "text": "The last use-case I considered in my experiments was utilizing ability to generalize for production of seamless textures. I think it works pretty well mainly because neural network is trained to generalize facts about style of the images. Therefore produced texture is pretty uniform e.g. gradient of light is easily removed."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/seamless-texture.jpg"
+            }
+        ],
+        "featured": true
     },
     {
         "slug": "trainwreck",
@@ -1583,6 +1641,7 @@
     {
         "slug": "tmsei",
         "tags": [
+            "data",
             "analysis",
             "similarity",
             "thesis"
@@ -1619,6 +1678,29 @@
             {
                 "type": "text",
                 "text": "I contributed to project [kreativator.eu](https:\/\/kreativator.eu\/) in company InQool as frontend developer for about a year. There is not much to say about this project. I considered it to be recreational project because you usualy do not have to think abstract thoughts when working on frontend. Therefore it was plesant change for a day or two in week of studiing mostly abstract things at an university."
+            }
+        ],
+        "featured": true
+    },
+    {
+        "slug": "2d-color-picker",
+        "tags": [
+            "data",
+            "other",
+            "model",
+            "similarity",
+            "colors"
+        ],
+        "title": "2D color picker",
+        "image": "https:\/\/raw.githubusercontent.com\/Linzee\/2d-color-picker\/master\/output\/colorScheme.png",
+        "startedAt": "2018-12-1",
+        "finishedAt": "2018-12-30",
+        "description": "Rethinked way we pick colors",
+        "keywords": "data, analysis, colors, color picker, machine learning, t-SNE, model",
+        "entries": [
+            {
+                "type": "text",
+                "text": "How does typical color picker look? It's usually a square (or circle) with at least one additional slider.\n\n![Traditional color picker](\/assets\/traditional-color-picker.png)\n\nThey cannot be less complicated because colors are actually ordered in three dimensional cube. Or can they? I tried to rethink way we approach one very simple task - selection of color.\n\nMy color picker has colors organized only in two dimensional plane (which can be trimed to square or circle). \n\n![2D color picker](https:\/\/raw.githubusercontent.com\/Linzee\/2d-color-picker\/master\/output\/colorScheme.png)\n\n### Model\n\nIt was generated in few steps:\n\n- I processed many photos to small 00\u00d700 images,\n- Relations between each pixel and each image as distance from most similar color in image (Ad-hoc metric). This should represent relations between colors as some colors are more likely to occur together on a image than others,\n- Standard t-SNE model used to compress this multidimensional data into plane,\n- Afterwards I applied tangential transformation to bend model into a circle,\n- Last step was generating a final color palette. Color of each pixel is determined as weighted sum of probabilities of colors extracted in first step.\n\n### Pros and cons\n\nOne apparent problem with this color picker is that it is not multipurpose. Color scheme greatly depicts source images used. But this is also its strength as we can generate color pickers for each purpose (e.g. anime artist surely uses different color palette than photograph for retouching).\n\n### Usage\n\nJust display image to user and read a color of pixel on position where he pointed.\n\n### Links\n\n- [GitHub repository with sources](https:\/\/github.com\/Linzee\/2d-color-picker)\n- [Color picker](https:\/\/raw.githubusercontent.com\/Linzee\/2d-color-picker\/master\/output\/colorScheme.png)"
             }
         ],
         "featured": true

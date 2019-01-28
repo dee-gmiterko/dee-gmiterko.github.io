@@ -1430,6 +1430,64 @@
         "featured": false
     },
     {
+        "slug": "image-analogies-experiments",
+        "tags": [
+            "other",
+            "experiment",
+            "machine-learning",
+            "neural-networks"
+        ],
+        "title": "Experiments with image analogies",
+        "image": "assets\/neuralTextures\/experiments\/seamless-texture.jpg",
+        "startedAt": "2017-06-01",
+        "finishedAt": "2017-07-01",
+        "description": "Neural network used to generate images",
+        "keywords": "neural networks, machine learning, image analogies, images",
+        "entries": [
+            {
+                "type": "text",
+                "text": "This post lists some (more successful) of my experiments with [image-analogies](https:\/\/github.com\/awentzonline\/image-analogies).\n\nFirst thing I tried was generating larger images from small sample."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/enlarge.jpg"
+            },
+            {
+                "type": "text",
+                "text": "I also experimented with using heightmap instead of black-white mask. I think result looks more realistic. (Heightmap on top-right is also generated using original black-white mask.)"
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/enlarge-heightmap.jpg"
+            },
+            {
+                "type": "text",
+                "text": "So, can you add simple shading to image using image analogies? Interestingly, yes. However result is not very good because we only told model how to draw convex objects, especially balls."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/draw.jpg"
+            },
+            {
+                "type": "text",
+                "text": "Therefore straightforward option is to use more descriptive source source image with all kinds of shapes. Result is much better."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/draw-complex.jpg"
+            },
+            {
+                "type": "text",
+                "text": "The last use-case I considered in my experiments was utilizing ability to generalize for production of seamless textures. I think it works pretty well mainly because neural network is trained to generalize facts about style of the images. Therefore produced texture is pretty uniform e.g. gradient of light is easily removed."
+            },
+            {
+                "type": "image",
+                "path": "\/assets\/neuralTextures\/experiments\/seamless-texture.jpg"
+            }
+        ],
+        "featured": true
+    },
+    {
         "slug": "trainwreck",
         "tags": [
             "programming",
@@ -1628,6 +1686,7 @@
         "slug": "2d-color-picker",
         "tags": [
             "data",
+            "other",
             "model",
             "similarity",
             "colors"

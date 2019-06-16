@@ -1,6 +1,6 @@
 <?php
 
-$featured = ["girl-in-park", "map-london", "ee-antic", "icons-extractor", "20-4-89-or-50", "samos", "efil-fo-emag", "hexaflexagon", "processing-sketches", "processing-ponyo", "trainwreck", "open-gl-forest", "sheep-simulation", "waterfull", "tower-town-visuals", "tmsei", "kreativator", "py-2049", "percy-s-tower", "2d-color-picker", "image-analogies-experiments"];
+$featured = ["girl-in-park", "map-london", "ee-antic", "icons-extractor", "20-4-89-or-50", "samos", "efil-fo-emag", "hexaflexagon", "processing-sketches", "processing-ponyo", "trainwreck", "open-gl-forest", "sheep-simulation", "waterfull", "tower-town-visuals", "tmsei", "kreativator", "py-2049", "percy-s-tower", "2d-color-picker", "image-analogies-experiments", "meteo", "cacheviz"];
 
 $en = json_decode(file_get_contents("../public/projects/en.json"), true);
 $sk = json_decode(file_get_contents("../public/projects/sk.json"), true);
